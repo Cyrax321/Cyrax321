@@ -6,7 +6,7 @@
 <p align="left"> <a href="https://img.shields.io/twitter/follow/?logo=twitter&style=for-the-badge" target="blank"><img src="https://img.shields.io/twitter/follow/?logo=twitter&style=for-the-badge" alt="" /></a> </p>
 
 - 🌱 Currently on my AI/ML learning journey!  
-- 📫 Feel free to reach out to me at: **[anandhupshaji995@gmail.com](mailto:anandhupshaji995@gmail.com)**  
+- 📫 Feel free to reach out to me at: **[MAIL](mailto:reach.anandhu.me@gmail.com)**  
 - ⚡ Fun fact: **Wake up, Code, Sleep, Repeat 🔄**
 
 <h3 align="left">🌟 Check out my portfolio:</h3>
