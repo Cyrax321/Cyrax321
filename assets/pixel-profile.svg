@@ -99,111 +99,109 @@
 <!-- ── LEFT: CUTE CHIBI CHARACTER ── -->
 <text x="28" y="174" font-family="monospace" font-size="8" fill="#3a8aff" letter-spacing="2">[ PLAYER.CHARACTER ]</text>
 
+<!-- PIXEL CHARACTER (P=7, x_start=53, y_start=175) -->
 <g class="bob">
 <animateTransform attributeName="transform" type="translate" values="0,0;0,-6;0,0" dur="3s" repeatCount="indefinite"/>
-<!-- Shadow -->
-<ellipse cx="140" cy="512" rx="44" ry="9" fill="rgba(58,138,255,0.1)"/>
+<!-- shadow -->
+<rect x="88" y="416" width="84" height="6" rx="3" fill="rgba(58,138,255,0.08)"/>
+<!-- hair top bumps -->
+<rect x="109" y="175" width="35" height="7" fill="#0f0f13"/>
+<rect x="95" y="182" width="63" height="7" fill="#0f0f13"/>
+<rect x="116" y="175" width="7" height="7" fill="#0f0f13"/>
+<rect x="137" y="171" width="14" height="11" fill="#0f0f13"/>
+<rect x="151" y="175" width="7" height="7" fill="#0f0f13"/>
+<!-- hair main block (back) -->
+<rect x="60" y="189" width="133" height="49" fill="#0f0f13"/>
+<!-- head skin -->
+<rect x="67" y="196" width="119" height="91" fill="#fdcba0"/>
+<!-- ears -->
+<rect x="53" y="231" width="14" height="21" fill="#fdcba0"/>
+<rect x="186" y="231" width="14" height="21" fill="#fdcba0"/>
+<!-- bangs overlay -->
+<rect x="60" y="189" width="133" height="28" fill="#0f0f13"/>
+<!-- individual bang strands -->
+<rect x="60" y="210" width="21" height="7" fill="#0f0f13"/>
+<rect x="67" y="217" width="14" height="7" fill="#0f0f13"/>
+<rect x="172" y="210" width="21" height="7" fill="#0f0f13"/>
+<rect x="172" y="217" width="14" height="7" fill="#0f0f13"/>
+<!-- eyebrows -->
+<rect x="81" y="217" width="21" height="7" fill="#0f0f13"/>
+<rect x="151" y="217" width="21" height="7" fill="#0f0f13"/>
+<!-- eye whites -->
+<rect x="81" y="224" width="21" height="21" fill="#ffffff"/>
+<rect x="151" y="224" width="21" height="21" fill="#ffffff"/>
+<!-- iris -->
+<rect x="84" y="227" width="15" height="15" fill="#1e1010"/>
+<rect x="154" y="227" width="15" height="15" fill="#1e1010"/>
+<!-- pupils -->
+<rect x="88" y="231" width="7" height="7" fill="#060303"/>
+<rect x="158" y="231" width="7" height="7" fill="#060303"/>
+<!-- eye highlights (pixel sparkle) -->
+<rect x="81" y="224" width="7" height="7" fill="#ffffff" opacity=".9"/>
+<rect x="151" y="224" width="7" height="7" fill="#ffffff" opacity=".9"/>
+<rect x="91" y="238" width="4" height="4" fill="#ffffff" opacity=".5"/>
+<rect x="161" y="238" width="4" height="4" fill="#ffffff" opacity=".5"/>
+<!-- nose pixel -->
+<rect x="123" y="252" width="7" height="7" fill="#e8a070"/>
+<!-- mouth - open happy -->
+<rect x="102" y="259" width="49" height="7" fill="#c03050"/>
+<rect x="102" y="266" width="49" height="7" fill="#c03050"/>
+<rect x="109" y="259" width="35" height="7" fill="#ffffff"/>
+<!-- cheeks pixel blocks -->
+<rect x="60" y="245" width="21" height="14" fill="#ff7090" opacity=".38"/>
+<rect x="172" y="245" width="21" height="14" fill="#ff7090" opacity=".38"/>
+<!-- neck -->
+<rect x="116" y="273" width="21" height="14" fill="#fdcba0"/>
+<!-- body/shirt -->
+<rect x="81" y="287" width="91" height="77" fill="#18181e"/>
+<!-- shirt logo - pink M (3 rects) -->
+<rect x="109" y="315" width="7" height="28" fill="#ff4488"/>
+<rect x="116" y="301" width="21" height="14" fill="#ff4488"/>
+<rect x="137" y="315" width="7" height="28" fill="#ff4488"/>
+<!-- left arm (shirt sleeve) -->
+<rect x="53" y="294" width="28" height="49" fill="#18181e"/>
+<!-- left forearm skin -->
+<rect x="39" y="259" width="21" height="42" fill="#fdcba0"/>
+<!-- left peace fingers (index + middle) -->
+<rect x="39" y="224" width="7" height="35" fill="#fdcba0"/>
+<rect x="46" y="224" width="7" height="35" fill="#fdcba0"/>
+<!-- left hand knuckle row -->
+<rect x="39" y="252" width="14" height="7" fill="#fdcba0"/>
+<!-- right arm (shirt sleeve) -->
+<rect x="172" y="294" width="28" height="49" fill="#18181e"/>
+<!-- right forearm skin -->
+<rect x="193" y="259" width="21" height="42" fill="#fdcba0"/>
+<!-- right peace fingers -->
+<rect x="200" y="224" width="7" height="35" fill="#fdcba0"/>
+<rect x="207" y="224" width="7" height="35" fill="#fdcba0"/>
+<!-- right hand knuckle row -->
+<rect x="200" y="252" width="14" height="7" fill="#fdcba0"/>
+<!-- legs -->
+<rect x="88" y="364" width="28" height="42" fill="#22223a"/>
+<rect x="137" y="364" width="28" height="42" fill="#22223a"/>
+<rect x="116" y="364" width="21" height="42" fill="#08101c"/>
+<!-- shoes -->
+<rect x="81" y="399" width="42" height="14" fill="#111111"/>
+<rect x="130" y="399" width="42" height="14" fill="#111111"/>
+<!-- shoe highlights -->
+<rect x="88" y="399" width="14" height="5" fill="rgba(255,255,255,0.09)"/>
+<rect x="137" y="399" width="14" height="5" fill="rgba(255,255,255,0.09)"/>
 
-<!-- HAIR BACK -->
-<ellipse cx="140" cy="276" rx="76" ry="80" fill="#111115"/>
-<!-- Messy top bumps -->
-<ellipse cx="118" cy="208" rx="20" ry="26" transform="rotate(-18,118,208)" fill="#111115"/>
-<ellipse cx="140" cy="200" rx="16" ry="22" fill="#111115"/>
-<ellipse cx="163" cy="205" rx="18" ry="24" transform="rotate(14,163,205)" fill="#111115"/>
-<ellipse cx="100" cy="222" rx="13" ry="18" transform="rotate(-28,100,222)" fill="#111115"/>
-<ellipse cx="180" cy="218" rx="13" ry="19" transform="rotate(22,180,218)" fill="#111115"/>
-<!-- Side hair -->
-<ellipse cx="72" cy="280" rx="14" ry="32" transform="rotate(-8,72,280)" fill="#111115"/>
-<ellipse cx="208" cy="278" rx="14" ry="32" transform="rotate(8,208,278)" fill="#111115"/>
-
-<!-- HEAD -->
-<ellipse cx="140" cy="285" rx="68" ry="74" fill="url(#skinr)"/>
-
-<!-- BANGS -->
-<ellipse cx="140" cy="232" rx="70" ry="30" fill="#111115"/>
-<ellipse cx="112" cy="248" rx="13" ry="22" transform="rotate(-14,112,248)" fill="#131318"/>
-<ellipse cx="133" cy="243" rx="11" ry="20" transform="rotate(-4,133,243)" fill="#131318"/>
-<ellipse cx="154" cy="244" rx="11" ry="19" transform="rotate(5,154,244)" fill="#131318"/>
-<ellipse cx="174" cy="250" rx="12" ry="20" transform="rotate(16,174,250)" fill="#131318"/>
-
-<!-- EARS -->
-<ellipse cx="74" cy="288" rx="11" ry="14" fill="#fdcfa0"/>
-<ellipse cx="74" cy="288" rx="7" ry="9" fill="#f0a880" opacity=".5"/>
-<ellipse cx="206" cy="288" rx="11" ry="14" fill="#fdcfa0"/>
-<ellipse cx="206" cy="288" rx="7" ry="9" fill="#f0a880" opacity=".5"/>
-
-<!-- EYES - big round dark -->
-<ellipse cx="116" cy="285" rx="21" ry="22" fill="white"/>
-<ellipse cx="116" cy="287" rx="15" ry="16" fill="url(#eyer)"/>
-<ellipse cx="116" cy="289" rx="9" ry="10" fill="#0a0808"/>
-<ellipse cx="109" cy="280" rx="6" ry="5" fill="white" opacity=".92"/>
-<ellipse cx="121" cy="292" rx="2.5" ry="2" fill="white" opacity=".6"/>
-<path d="M 97 270 Q 116 265 135 270" stroke="#111115" stroke-width="4.5" fill="none" stroke-linecap="round"/>
-
-<ellipse cx="163" cy="285" rx="21" ry="22" fill="white"/>
-<ellipse cx="163" cy="287" rx="15" ry="16" fill="url(#eyer)"/>
-<ellipse cx="163" cy="289" rx="9" ry="10" fill="#0a0808"/>
-<ellipse cx="156" cy="280" rx="6" ry="5" fill="white" opacity=".92"/>
-<ellipse cx="168" cy="292" rx="2.5" ry="2" fill="white" opacity=".6"/>
-<path d="M 144 270 Q 163 265 182 270" stroke="#111115" stroke-width="4.5" fill="none" stroke-linecap="round"/>
-
-<!-- EYEBROWS -->
-<path d="M 97 263 Q 116 258 133 263" stroke="#111115" stroke-width="5" fill="none" stroke-linecap="round"/>
-<path d="M 147 263 Q 163 258 181 263" stroke="#111115" stroke-width="5" fill="none" stroke-linecap="round"/>
-
-<!-- NOSE tiny -->
-<ellipse cx="140" cy="306" rx="3.5" ry="3" fill="#e8a070"/>
-
-<!-- MOUTH open happy -->
-<path d="M 120 318 Q 140 335 160 318" fill="#d04858"/>
-<path d="M 120 318 Q 140 325 160 318" fill="white"/>
-<path d="M 120 318 Q 140 320 160 318" fill="none" stroke="#d04858" stroke-width="2"/>
-
-<!-- CHEEKS big rosy -->
-<ellipse class="bsh" cx="86" cy="308" rx="22" ry="14" fill="#ff7090" opacity=".4"/>
-<ellipse class="bsh" cx="194" cy="308" rx="22" ry="14" fill="#ff7090" opacity=".4" style="animation-delay:.6s"/>
-
-<!-- NECK -->
-<rect x="126" y="356" width="28" height="16" rx="5" fill="#fdcfa0"/>
-
-<!-- BODY - dark tshirt -->
-<rect x="88" y="368" width="104" height="90" rx="16" fill="#18181e"/>
-<!-- Pink M logo on shirt -->
-<path d="M 120 390 L 128 412 L 140 396 L 152 412 L 160 390" fill="none" stroke="#ff4488" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
-
-<!-- LEFT ARM - raised peace sign -->
-<rect x="68" y="372" width="22" height="52" rx="11" fill="#18181e" transform="rotate(-32,79,372)"/>
-<ellipse cx="63" cy="356" rx="14" ry="10" fill="#fdcfa0"/>
-<!-- Peace fingers left -->
-<rect x="54" y="310" width="10" height="34" rx="5" fill="#fdcfa0" transform="rotate(-8,59,327)"/>
-<rect x="67" y="308" width="10" height="34" rx="5" fill="#fdcfa0" transform="rotate(3,72,325)"/>
-
-<!-- RIGHT ARM - raised peace sign -->
-<rect x="190" y="372" width="22" height="52" rx="11" fill="#18181e" transform="rotate(32,201,372)"/>
-<ellipse cx="217" cy="356" rx="14" ry="10" fill="#fdcfa0"/>
-<!-- Peace fingers right -->
-<rect x="213" y="308" width="10" height="34" rx="5" fill="#fdcfa0" transform="rotate(-3,218,325)"/>
-<rect x="226" y="310" width="10" height="34" rx="5" fill="#fdcfa0" transform="rotate(8,231,327)"/>
-
-<!-- LEGS -->
-<rect x="104" y="455" width="26" height="42" rx="10" fill="#22223a"/>
-<rect x="150" y="455" width="26" height="42" rx="10" fill="#22223a"/>
-<!-- Shoes -->
-<rect x="97" y="490" width="36" height="15" rx="8" fill="#111111"/>
-<ellipse cx="108" cy="495" rx="8" ry="3.5" fill="rgba(255,255,255,0.1)"/>
-<rect x="149" y="490" width="36" height="15" rx="8" fill="#111111"/>
-<ellipse cx="160" cy="495" rx="8" ry="3.5" fill="rgba(255,255,255,0.1)"/>
 </g>
 
-<!-- Character info -->
-<rect x="20" y="528" width="234" height="1" fill="#1a2e48"/>
-<text x="28" y="548" font-family="monospace" font-size="9" fill="#4a6080">LOCATION</text>
-<text x="28" y="564" font-family="monospace" font-size="11" fill="#e6edf3">CEM · Kerala</text>
-<text x="28" y="584" font-family="monospace" font-size="9" fill="#4a6080">UNIVERSITY</text>
-<text x="28" y="600" font-family="monospace" font-size="11" fill="#e6edf3">APJ Abdul Kalam Tech. Univ.</text>
-<text x="28" y="618" font-family="monospace" font-size="9" fill="#4a6080">STATUS</text>
-<text x="28" y="634" font-family="monospace" font-size="11" fill="#39d353">RESEARCHING</text>
-<text class="bk" x="164" y="634" font-family="monospace" font-size="11" fill="#39d353">▮</text>
+<!-- Character info (moved up, no blank gap) -->
+<rect x="20" y="428" width="234" height="1" fill="#1a2e48"/>
+<text x="28" y="446" font-family="monospace" font-size="9" fill="#4a6080">LOCATION</text>
+<text x="28" y="461" font-family="monospace" font-size="11" fill="#e6edf3">CEM · Kerala</text>
+<text x="28" y="479" font-family="monospace" font-size="9" fill="#4a6080">UNIVERSITY</text>
+<text x="28" y="494" font-family="monospace" font-size="11" fill="#e6edf3">APJ KTU</text>
+<text x="28" y="512" font-family="monospace" font-size="9" fill="#4a6080">STATUS</text>
+<text x="28" y="527" font-family="monospace" font-size="11" fill="#39d353">RESEARCHING</text>
+<text class="bk" x="164" y="527" font-family="monospace" font-size="11" fill="#39d353">▮</text>
+<text x="28" y="547" font-family="monospace" font-size="9" fill="#4a6080">MAIN FOCUS</text>
+<text x="28" y="562" font-family="monospace" font-size="10" fill="#a040ff">Theoretical CS</text>
+<text x="28" y="582" font-family="monospace" font-size="9" fill="#4a6080">GUILD</text>
+<text x="28" y="597" font-family="monospace" font-size="10" fill="#f0c060">ACSES · Joint Secretary</text>
 
 <!-- ── RIGHT PANEL: NEURAL NETWORK ── -->
 <text x="278" y="174" font-family="monospace" font-size="8" fill="#3a8aff" letter-spacing="2">[ NEURAL.ARCHITECTURE ]  —  knowledge graph</text>
