@@ -61,10 +61,3 @@ MobileNetV2 achieved **99.96% accuracy**.
 </div>
 </details>
 
----
-
-<div align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=Cyrax321&show_icons=true&hide_border=true&bg_color=09101a&title_color=58a6ff&icon_color=39d353&text_color=9aaabb&count_private=true" height="150"/>
-&nbsp;
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Cyrax321&layout=compact&hide_border=true&bg_color=09101a&title_color=58a6ff&text_color=9aaabb&langs_count=6" height="150"/>
-</div>
