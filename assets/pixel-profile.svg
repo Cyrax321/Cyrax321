@@ -1,231 +1,385 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" width="900" height="480">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 660" width="900" height="660">
 <defs>
   <style>
-    @keyframes twinkle{0%,100%{opacity:.1}50%{opacity:.9}}
-    @keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
-    @keyframes scan{0%{transform:translateY(-20px)}100%{transform:translateY(500px)}}
-    @keyframes glw{0%,100%{opacity:.75}50%{opacity:1}}
-    .s{animation:twinkle var(--d,2s) ease-in-out infinite}
-    .cur{animation:blink 1s step-end infinite}
-    .tg{animation:glw 3s ease-in-out infinite}
-    .scl{animation:scan 7s linear infinite}
+    @keyframes tw{0%,100%{opacity:.08}50%{opacity:.7}}
+    @keyframes bk{0%,49%{opacity:1}50%,100%{opacity:0}}
+    @keyframes sc{0%{transform:translateY(-20px)}100%{transform:translateY(680px)}}
+    @keyframes gl{0%,100%{opacity:.6}50%{opacity:1}}
+    @keyframes ft{0%,100%{opacity:.08;transform:translateY(0)}50%{opacity:.35;transform:translateY(-6px)}}
+    @keyframes pulse{0%,100%{opacity:.3;r:5}50%{opacity:1;r:7}}
+    @keyframes flow{0%{stroke-dashoffset:30}100%{stroke-dashoffset:0}}
+    @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+    @keyframes blush{0%,100%{opacity:.3}50%{opacity:.55}}
+    .tw{animation:tw var(--d,2s) ease-in-out infinite}
+    .bk{animation:bk 1s step-end infinite}
+    .sc{animation:sc 8s linear infinite}
+    .gl{animation:gl 3s ease-in-out infinite}
+    .ft{animation:ft var(--d,3s) ease-in-out infinite}
+    .nd{animation:pulse var(--d,2s) ease-in-out infinite}
+    .cn{stroke-dasharray:6 4;animation:flow 1.2s linear infinite}
+    .ch{animation:bob 3s ease-in-out infinite}
+    .bsh{animation:blush 3s ease-in-out infinite}
   </style>
-  <pattern id="g" width="8" height="8" patternUnits="userSpaceOnUse">
-    <path d="M8 0L0 0 0 8" fill="none" stroke="#131a24" stroke-width=".4"/>
+  <pattern id="gp" width="10" height="10" patternUnits="userSpaceOnUse">
+    <path d="M10 0L0 0 0 10" fill="none" stroke="#121a28" stroke-width=".4"/>
   </pattern>
-  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%" stop-color="#060a12"/><stop offset="100%" stop-color="#0a0f1c"/>
+  <radialGradient id="headglow" cx="50%" cy="50%">
+    <stop offset="0%" stop-color="#ffeedd"/><stop offset="100%" stop-color="#ffd5b0"/>
+  </radialGradient>
+  <radialGradient id="eyeglow" cx="35%" cy="35%">
+    <stop offset="0%" stop-color="#aaddff"/><stop offset="100%" stop-color="#3a8aff"/>
+  </radialGradient>
+  <radialGradient id="bgr" cx="50%" cy="0%" r="80%">
+    <stop offset="0%" stop-color="#0d1520"/><stop offset="100%" stop-color="#060a10"/>
+  </radialGradient>
+  <linearGradient id="titleg" x1="0" x2="1" y1="0" y2="0">
+    <stop offset="0%" stop-color="#3a8aff"/><stop offset="50%" stop-color="#a040ff"/><stop offset="100%" stop-color="#ff4aaa"/>
   </linearGradient>
-  <linearGradient id="bblue" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0%" stop-color="#1a5fb4"/><stop offset="100%" stop-color="#58a6ff"/>
+  <linearGradient id="panelg" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0%" stop-color="#0d1828"/><stop offset="100%" stop-color="#090f1c"/>
   </linearGradient>
-  <linearGradient id="bgrn" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0%" stop-color="#1a7340"/><stop offset="100%" stop-color="#39d353"/>
-  </linearGradient>
-  <linearGradient id="bgld" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0%" stop-color="#7a5800"/><stop offset="100%" stop-color="#f0c060"/>
-  </linearGradient>
-  <linearGradient id="bpur" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0%" stop-color="#5a1a8a"/><stop offset="100%" stop-color="#bf60ff"/>
-  </linearGradient>
-  <clipPath id="tc"><rect x="86" y="436" width="808" height="32"/></clipPath>
-  <filter id="gf">
-    <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="b"/>
-    <feFlood flood-color="#58a6ff" flood-opacity=".45" result="c"/>
-    <feComposite in="c" in2="b" operator="in" result="sh"/>
+  <filter id="gf" x="-20%" y="-20%" width="140%" height="140%">
+    <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="b"/>
+    <feFlood flood-color="#3a8aff" flood-opacity=".5"/><feComposite in2="b" operator="in" result="sh"/>
     <feMerge><feMergeNode in="sh"/><feMergeNode in="SourceGraphic"/></feMerge>
   </filter>
+  <filter id="pinkgf" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur in="SourceAlpha" stdDeviation="5" result="b"/>
+    <feFlood flood-color="#ff4aaa" flood-opacity=".4"/><feComposite in2="b" operator="in" result="sh"/>
+    <feMerge><feMergeNode in="sh"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="softglow">
+    <feGaussianBlur stdDeviation="2.5" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <clipPath id="tc"><rect x="90" y="617" width="800" height="30"/></clipPath>
 </defs>
 
-<!-- BG -->
-<rect width="900" height="480" fill="url(#bg)"/>
-<rect width="900" height="480" fill="url(#g)" opacity=".5"/>
+<!-- ───── BACKGROUND ───── -->
+<rect width="900" height="660" fill="url(#bgr)"/>
+<rect width="900" height="660" fill="url(#gp)" opacity=".6"/>
 
 <!-- Stars -->
-<circle class="s" cx="35" cy="22" r="1.5" fill="#fff" style="--d:2.1s"/>
-<circle class="s" cx="90" cy="14" r="1" fill="#58a6ff" style="--d:1.7s;animation-delay:.3s"/>
-<circle class="s" cx="155" cy="32" r="1.5" fill="#fff" style="--d:2.8s;animation-delay:.8s"/>
-<circle class="s" cx="210" cy="16" r="1" fill="#fff" style="--d:1.9s;animation-delay:.2s"/>
-<circle class="s" cx="280" cy="26" r="2" fill="#39d353" style="--d:2.5s;animation-delay:1s"/>
-<circle class="s" cx="360" cy="10" r="1" fill="#fff" style="--d:3.1s;animation-delay:.5s"/>
-<circle class="s" cx="430" cy="28" r="1.5" fill="#fff" style="--d:2.2s;animation-delay:.7s"/>
-<circle class="s" cx="510" cy="18" r="1" fill="#58a6ff" style="--d:1.8s;animation-delay:.4s"/>
-<circle class="s" cx="590" cy="33" r="2" fill="#fff" style="--d:2.7s;animation-delay:1.2s"/>
-<circle class="s" cx="660" cy="8" r="1" fill="#fff" style="--d:2.3s;animation-delay:.6s"/>
-<circle class="s" cx="740" cy="24" r="1.5" fill="#f0c060" style="--d:1.6s;animation-delay:.9s"/>
-<circle class="s" cx="810" cy="16" r="1" fill="#fff" style="--d:2.9s;animation-delay:.1s"/>
-<circle class="s" cx="868" cy="30" r="1.5" fill="#fff" style="--d:2.4s;animation-delay:.3s"/>
+<circle class="tw" cx="40" cy="25" r="1.5" fill="#fff" style="--d:2.1s"/>
+<circle class="tw" cx="100" cy="15" r="1" fill="#7aafff" style="--d:1.7s;animation-delay:.3s"/>
+<circle class="tw" cx="170" cy="38" r="2" fill="#fff" style="--d:2.8s;animation-delay:.8s"/>
+<circle class="tw" cx="230" cy="14" r="1" fill="#fff" style="--d:1.9s;animation-delay:.2s"/>
+<circle class="tw" cx="310" cy="28" r="1.5" fill="#a040ff" style="--d:2.5s;animation-delay:1s"/>
+<circle class="tw" cx="400" cy="10" r="1" fill="#fff" style="--d:3.1s;animation-delay:.5s"/>
+<circle class="tw" cx="480" cy="32" r="2" fill="#fff" style="--d:2.2s;animation-delay:.7s"/>
+<circle class="tw" cx="560" cy="18" r="1" fill="#7aafff" style="--d:1.8s;animation-delay:.4s"/>
+<circle class="tw" cx="640" cy="35" r="1.5" fill="#fff" style="--d:2.7s;animation-delay:1.2s"/>
+<circle class="tw" cx="720" cy="12" r="1" fill="#fff" style="--d:2.3s;animation-delay:.6s"/>
+<circle class="tw" cx="800" cy="26" r="2" fill="#ff4aaa" style="--d:1.6s;animation-delay:.9s"/>
+<circle class="tw" cx="860" cy="18" r="1.5" fill="#fff" style="--d:2.9s;animation-delay:.1s"/>
+
+<!-- Floating math symbols (background decoration) -->
+<text class="ft" x="18" y="200" font-family="monospace" font-size="13" fill="#3a8aff" style="--d:4s">∇L(θ)</text>
+<text class="ft" x="18" y="320" font-family="monospace" font-size="11" fill="#a040ff" style="--d:5s;animation-delay:1s">∂f/∂x</text>
+<text class="ft" x="18" y="440" font-family="monospace" font-size="12" fill="#3a8aff" style="--d:3.5s;animation-delay:2s">Σwᵢ</text>
+<text class="ft" x="840" y="180" font-family="monospace" font-size="12" fill="#ff4aaa" style="--d:4.5s;animation-delay:.5s">σ(z)</text>
+<text class="ft" x="845" y="290" font-family="monospace" font-size="11" fill="#a040ff" style="--d:3.8s;animation-delay:1.5s">f(x)</text>
+<text class="ft" x="838" y="400" font-family="monospace" font-size="13" fill="#3a8aff" style="--d:4.2s;animation-delay:2.5s">P(y|x)</text>
+<text class="ft" x="840" y="500" font-family="monospace" font-size="11" fill="#ff4aaa" style="--d:5.1s;animation-delay:.8s">λ·‖θ‖²</text>
 
 <!-- Scanline -->
-<rect class="scl" x="0" y="-20" width="900" height="5" fill="rgba(255,255,255,0.012)"/>
+<rect class="sc" x="0" y="-20" width="900" height="4" fill="rgba(255,255,255,0.01)"/>
 
-<!-- OUTER FRAME -->
-<rect x="8" y="8" width="884" height="464" fill="none" stroke="#58a6ff" stroke-width="1" opacity=".25"/>
-<rect x="12" y="12" width="876" height="456" fill="#09101a" stroke="#1c2e48" stroke-width="2"/>
-<!-- Corner pixels -->
-<rect x="12" y="12" width="12" height="3" fill="#58a6ff"/><rect x="12" y="12" width="3" height="12" fill="#58a6ff"/>
-<rect x="876" y="12" width="12" height="3" fill="#58a6ff"/><rect x="885" y="12" width="3" height="12" fill="#58a6ff"/>
-<rect x="12" y="465" width="12" height="3" fill="#58a6ff"/><rect x="12" y="456" width="3" height="12" fill="#58a6ff"/>
-<rect x="876" y="465" width="12" height="3" fill="#58a6ff"/><rect x="885" y="456" width="3" height="12" fill="#58a6ff"/>
+<!-- ───── OUTER FRAME ───── -->
+<rect x="7" y="7" width="886" height="646" fill="none" stroke="#3a8aff" stroke-width=".8" opacity=".2"/>
+<rect x="11" y="11" width="878" height="638" fill="url(#panelg)" stroke="#1a2a44" stroke-width="2"/>
+<!-- Pixel corners -->
+<rect x="11" y="11" width="14" height="3" fill="#3a8aff"/><rect x="11" y="11" width="3" height="14" fill="#3a8aff"/>
+<rect x="875" y="11" width="14" height="3" fill="#3a8aff"/><rect x="886" y="11" width="3" height="14" fill="#3a8aff"/>
+<rect x="11" y="647" width="14" height="3" fill="#3a8aff"/><rect x="11" y="636" width="3" height="14" fill="#3a8aff"/>
+<rect x="875" y="647" width="14" height="3" fill="#3a8aff"/><rect x="886" y="636" width="3" height="14" fill="#3a8aff"/>
 
-<!-- TITLE BAR -->
-<rect x="13" y="13" width="874" height="38" fill="#0c1622"/>
-<rect x="13" y="51" width="874" height="2" fill="#1c3050"/>
-<rect x="13" y="53" width="874" height="1" fill="#58a6ff" opacity=".35"/>
-<text class="tg" x="24" y="38" font-family="monospace" font-size="14" fill="#58a6ff" letter-spacing="3" filter="url(#gf)">◈  ANANDHU.EXE  —  PROFILE SYSTEM  v2025.04</text>
-<!-- Mac-style dots -->
-<circle cx="838" cy="32" r="7" fill="#ff5f57"/><circle cx="856" cy="32" r="7" fill="#febc2e"/><circle cx="874" cy="32" r="7" fill="#28c840"/>
+<!-- ───── TITLE BAR ───── -->
+<rect x="12" y="12" width="876" height="40" fill="#090f1c"/>
+<rect x="12" y="52" width="876" height="2" fill="#1a2a44"/>
+<rect x="12" y="54" width="876" height="1" fill="#3a8aff" opacity=".25"/>
+<!-- Title text -->
+<text class="gl" x="24" y="38" font-family="monospace" font-size="14" fill="url(#titleg)" letter-spacing="3" filter="url(#gf)">◈  ANANDHU.EXE  ─  AI ∩ CS  ─  PROFILE v∞</text>
+<!-- Dots -->
+<circle cx="834" cy="32" r="7" fill="#ff5f57"/><circle cx="852" cy="32" r="7" fill="#febc2e"/><circle cx="870" cy="32" r="7" fill="#28c840"/>
 
-<!-- DIVIDER LINE (vertical) -->
-<rect x="232" y="54" width="2" height="376" fill="#1c2e48"/>
+<!-- ───── VERTICAL DIVIDER ───── -->
+<rect x="256" y="56" width="2" height="552" fill="#1a2a44"/>
 
-<!-- ═══════════ LEFT PANEL ═══════════ -->
-<rect x="18" y="62" width="206" height="18" fill="#0d1c2e"/>
-<text x="26" y="75" font-family="monospace" font-size="9" fill="#58a6ff" letter-spacing="2">[ PLAYER CHARACTER ]</text>
+<!-- ══════════════ LEFT PANEL — CHIBI CHARACTER ══════════════ -->
 
-<!-- PIXEL CHARACTER (with bob animation) -->
-<g>
-  <animateTransform attributeName="transform" type="translate" values="0,0;0,-4;0,0;0,-2;0,0" dur="3s" repeatCount="indefinite"/>
+<rect x="17" y="63" width="232" height="18" fill="#0c1828"/>
+<text x="24" y="76" font-family="monospace" font-size="9" fill="#3a8aff" letter-spacing="2">[ PLAYER.CHARACTER ]</text>
+
+<!-- ── Chibi anime character (cute, big head) centered at x=132 ── -->
+<g class="ch">
   <!-- Shadow -->
-  <ellipse cx="122" cy="267" rx="24" ry="5" fill="rgba(88,166,255,0.12)"/>
-  <!-- Hair -->
-  <rect x="100" y="90" width="44" height="12" fill="#2d1a0a"/>
-  <rect x="97" y="98" width="5" height="8" fill="#2d1a0a"/><rect x="142" y="98" width="5" height="8" fill="#2d1a0a"/>
-  <!-- Head -->
-  <rect x="100" y="98" width="44" height="42" fill="#f5c5a3"/>
-  <!-- Eyes -->
-  <rect x="108" y="112" width="8" height="8" fill="#fff"/><rect x="128" y="112" width="8" height="8" fill="#fff"/>
-  <rect x="110" y="114" width="5" height="5" fill="#1a1a2a"/><rect x="130" y="114" width="5" height="5" fill="#1a1a2a"/>
-  <rect x="111" y="115" width="3" height="3" fill="#000"/><rect x="131" y="115" width="3" height="3" fill="#000"/>
-  <!-- Eyebrows -->
-  <rect x="107" y="108" width="11" height="3" fill="#2d1a0a"/><rect x="126" y="108" width="11" height="3" fill="#2d1a0a"/>
-  <!-- Nose -->
-  <rect x="120" y="124" width="4" height="6" fill="#e0a882"/>
-  <!-- Mouth -->
-  <rect x="110" y="133" width="24" height="4" fill="#c06040"/>
-  <!-- Ears -->
-  <rect x="96" y="110" width="5" height="12" fill="#f5c5a3"/><rect x="143" y="110" width="5" height="12" fill="#f5c5a3"/>
-  <!-- Neck -->
-  <rect x="113" y="140" width="18" height="10" fill="#f5c5a3"/>
-  <!-- Shirt -->
-  <rect x="97" y="150" width="50" height="50" fill="#1a3a6a"/>
-  <!-- Pocket -->
-  <rect x="109" y="176" width="26" height="14" fill="#0f2540"/>
-  <!-- Arms -->
-  <rect x="84" y="150" width="14" height="44" fill="#1a3a6a"/><rect x="84" y="193" width="14" height="10" fill="#f5c5a3"/>
-  <rect x="146" y="150" width="14" height="44" fill="#1a3a6a"/><rect x="146" y="193" width="14" height="10" fill="#f5c5a3"/>
-  <!-- Belt -->
-  <rect x="97" y="197" width="50" height="7" fill="#0a1520"/>
-  <rect x="118" y="197" width="8" height="7" fill="#777"/>
-  <!-- Legs -->
-  <rect x="101" y="204" width="20" height="50" fill="#1e2a44"/>
-  <rect x="123" y="204" width="20" height="50" fill="#1e2a44"/>
-  <rect x="120" y="204" width="4" height="50" fill="#09101a"/>
+  <ellipse cx="132" cy="330" rx="36" ry="8" fill="rgba(58,138,255,0.1)"/>
+
+  <!-- ── HAIR BACK LAYER (dark navy, drawn first) ── -->
+  <!-- Back hair bulk -->
+  <ellipse cx="132" cy="148" rx="70" ry="74" fill="#1a3060"/>
+  <!-- Long side hair left -->
+  <rect x="66" y="155" width="22" height="55" rx="11" fill="#1a3060"/>
+  <!-- Long side hair right -->
+  <rect x="144" y="155" width="22" height="55" rx="11" fill="#1a3060"/>
+
+  <!-- ── HEAD (large, anime proportions) ── -->
+  <ellipse cx="132" cy="150" rx="62" ry="68" fill="url(#headglow)"/>
+
+  <!-- ── HAIR FRONT (bangs) ── -->
+  <!-- Main bang sweep -->
+  <ellipse cx="132" cy="100" rx="65" ry="28" fill="#1a3060"/>
+  <!-- Left bang strand -->
+  <ellipse cx="84" cy="118" rx="14" ry="22" transform="rotate(-15,84,118)" fill="#1e3870"/>
+  <!-- Center bang strand point -->
+  <ellipse cx="132" cy="92" rx="10" ry="18" fill="#1a3060"/>
+  <!-- Right bang strand -->
+  <ellipse cx="178" cy="122" rx="13" ry="19" transform="rotate(12,178,122)" fill="#1e3870"/>
+  <!-- Hair highlights -->
+  <ellipse cx="110" cy="98" rx="6" ry="3" fill="#3a5090" opacity=".7"/>
+  <ellipse cx="148" cy="95" rx="5" ry="2.5" fill="#3a5090" opacity=".6"/>
+  <!-- Ahoge (cute hair spike) -->
+  <ellipse cx="148" cy="82" rx="8" ry="16" transform="rotate(20,148,82)" fill="#1a3060"/>
+
+  <!-- ── EARS ── -->
+  <ellipse cx="72" cy="152" rx="10" ry="13" fill="#ffd5b0"/>
+  <ellipse cx="72" cy="152" rx="6" ry="8" fill="#ffb8a0" opacity=".5"/>
+  <ellipse cx="192" cy="152" rx="10" ry="13" fill="#ffd5b0"/>
+  <ellipse cx="192" cy="152" rx="6" ry="8" fill="#ffb8a0" opacity=".5"/>
+
+  <!-- ── EYES (big cute anime eyes) ── -->
+  <!-- Left eye white -->
+  <ellipse cx="108" cy="152" rx="18" ry="22" fill="#fff"/>
+  <!-- Left iris -->
+  <ellipse cx="108" cy="155" rx="13" ry="16" fill="url(#eyeglow)"/>
+  <!-- Left pupil -->
+  <ellipse cx="108" cy="157" rx="7" ry="9" fill="#0a1020"/>
+  <!-- Left highlight top -->
+  <ellipse cx="103" cy="149" rx="5" ry="4" fill="rgba(255,255,255,0.9)"/>
+  <!-- Left highlight small -->
+  <ellipse cx="114" cy="160" rx="2.5" ry="2" fill="rgba(255,255,255,0.6)"/>
+  <!-- Left upper lash -->
+  <rect x="91" y="131" width="34" height="5" rx="3" fill="#0a1020"/>
+
+  <!-- Right eye white -->
+  <ellipse cx="158" cy="152" rx="18" ry="22" fill="#fff"/>
+  <!-- Right iris -->
+  <ellipse cx="158" cy="155" rx="13" ry="16" fill="url(#eyeglow)"/>
+  <!-- Right pupil -->
+  <ellipse cx="158" cy="157" rx="7" ry="9" fill="#0a1020"/>
+  <!-- Right highlight top -->
+  <ellipse cx="153" cy="149" rx="5" ry="4" fill="rgba(255,255,255,0.9)"/>
+  <!-- Right highlight small -->
+  <ellipse cx="164" cy="160" rx="2.5" ry="2" fill="rgba(255,255,255,0.6)"/>
+  <!-- Right upper lash -->
+  <rect x="141" y="131" width="34" height="5" rx="3" fill="#0a1020"/>
+
+  <!-- ── EYEBROWS ── -->
+  <rect x="93" y="125" width="26" height="5" rx="3" fill="#1a2a50" transform="rotate(-5,106,127)"/>
+  <rect x="147" y="125" width="26" height="5" rx="3" fill="#1a2a50" transform="rotate(5,160,127)"/>
+
+  <!-- ── NOSE ── -->
+  <ellipse cx="132" cy="176" rx="3" ry="2.5" fill="#f0a888"/>
+
+  <!-- ── MOUTH (cute smile) ── -->
+  <path d="M 118 186 Q 132 196 146 186" stroke="#d06050" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- ── ROSY CHEEKS ── -->
+  <ellipse class="bsh" cx="88" cy="172" rx="15" ry="10" fill="#ff8898" opacity=".35"/>
+  <ellipse class="bsh" cx="176" cy="172" rx="15" ry="10" fill="#ff8898" opacity=".35" style="animation-delay:.5s"/>
+
+  <!-- ── NECK ── -->
+  <rect x="120" y="214" width="24" height="14" rx="4" fill="#ffd5b0"/>
+
+  <!-- ── BODY (cute hoodie with AI theme) ── -->
+  <!-- Main hoodie -->
+  <rect x="88" y="224" width="88" height="80" rx="14" fill="#1a3060"/>
+  <!-- Hoodie front pocket -->
+  <rect x="106" y="264" width="52" height="28" rx="8" fill="#0f2040"/>
+  <!-- AI text on pocket -->
+  <text x="120" y="282" font-family="monospace" font-size="11" fill="#3a8aff" font-weight="bold">AI</text>
+  <!-- Circuit lines on hoodie -->
+  <line x1="96" y1="244" x2="116" y2="244" stroke="#3a8aff" stroke-width="1" opacity=".4"/>
+  <circle cx="116" cy="244" r="2" fill="#3a8aff" opacity=".5"/>
+  <line x1="116" y1="244" x2="116" y2="254" stroke="#3a8aff" stroke-width="1" opacity=".4"/>
+  <line x1="148" y1="244" x2="168" y2="244" stroke="#3a8aff" stroke-width="1" opacity=".4"/>
+  <circle cx="148" cy="244" r="2" fill="#ff4aaa" opacity=".5"/>
+  <!-- Hood strings -->
+  <line x1="118" y1="224" x2="112" y2="240" stroke="#1a3870" stroke-width="2" stroke-linecap="round"/>
+  <line x1="146" y1="224" x2="152" y2="240" stroke="#1a3870" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- ── ARMS ── -->
+  <rect x="72" y="228" width="20" height="52" rx="10" fill="#1a3060"/>
+  <rect x="72" y="275" width="20" height="16" rx="8" fill="#ffd5b0"/>
+  <rect x="172" y="228" width="20" height="52" rx="10" fill="#1a3060"/>
+  <rect x="172" y="275" width="20" height="16" rx="8" fill="#ffd5b0"/>
+
+  <!-- ── LEGS (chibi short) ── -->
+  <rect x="101" y="302" width="24" height="32" rx="8" fill="#0f1a30"/>
+  <rect x="139" y="302" width="24" height="32" rx="8" fill="#0f1a30"/>
   <!-- Shoes -->
-  <rect x="95" y="252" width="27" height="11" fill="#111"/><rect x="92" y="255" width="5" height="8" fill="#111"/>
-  <rect x="122" y="252" width="27" height="11" fill="#111"/><rect x="149" y="255" width="5" height="8" fill="#111"/>
+  <rect x="95" y="326" width="34" height="14" rx="7" fill="#0a0f1c"/>
+  <rect x="135" y="326" width="34" height="14" rx="7" fill="#0a0f1c"/>
+  <!-- Shoe shine -->
+  <ellipse cx="107" cy="330" rx="7" ry="3" fill="rgba(255,255,255,0.12)"/>
+  <ellipse cx="147" cy="330" rx="7" ry="3" fill="rgba(255,255,255,0.12)"/>
 </g>
 
-<!-- Character info -->
-<rect x="18" y="276" width="206" height="1" fill="#1c2e48"/>
-<text x="26" y="296" font-family="monospace" font-size="10" fill="#4a6070">LOCATION</text>
-<text x="26" y="312" font-family="monospace" font-size="12" fill="#e6edf3">CEM · KERALA</text>
-<text x="26" y="334" font-family="monospace" font-size="10" fill="#4a6070">UNIVERSITY</text>
-<text x="26" y="350" font-family="monospace" font-size="11" fill="#e6edf3">APJ KTU</text>
-<text x="26" y="372" font-family="monospace" font-size="10" fill="#4a6070">STATUS</text>
-<text x="26" y="388" font-family="monospace" font-size="12" fill="#39d353">RESEARCHING</text>
-<text class="cur" x="162" y="388" font-family="monospace" font-size="12" fill="#39d353">▮</text>
-<text x="26" y="414" font-family="monospace" font-size="10" fill="#4a6070">GUILD</text>
-<text x="26" y="430" font-family="monospace" font-size="11" fill="#f0c060">ACSES · JOINT SEC</text>
+<!-- Character info below -->
+<rect x="17" y="346" width="232" height="1" fill="#1a2a44"/>
+<text x="24" y="366" font-family="monospace" font-size="9" fill="#4a6080">LOCATION</text>
+<text x="24" y="381" font-family="monospace" font-size="11" fill="#e6edf3">CEM · KERALA</text>
+<text x="24" y="400" font-family="monospace" font-size="9" fill="#4a6080">UNIVERSITY</text>
+<text x="24" y="415" font-family="monospace" font-size="11" fill="#e6edf3">APJ KTU</text>
+<text x="24" y="434" font-family="monospace" font-size="9" fill="#4a6080">STATUS</text>
+<text x="24" y="450" font-family="monospace" font-size="12" fill="#39d353">RESEARCHING</text>
+<text class="bk" x="170" y="450" font-family="monospace" font-size="12" fill="#39d353">▮</text>
+<text x="24" y="470" font-family="monospace" font-size="9" fill="#4a6080">MAIN QUEST</text>
+<text x="24" y="486" font-family="monospace" font-size="10" fill="#a040ff">THEORETICAL CS</text>
+<text class="bk" x="184" y="486" font-family="monospace" font-size="10" fill="#a040ff">▮</text>
+<text x="24" y="506" font-family="monospace" font-size="9" fill="#4a6080">GUILD</text>
+<text x="24" y="521" font-family="monospace" font-size="10" fill="#f0c060">ACSES · JOINT SEC</text>
 
-<!-- ═══════════ RIGHT PANEL ═══════════ -->
-<rect x="242" y="62" width="642" height="18" fill="#0d1c2e"/>
-<text x="252" y="75" font-family="monospace" font-size="9" fill="#58a6ff" letter-spacing="2">[ PLAYER STATS ]</text>
+<!-- ══════════════ RIGHT PANEL ══════════════ -->
 
-<!-- Info rows -->
-<text x="252" y="100" font-family="monospace" font-size="10" fill="#4a6070">NAME    :</text>
-<text x="340" y="100" font-family="monospace" font-size="13" fill="#e6edf3" font-weight="bold">ANANDHU P SHAJI</text>
-<text x="252" y="120" font-family="monospace" font-size="10" fill="#4a6070">CLASS   :</text>
-<text x="340" y="120" font-family="monospace" font-size="12" fill="#58a6ff">ML RESEARCHER</text>
-<text x="252" y="140" font-family="monospace" font-size="10" fill="#4a6070">LEVEL   :</text>
-<text x="340" y="140" font-family="monospace" font-size="12" fill="#f0c060">PRE-FINAL YEAR · B.TECH CSE</text>
-<text x="252" y="160" font-family="monospace" font-size="10" fill="#4a6070">PAPERS  :</text>
-<text x="340" y="160" font-family="monospace" font-size="12" fill="#39d353">2 × IEEE PUBLISHED</text>
+<!-- Player info -->
+<rect x="264" y="63" width="620" height="18" fill="#0c1828"/>
+<text x="274" y="76" font-family="monospace" font-size="9" fill="#3a8aff" letter-spacing="2">[ PLAYER.STATS ]</text>
 
-<rect x="242" y="170" width="642" height="1" fill="#1c2e48"/>
+<text x="274" y="104" font-family="monospace" font-size="10" fill="#4a6080">NAME</text>
+<text x="336" y="104" font-family="monospace" font-size="14" fill="#e6edf3" font-weight="bold" filter="url(#softglow)">ANANDHU P SHAJI</text>
+<text x="274" y="124" font-family="monospace" font-size="10" fill="#4a6080">CLASS</text>
+<text x="336" y="124" font-family="monospace" font-size="12" fill="#3a8aff">ML RESEARCHER  ⟨ Σ ∇ θ ⟩</text>
+<text x="274" y="144" font-family="monospace" font-size="10" fill="#4a6080">LEVEL</text>
+<text x="336" y="144" font-family="monospace" font-size="12" fill="#f0c060">PRE-FINAL · B.TECH CSE</text>
+<text x="274" y="164" font-family="monospace" font-size="10" fill="#4a6080">PAPERS</text>
+<text x="336" y="164" font-family="monospace" font-size="12" fill="#39d353">2 × IEEE PUBLISHED  ✓✓</text>
 
-<!-- SKILL BARS -->
-<text x="252" y="188" font-family="monospace" font-size="9" fill="#58a6ff" letter-spacing="2">[ SKILL LEVELS ]</text>
+<rect x="264" y="174" width="620" height="1" fill="#1a2a44"/>
 
-<!-- Bar macro: label, bar bg, bar fill, level text -->
-<!-- IEEE -->
-<text x="252" y="210" font-family="monospace" font-size="10" fill="#9aaabb">IEEE PAPERS   </text>
-<rect x="388" y="200" width="200" height="11" fill="#0f1e30"/>
-<rect x="388" y="200" width="0" height="11" fill="url(#bgld)"><animate attributeName="width" from="0" to="200" dur="1.4s" fill="freeze" begin="0.2s"/></rect>
-<text x="594" y="210" font-family="monospace" font-size="10" fill="#f0c060">×2 PUBLISHED</text>
+<!-- ── NEURAL NETWORK VISUALIZATION (replaces skill bars) ── -->
+<rect x="264" y="180" width="620" height="18" fill="#0c1828"/>
+<text x="274" y="193" font-family="monospace" font-size="9" fill="#3a8aff" letter-spacing="2">[ NEURAL.ARCHITECTURE ]  —  skill graph</text>
 
-<!-- COMP VISION -->
-<text x="252" y="230" font-family="monospace" font-size="10" fill="#9aaabb">COMP. VISION  </text>
-<rect x="388" y="220" width="200" height="11" fill="#0f1e30"/>
-<rect x="388" y="220" width="0" height="11" fill="url(#bblue)"><animate attributeName="width" from="0" to="175" dur="1.4s" fill="freeze" begin="0.4s"/></rect>
-<text x="594" y="230" font-family="monospace" font-size="10" fill="#58a6ff">ADVANCED</text>
+<!-- Layer labels -->
+<text x="295" y="218" font-family="monospace" font-size="8" fill="#4a6080" text-anchor="middle">INPUT</text>
+<text x="490" y="218" font-family="monospace" font-size="8" fill="#4a6080" text-anchor="middle">HIDDEN</text>
+<text x="690" y="218" font-family="monospace" font-size="8" fill="#4a6080" text-anchor="middle">OUTPUT</text>
 
-<!-- DEEP LEARNING -->
-<text x="252" y="250" font-family="monospace" font-size="10" fill="#9aaabb">DEEP LEARNING </text>
-<rect x="388" y="240" width="200" height="11" fill="#0f1e30"/>
-<rect x="388" y="240" width="0" height="11" fill="url(#bgrn)"><animate attributeName="width" from="0" to="190" dur="1.4s" fill="freeze" begin="0.6s"/></rect>
-<text x="594" y="250" font-family="monospace" font-size="10" fill="#39d353">MASTERED</text>
+<!-- INPUT NODES (x=295) -->
+<!-- Node 1: DATA -->
+<circle cx="295" cy="248" r="22" fill="#0d1828" stroke="#3a8aff" stroke-width="1.5"/>
+<text x="295" y="244" font-family="monospace" font-size="8" fill="#3a8aff" text-anchor="middle">DATA</text>
+<text x="295" y="255" font-family="monospace" font-size="7" fill="#3a8aff" text-anchor="middle">scikit</text>
+<!-- Node 2: MATH -->
+<circle cx="295" cy="315" r="22" fill="#0d1828" stroke="#a040ff" stroke-width="1.5"/>
+<text x="295" y="311" font-family="monospace" font-size="8" fill="#a040ff" text-anchor="middle">MATH</text>
+<text x="295" y="322" font-family="monospace" font-size="7" fill="#a040ff" text-anchor="middle">∇ ∂ Σ</text>
+<!-- Node 3: CODE -->
+<circle cx="295" cy="382" r="22" fill="#0d1828" stroke="#39d353" stroke-width="1.5"/>
+<text x="295" y="378" font-family="monospace" font-size="8" fill="#39d353" text-anchor="middle">CODE</text>
+<text x="295" y="389" font-family="monospace" font-size="7" fill="#39d353" text-anchor="middle">Python</text>
 
-<!-- THEORETICAL CS -->
-<text x="252" y="270" font-family="monospace" font-size="10" fill="#9aaabb">THEORETICAL CS</text>
-<rect x="388" y="260" width="200" height="11" fill="#0f1e30"/>
-<rect x="388" y="260" width="0" height="11" fill="url(#bpur)"><animate attributeName="width" from="0" to="80" dur="1.4s" fill="freeze" begin="0.8s"/></rect>
-<text x="594" y="270" font-family="monospace" font-size="10" fill="#bf60ff">LEARNING</text>
-<text class="cur" x="667" y="270" font-family="monospace" font-size="10" fill="#bf60ff">▮</text>
+<!-- CONNECTIONS input→hidden (animated flows) -->
+<!-- from DATA(295,248) to each hidden node -->
+<line class="cn" x1="317" y1="248" x2="468" y2="248" stroke="#3a8aff" stroke-width="1" opacity=".5"/>
+<line class="cn" x1="317" y1="250" x2="468" y2="308" stroke="#3a8aff" stroke-width="1" opacity=".35" style="animation-delay:.3s"/>
+<line class="cn" x1="317" y1="251" x2="468" y2="370" stroke="#3a8aff" stroke-width="1" opacity=".25" style="animation-delay:.6s"/>
+<line class="cn" x1="317" y1="249" x2="468" y2="430" stroke="#3a8aff" stroke-width="1" opacity=".2" style="animation-delay:.9s"/>
+<!-- from MATH(295,315) -->
+<line class="cn" x1="317" y1="313" x2="468" y2="250" stroke="#a040ff" stroke-width="1" opacity=".3" style="animation-delay:.2s"/>
+<line class="cn" x1="317" y1="315" x2="468" y2="310" stroke="#a040ff" stroke-width="1" opacity=".5" style="animation-delay:.5s"/>
+<line class="cn" x1="317" y1="317" x2="468" y2="370" stroke="#a040ff" stroke-width="1" opacity=".4" style="animation-delay:.8s"/>
+<line class="cn" x1="317" y1="316" x2="468" y2="430" stroke="#a040ff" stroke-width="1" opacity=".25" style="animation-delay:1.1s"/>
+<!-- from CODE(295,382) -->
+<line class="cn" x1="317" y1="380" x2="468" y2="252" stroke="#39d353" stroke-width="1" opacity=".2" style="animation-delay:.4s"/>
+<line class="cn" x1="317" y1="381" x2="468" y2="312" stroke="#39d353" stroke-width="1" opacity=".3" style="animation-delay:.7s"/>
+<line class="cn" x1="317" y1="382" x2="468" y2="372" stroke="#39d353" stroke-width="1" opacity=".5" style="animation-delay:1s"/>
+<line class="cn" x1="317" y1="383" x2="468" y2="432" stroke="#39d353" stroke-width="1" opacity=".35" style="animation-delay:1.3s"/>
 
-<!-- FULL STACK -->
-<text x="252" y="290" font-family="monospace" font-size="10" fill="#9aaabb">FULL-STACK    </text>
-<rect x="388" y="280" width="200" height="11" fill="#0f1e30"/>
-<rect x="388" y="280" width="0" height="11" fill="url(#bblue)"><animate attributeName="width" from="0" to="145" dur="1.4s" fill="freeze" begin="1s"/></rect>
-<text x="594" y="290" font-family="monospace" font-size="10" fill="#58a6ff">PROFICIENT</text>
+<!-- HIDDEN NODES (x=490) -->
+<!-- Node H1: PYTORCH -->
+<circle cx="490" cy="248" r="26" fill="#0d1828" stroke="#ff4aaa" stroke-width="1.5"/>
+<text x="490" y="244" font-family="monospace" font-size="8" fill="#ff4aaa" text-anchor="middle">TORCH</text>
+<text x="490" y="256" font-family="monospace" font-size="7" fill="#ff4aaa" text-anchor="middle">PyTorch</text>
+<!-- Node H2: VISION -->
+<circle cx="490" cy="310" r="26" fill="#0d1828" stroke="#3a8aff" stroke-width="1.5"/>
+<text x="490" y="306" font-family="monospace" font-size="8" fill="#3a8aff" text-anchor="middle">VISION</text>
+<text x="490" y="318" font-family="monospace" font-size="7" fill="#3a8aff" text-anchor="middle">CNN·ViT</text>
+<!-- Node H3: TEMPORAL -->
+<circle cx="490" cy="370" r="26" fill="#0d1828" stroke="#f0c060" stroke-width="1.5"/>
+<text x="490" y="366" font-family="monospace" font-size="8" fill="#f0c060" text-anchor="middle">TEMPORAL</text>
+<text x="490" y="378" font-family="monospace" font-size="7" fill="#f0c060" text-anchor="middle">LSTM·MAE</text>
+<!-- Node H4: THEORY -->
+<circle cx="490" cy="430" r="26" fill="#0d1828" stroke="#a040ff" stroke-width="1.5"/>
+<text x="490" y="426" font-family="monospace" font-size="8" fill="#a040ff" text-anchor="middle">THEORY</text>
+<text x="490" y="438" font-family="monospace" font-size="7" fill="#a040ff" text-anchor="middle">∇·Σ·∂</text>
 
-<rect x="242" y="300" width="642" height="1" fill="#1c2e48"/>
+<!-- CONNECTIONS hidden→output -->
+<!-- to RESEARCH (690,295) -->
+<line class="cn" x1="516" y1="246" x2="668" y2="293" stroke="#ff4aaa" stroke-width="1.2" opacity=".5" style="animation-delay:.2s"/>
+<line class="cn" x1="516" y1="308" x2="668" y2="295" stroke="#3a8aff" stroke-width="1.2" opacity=".5" style="animation-delay:.5s"/>
+<line class="cn" x1="516" y1="368" x2="668" y2="297" stroke="#f0c060" stroke-width="1.2" opacity=".35" style="animation-delay:.8s"/>
+<line class="cn" x1="516" y1="428" x2="668" y2="299" stroke="#a040ff" stroke-width="1.2" opacity=".4" style="animation-delay:1.1s"/>
+<!-- to BUILD (690,385) -->
+<line class="cn" x1="516" y1="250" x2="668" y2="383" stroke="#ff4aaa" stroke-width="1.2" opacity=".35" style="animation-delay:.3s"/>
+<line class="cn" x1="516" y1="312" x2="668" y2="385" stroke="#3a8aff" stroke-width="1.2" opacity=".5" style="animation-delay:.6s"/>
+<line class="cn" x1="516" y1="372" x2="668" y2="387" stroke="#f0c060" stroke-width="1.2" opacity=".5" style="animation-delay:.9s"/>
+<line class="cn" x1="516" y1="432" x2="668" y2="389" stroke="#a040ff" stroke-width="1.2" opacity=".4" style="animation-delay:1.2s"/>
 
-<!-- QUEST LOG -->
-<text x="252" y="318" font-family="monospace" font-size="9" fill="#58a6ff" letter-spacing="2">[ QUEST LOG ]</text>
+<!-- OUTPUT NODES (x=690) -->
+<!-- Node O1: RESEARCH -->
+<circle cx="690" cy="295" r="30" fill="#0d1828" stroke="#39d353" stroke-width="2" filter="url(#softglow)"/>
+<text x="690" y="290" font-family="monospace" font-size="9" fill="#39d353" text-anchor="middle" font-weight="bold">RESEARCH</text>
+<text x="690" y="302" font-family="monospace" font-size="8" fill="#39d353" text-anchor="middle">IEEE ×2</text>
+<!-- Node O2: BUILD -->
+<circle cx="690" cy="385" r="30" fill="#0d1828" stroke="#ff4aaa" stroke-width="2" filter="url(#softglow)"/>
+<text x="690" y="380" font-family="monospace" font-size="9" fill="#ff4aaa" text-anchor="middle" font-weight="bold">BUILD</text>
+<text x="690" y="392" font-family="monospace" font-size="8" fill="#ff4aaa" text-anchor="middle">KIBO+more</text>
 
-<text x="252" y="338" font-family="monospace" font-size="11" fill="#39d353">✓</text>
-<text x="272" y="338" font-family="monospace" font-size="10" fill="#9aaabb">HAR Paper — CNN-LSTM 96.23% acc</text>
-<text x="632" y="338" font-family="monospace" font-size="10" fill="#39d353">[DONE]</text>
+<!-- Equation label -->
+<text x="740" y="340" font-family="monospace" font-size="10" fill="#4a6080">y = σ(Wx+b)</text>
+<text x="745" y="355" font-family="monospace" font-size="10" fill="#2a3a50">ŷ = f(θ; x)</text>
 
-<text x="252" y="356" font-family="monospace" font-size="11" fill="#39d353">✓</text>
-<text x="272" y="356" font-family="monospace" font-size="10" fill="#9aaabb">HI-MobileNet — MobileNetV2 99.96%</text>
-<text x="632" y="356" font-family="monospace" font-size="10" fill="#39d353">[DONE]</text>
+<rect x="264" y="464" width="620" height="1" fill="#1a2a44"/>
 
-<text x="252" y="374" font-family="monospace" font-size="11" fill="#f0c060">►</text>
-<text x="272" y="374" font-family="monospace" font-size="10" fill="#e6edf3">KIBO — gamified career platform</text>
-<text x="632" y="374" font-family="monospace" font-size="10" fill="#58a6ff">[ACTIVE]</text>
+<!-- ── QUEST LOG ── -->
+<rect x="264" y="470" width="620" height="18" fill="#0c1828"/>
+<text x="274" y="483" font-family="monospace" font-size="9" fill="#3a8aff" letter-spacing="2">[ QUEST.LOG ]</text>
 
-<text x="252" y="392" font-family="monospace" font-size="11" fill="#f0c060">►</text>
-<text x="272" y="392" font-family="monospace" font-size="10" fill="#e6edf3">H-CoAtNet — beat Swin + ViT</text>
-<text x="632" y="392" font-family="monospace" font-size="10" fill="#58a6ff">[ACTIVE]</text>
+<text x="274" y="506" font-family="monospace" font-size="11" fill="#39d353">✓</text>
+<text x="294" y="506" font-family="monospace" font-size="10" fill="#8a9aaa">HAR Paper — CNN-LSTM 96.23% accuracy</text>
+<text x="724" y="506" font-family="monospace" font-size="9" fill="#39d353">[DONE]</text>
 
-<text x="252" y="410" font-family="monospace" font-size="11" fill="#bf60ff">◈</text>
-<text x="272" y="410" font-family="monospace" font-size="10" fill="#bf60ff">Master Theoretical CS</text>
-<text x="632" y="410" font-family="monospace" font-size="10" fill="#bf60ff">[MAIN]</text>
-<text class="cur" x="680" y="410" font-family="monospace" font-size="10" fill="#bf60ff">▮</text>
+<text x="274" y="524" font-family="monospace" font-size="11" fill="#39d353">✓</text>
+<text x="294" y="524" font-family="monospace" font-size="10" fill="#8a9aaa">HI-MobileNet — MobileNetV2 99.96% accuracy</text>
+<text x="724" y="524" font-family="monospace" font-size="9" fill="#39d353">[DONE]</text>
 
-<!-- BOTTOM TICKER -->
-<rect x="13" y="432" width="874" height="2" fill="#1c2e48"/>
-<rect x="13" y="434" width="874" height="34" fill="#06090f"/>
-<text x="20" y="457" font-family="monospace" font-size="10" fill="#58a6ff">SKILLS ►</text>
+<text x="274" y="542" font-family="monospace" font-size="11" fill="#f0c060">►</text>
+<text x="294" y="542" font-family="monospace" font-size="10" fill="#e6edf3">KIBO — gamified career platform (React · Supabase)</text>
+<text x="724" y="542" font-family="monospace" font-size="9" fill="#3a8aff">[ACTIVE]</text>
+
+<text x="274" y="560" font-family="monospace" font-size="11" fill="#f0c060">►</text>
+<text x="294" y="560" font-family="monospace" font-size="10" fill="#e6edf3">H-CoAtNet — hybrid CNN+Transformer, beat Swin+ViT</text>
+<text x="724" y="560" font-family="monospace" font-size="9" fill="#3a8aff">[ACTIVE]</text>
+
+<text x="274" y="578" font-family="monospace" font-size="11" fill="#a040ff">◈</text>
+<text x="294" y="578" font-family="monospace" font-size="10" fill="#a040ff">Master Theoretical CS — algorithms and structure</text>
+<text x="724" y="578" font-family="monospace" font-size="9" fill="#a040ff">[MAIN]</text>
+<text class="bk" x="779" y="578" font-family="monospace" font-size="9" fill="#a040ff">▮</text>
+
+<!-- ── BOTTOM TICKER ── -->
+<rect x="13" y="607" width="874" height="2" fill="#1a2a44"/>
+<rect x="13" y="609" width="874" height="38" fill="#07090f"/>
+<text x="20" y="633" font-family="monospace" font-size="10" fill="#3a8aff">∇ ►</text>
 <g clip-path="url(#tc)">
-  <text y="457" font-family="monospace" font-size="11" fill="#3a5060" letter-spacing="2">
-    ·  Python  ·  PyTorch  ·  TensorFlow  ·  Keras  ·  OpenCV  ·  React  ·  TypeScript  ·  Supabase  ·  PostgreSQL  ·  CNN  ·  LSTM  ·  Transformers  ·  ViT  ·  Transfer Learning  ·  Python  ·  PyTorch  ·  TensorFlow  ·
-    <animateTransform attributeName="transform" type="translate" from="850,0" to="-2400,0" dur="28s" repeatCount="indefinite"/>
+  <text y="633" font-family="monospace" font-size="11" fill="#2a3a50" letter-spacing="2">
+    ·  Python  ·  PyTorch  ·  TensorFlow  ·  Keras  ·  OpenCV  ·  React  ·  TypeScript  ·  Supabase  ·  PostgreSQL  ·  CNN  ·  LSTM  ·  Transformers  ·  ViT  ·  Transfer Learning  ·  MobileNetV2  ·  VideoMAE  ·  V-JEPA2  ·
+    <animateTransform attributeName="transform" type="translate" from="850,0" to="-2800,0" dur="30s" repeatCount="indefinite"/>
   </text>
 </g>
 
-<!-- Footer label -->
-<text x="730" y="468" font-family="monospace" font-size="8" fill="#1e2e3e">◈ GITHUB.COM/CYRAX321</text>
+<!-- Corner label -->
+<text x="730" y="654" font-family="monospace" font-size="8" fill="#1a2a3a">◈ GITHUB.COM/CYRAX321</text>
 </svg>
