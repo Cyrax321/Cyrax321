@@ -1,352 +1,368 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1120" width="900" height="1120">
 <defs>
 <style>
-@keyframes tw{0%,100%{opacity:.08}50%{opacity:.8}}
+@keyframes tw{0%,100%{opacity:.07}50%{opacity:.85}}
 @keyframes bk{0%,49%{opacity:1}50%,100%{opacity:0}}
 @keyframes sc{0%{transform:translateY(-20px)}100%{transform:translateY(1140px)}}
-@keyframes ft{0%,100%{opacity:.06;transform:translateY(0)}50%{opacity:.28;transform:translateY(-8px)}}
+@keyframes ft{0%,100%{opacity:.05;transform:translateY(0)}50%{opacity:.25;transform:translateY(-9px)}}
 @keyframes fl{0%{stroke-dashoffset:24}100%{stroke-dashoffset:0}}
-@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
-@keyframes bsh{0%,100%{opacity:.3}50%{opacity:.6}}
-@keyframes gl{0%,100%{opacity:.65}50%{opacity:1}}
-@keyframes xp{from{width:0}to{width:268px}}
-@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
-@keyframes nd{0%,100%{opacity:.5}50%{opacity:1}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@keyframes gl{0%,100%{opacity:.6}50%{opacity:1}}
+@keyframes xpfill{from{width:0}to{width:262px}}
+@keyframes bsh{0%,100%{opacity:.28}50%{opacity:.55}}
+@keyframes ndp{0%,100%{opacity:.45}50%{opacity:1}}
 .tw{animation:tw var(--d,2s) ease-in-out infinite}
 .bk{animation:bk 1s step-end infinite}
 .ft{animation:ft var(--d,4s) ease-in-out infinite}
-.fl{stroke-dasharray:6 3;animation:fl 1.4s linear infinite}
-.bob{animation:bob 3s ease-in-out infinite}
-.bsh{animation:bsh 2.8s ease-in-out infinite}
+.fl{stroke-dasharray:6 3;animation:fl 1.3s linear infinite}
+.bob{animation:bob 3.2s ease-in-out infinite}
 .gl{animation:gl 3s ease-in-out infinite}
-.nd{animation:nd var(--d,2s) ease-in-out infinite}
 .sc{animation:sc 9s linear infinite}
+.bsh{animation:bsh 3s ease-in-out infinite}
 </style>
-<pattern id="gp" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M10 0L0 0 0 10" fill="none" stroke="#141e2e" stroke-width=".4"/></pattern>
-<radialGradient id="bgr" cx="50%" cy="20%" r="80%"><stop offset="0%" stop-color="#0e1830"/><stop offset="100%" stop-color="#06080f"/></radialGradient>
-<radialGradient id="skinr" cx="40%" cy="35%"><stop offset="0%" stop-color="#ffe8cc"/><stop offset="100%" stop-color="#fdcfa0"/></radialGradient>
-<radialGradient id="eyer" cx="30%" cy="30%"><stop offset="0%" stop-color="#3a2828"/><stop offset="100%" stop-color="#1a1010"/></radialGradient>
-<linearGradient id="xpg" x1="0" x2="1" y1="0" y2="0"><stop offset="0%" stop-color="#a040ff"/><stop offset="50%" stop-color="#3a8aff"/><stop offset="100%" stop-color="#39d353"/></linearGradient>
-<linearGradient id="titleg" x1="0" x2="1" y1="0" y2="0"><stop offset="0%" stop-color="#3a8aff"/><stop offset="50%" stop-color="#a040ff"/><stop offset="100%" stop-color="#ff4aaa"/></linearGradient>
-<linearGradient id="cardg" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stop-color="#0f1e34"/><stop offset="100%" stop-color="#090f1c"/></linearGradient>
-<filter id="gf"><feGaussianBlur in="SourceAlpha" stdDeviation="3" result="b"/><feFlood flood-color="#3a8aff" flood-opacity=".4"/><feComposite in2="b" operator="in" result="s"/><feMerge><feMergeNode in="s"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-<filter id="pgf"><feGaussianBlur in="SourceAlpha" stdDeviation="4" result="b"/><feFlood flood-color="#ff4aaa" flood-opacity=".35"/><feComposite in2="b" operator="in" result="s"/><feMerge><feMergeNode in="s"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-<filter id="sg"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-<clipPath id="win"><rect x="12" y="12" width="876" height="1096" rx="16"/></clipPath>
+<pattern id="gp" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M10 0L0 0 0 10" fill="none" stroke="#0e1828" stroke-width=".45"/></pattern>
+<radialGradient id="bgr" cx="50%" cy="15%" r="85%"><stop offset="0%" stop-color="#0e1630"/><stop offset="100%" stop-color="#060810"/></radialGradient>
+<linearGradient id="titleg" x1="0" x2="1" y1="0" y2="0"><stop offset="0%" stop-color="#00d4ff"/><stop offset="50%" stop-color="#b040ff"/><stop offset="100%" stop-color="#ff3a9e"/></linearGradient>
+<linearGradient id="xpg" x1="0" x2="1" y1="0" y2="0"><stop offset="0%" stop-color="#b040ff"/><stop offset="50%" stop-color="#00d4ff"/><stop offset="100%" stop-color="#00e87a"/></linearGradient>
+<linearGradient id="cg" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stop-color="#0e1832"/><stop offset="100%" stop-color="#080e1c"/></linearGradient>
+<filter id="gf"><feGaussianBlur in="SourceAlpha" stdDeviation="3" result="b"/><feFlood flood-color="#00d4ff" flood-opacity=".4"/><feComposite in2="b" operator="in" result="s"/><feMerge><feMergeNode in="s"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="sg"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
 <clipPath id="tc"><rect x="90" y="1082" width="800" height="28"/></clipPath>
 </defs>
 
 <!-- BG -->
 <rect width="900" height="1120" fill="url(#bgr)"/>
-<rect width="900" height="1120" fill="url(#gp)" opacity=".5"/>
+<rect width="900" height="1120" fill="url(#gp)" opacity=".55"/>
 
-<!-- Stars + math floats -->
-<circle class="tw" cx="40" cy="30" r="1.5" fill="#fff" style="--d:2.1s"/>
-<circle class="tw" cx="110" cy="18" r="1" fill="#7aafff" style="--d:1.7s;animation-delay:.3s"/>
-<circle class="tw" cx="200" cy="40" r="1.5" fill="#fff" style="--d:2.8s;animation-delay:.8s"/>
-<circle class="tw" cx="320" cy="22" r="2" fill="#a040ff" style="--d:2.5s;animation-delay:1s"/>
-<circle class="tw" cx="450" cy="35" r="1" fill="#fff" style="--d:3.1s;animation-delay:.5s"/>
-<circle class="tw" cx="600" cy="20" r="1.5" fill="#7aafff" style="--d:1.8s;animation-delay:.4s"/>
-<circle class="tw" cx="750" cy="30" r="2" fill="#ff4aaa" style="--d:1.6s;animation-delay:.9s"/>
-<circle class="tw" cx="860" cy="15" r="1.5" fill="#fff" style="--d:2.9s;animation-delay:.1s"/>
-<text class="ft" x="16" y="250" font-family="monospace" font-size="12" fill="#3a8aff" style="--d:4.2s">∇L(θ)</text>
-<text class="ft" x="16" y="400" font-family="monospace" font-size="11" fill="#a040ff" style="--d:5s;animation-delay:1s">∂f/∂x</text>
-<text class="ft" x="16" y="560" font-family="monospace" font-size="12" fill="#3a8aff" style="--d:3.8s;animation-delay:2s">Σwᵢxᵢ</text>
-<text class="ft" x="16" y="720" font-family="monospace" font-size="11" fill="#39d353" style="--d:4.5s;animation-delay:.5s">O(n log n)</text>
-<text class="ft" x="845" y="220" font-family="monospace" font-size="12" fill="#ff4aaa" style="--d:4.8s">σ(z)</text>
-<text class="ft" x="848" y="370" font-family="monospace" font-size="11" fill="#a040ff" style="--d:3.5s;animation-delay:1.5s">f(x)=</text>
-<text class="ft" x="840" y="530" font-family="monospace" font-size="12" fill="#3a8aff" style="--d:4.2s;animation-delay:2.5s">P(y|x)</text>
-<text class="ft" x="843" y="680" font-family="monospace" font-size="11" fill="#ff4aaa" style="--d:5.2s;animation-delay:.8s">λ‖θ‖²</text>
-<text class="ft" x="845" y="830" font-family="monospace" font-size="11" fill="#39d353" style="--d:3.9s;animation-delay:3s">∀x∈ℝⁿ</text>
-<rect class="sc" x="0" y="-20" width="900" height="4" fill="rgba(255,255,255,0.01)"/>
+<!-- Stars -->
+<circle class="tw" cx="45" cy="28" r="1.5" fill="#fff" style="--d:2.1s"/>
+<circle class="tw" cx="115" cy="16" r="1" fill="#00d4ff" style="--d:1.7s;animation-delay:.3s"/>
+<circle class="tw" cx="210" cy="38" r="1.5" fill="#fff" style="--d:2.8s;animation-delay:.8s"/>
+<circle class="tw" cx="330" cy="20" r="2" fill="#b040ff" style="--d:2.5s;animation-delay:1s"/>
+<circle class="tw" cx="460" cy="33" r="1" fill="#fff" style="--d:3.1s;animation-delay:.5s"/>
+<circle class="tw" cx="595" cy="18" r="1.5" fill="#00d4ff" style="--d:1.8s;animation-delay:.4s"/>
+<circle class="tw" cx="745" cy="28" r="2" fill="#ff3a9e" style="--d:1.6s;animation-delay:.9s"/>
+<circle class="tw" cx="858" cy="14" r="1.5" fill="#fff" style="--d:2.9s;animation-delay:.1s"/>
 
-<!-- ── macOS WINDOW FRAME ── -->
-<rect x="10" y="10" width="880" height="1100" rx="18" fill="none" stroke="#1e304a" stroke-width="2"/>
-<rect x="12" y="12" width="876" height="1096" rx="16" fill="#08101c"/>
+<!-- Floating math -->
+<text class="ft" x="16" y="245" font-family="monospace" font-size="12" fill="#00d4ff" style="--d:4.2s">∇L(θ)</text>
+<text class="ft" x="16" y="400" font-family="monospace" font-size="11" fill="#b040ff" style="--d:5s;animation-delay:1.1s">∂f/∂x</text>
+<text class="ft" x="16" y="560" font-family="monospace" font-size="12" fill="#00d4ff" style="--d:3.8s;animation-delay:2s">Σwᵢxᵢ</text>
+<text class="ft" x="16" y="720" font-family="monospace" font-size="11" fill="#00e87a" style="--d:4.5s;animation-delay:.5s">O(n log n)</text>
+<text class="ft" x="16" y="880" font-family="monospace" font-size="11" fill="#b040ff" style="--d:5.2s;animation-delay:1.8s">∀ε&gt;0 ∃δ</text>
+<text class="ft" x="844" y="215" font-family="monospace" font-size="12" fill="#ff3a9e" style="--d:4.8s">σ(z)</text>
+<text class="ft" x="847" y="370" font-family="monospace" font-size="11" fill="#b040ff" style="--d:3.5s;animation-delay:1.5s">f(x)=</text>
+<text class="ft" x="840" y="530" font-family="monospace" font-size="12" fill="#00d4ff" style="--d:4.2s;animation-delay:2.5s">P(y|x)</text>
+<text class="ft" x="843" y="680" font-family="monospace" font-size="11" fill="#ff3a9e" style="--d:5.2s;animation-delay:.8s">λ‖θ‖²</text>
+<text class="ft" x="845" y="840" font-family="monospace" font-size="11" fill="#00e87a" style="--d:3.9s;animation-delay:3s">∀x∈ℝⁿ</text>
+<rect class="sc" x="0" y="-20" width="900" height="4" fill="rgba(255,255,255,0.008)"/>
 
-<!-- TITLE BAR (macOS style) -->
-<rect x="12" y="12" width="876" height="46" rx="16" fill="#0d1828"/>
-<rect x="12" y="40" width="876" height="18" fill="#0d1828"/><!-- square bottom corners -->
-<rect x="12" y="58" width="876" height="2" fill="#1a2e48"/>
-<!-- Traffic lights -->
-<circle cx="40" cy="35" r="8" fill="#ff5f57"/>
-<circle cx="64" cy="35" r="8" fill="#febc2e"/>
-<circle cx="88" cy="35" r="8" fill="#28c840"/>
-<text x="37" y="39" font-family="monospace" font-size="8" fill="#7a0000">✕</text>
-<text x="60" y="39" font-family="monospace" font-size="9" fill="#7a5500">−</text>
-<text x="84" y="39" font-family="monospace" font-size="9" fill="#005a00">⊕</text>
-<!-- Title -->
-<text class="gl" x="450" y="40" font-family="system-ui,monospace" font-size="13" fill="url(#titleg)" text-anchor="middle" letter-spacing="2" filter="url(#gf)">ANANDHU.EXE — AI ∩ CS — Beans 🫘</text>
+<!-- WINDOW FRAME (mac style) -->
+<rect x="9" y="9" width="882" height="1102" rx="20" fill="none" stroke="#1a3060" stroke-width="1.5"/>
+<rect x="11" y="11" width="878" height="1098" rx="18" fill="#080c18"/>
 
-<!-- ── PLAYER HEADER + XP ── -->
-<rect x="20" y="68" width="860" height="80" rx="12" fill="#0c1624" stroke="#1a2e48" stroke-width="1"/>
-<text x="40" y="92" font-family="monospace" font-size="10" fill="#4a6080" letter-spacing="2">PLAYER</text>
-<text x="40" y="112" font-family="system-ui,monospace" font-size="18" fill="#e6edf3" font-weight="bold">Anandhu P Shaji</text>
-<text x="40" y="132" font-family="monospace" font-size="11" fill="#3a8aff">ML Researcher · Pre-Final Year · CEM Kerala</text>
-<!-- XP bar right side -->
-<text x="520" y="88" font-family="monospace" font-size="9" fill="#4a6080">LEVEL</text>
-<text x="576" y="88" font-family="monospace" font-size="12" fill="#f0c060" font-weight="bold">12</text>
-<text x="620" y="88" font-family="monospace" font-size="9" fill="#4a6080">CLASS: RESEARCHER</text>
-<text x="520" y="106" font-family="monospace" font-size="9" fill="#4a6080">EXP ·····················</text>
-<rect x="520" y="112" width="340" height="12" rx="6" fill="#0a1620"/>
-<rect x="520" y="112" width="0" height="12" rx="6" fill="url(#xpg)"><animate attributeName="width" from="0" to="268" dur="2s" fill="freeze" begin="0.3s"/></rect>
-<text x="796" y="122" font-family="monospace" font-size="8" fill="#6a8090">2,450 / 3,000</text>
-<text x="520" y="140" font-family="monospace" font-size="9" fill="#4a6080">GUILD: ACSES · Joint Secretary  ·  IEEE: 2 Papers Published</text>
+<!-- TITLE BAR -->
+<rect x="11" y="11" width="878" height="46" rx="18" fill="#0c1428"/>
+<rect x="11" y="39" width="878" height="18" fill="#0c1428"/>
+<rect x="11" y="57" width="878" height="2" fill="#172040"/>
+<!-- traffic lights -->
+<circle cx="40" cy="34" r="8" fill="#ff5f57"/><circle cx="63" cy="34" r="8" fill="#febc2e"/><circle cx="86" cy="34" r="8" fill="#28c840"/>
+<text x="37" y="38" font-family="monospace" font-size="8" fill="#7a0000">✕</text>
+<text x="59" y="38" font-family="monospace" font-size="9" fill="#7a5500">−</text>
+<text x="82" y="38" font-family="monospace" font-size="9" fill="#005a00">⊕</text>
+<text class="gl" x="450" y="39" font-family="monospace" font-size="13" fill="url(#titleg)" text-anchor="middle" letter-spacing="2" filter="url(#gf)">ANANDHU.EXE  —  AI ∩ CS  —  Beans 🫘</text>
 
-<!-- ── DIVIDER ── -->
-<rect x="262" y="158" width="1.5" height="366" fill="#1a2e48"/>
+<!-- PLAYER HEADER + XP -->
+<rect x="20" y="67" width="860" height="82" rx="10" fill="#0c1428" stroke="#172040" stroke-width="1"/>
+<text x="40" y="91" font-family="monospace" font-size="9" fill="#3a5070" letter-spacing="3">PLAYER</text>
+<text x="40" y="112" font-family="monospace" font-size="18" fill="#e0eaff" font-weight="bold">Anandhu P Shaji</text>
+<text x="40" y="132" font-family="monospace" font-size="11" fill="#00d4ff">ML Researcher · Pre-Final Year · CEM Kerala</text>
+<!-- XP section -->
+<text x="515" y="87" font-family="monospace" font-size="9" fill="#3a5070">LEVEL</text>
+<text x="568" y="87" font-family="monospace" font-size="13" fill="#ffd060" font-weight="bold">12</text>
+<text x="610" y="87" font-family="monospace" font-size="9" fill="#3a5070">·  CLASS: RESEARCHER</text>
+<text x="515" y="106" font-family="monospace" font-size="8" fill="#3a5070">EXP ··················</text>
+<rect x="515" y="112" width="344" height="11" rx="5" fill="#060c18"/>
+<rect x="515" y="112" width="0" height="11" rx="5" fill="url(#xpg)"><animate attributeName="width" from="0" to="262" dur="2s" fill="freeze" begin="0.3s"/></rect>
+<text x="790" y="121" font-family="monospace" font-size="7" fill="#3a5070">2,450 / 3,000</text>
+<text x="515" y="140" font-family="monospace" font-size="9" fill="#3a5070">GUILD: ACSES · Joint Secretary  ·  IEEE: 2 Papers Published</text>
 
-<!-- ── LEFT: CUTE CHIBI CHARACTER ── -->
-<text x="28" y="174" font-family="monospace" font-size="8" fill="#3a8aff" letter-spacing="2">[ PLAYER.CHARACTER ]</text>
+<!-- VERTICAL DIVIDER -->
+<rect x="262" y="157" width="1.5" height="378" fill="#172040"/>
 
-<!-- PIXEL CHARACTER (P=7, x_start=53, y_start=175) -->
+<!-- LEFT PANEL LABEL -->
+<text x="26" y="173" font-family="monospace" font-size="8" fill="#00d4ff" letter-spacing="2">[ PLAYER.CHARACTER ]</text>
+
+<!-- ═══ PIXEL ART CHARACTER (6px grid, x_offset=61, y_offset=178) ═══ -->
 <g class="bob">
-<animateTransform attributeName="transform" type="translate" values="0,0;0,-6;0,0" dur="3s" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="translate" values="0,0;0,-7;0,0" dur="3.2s" repeatCount="indefinite"/>
+
 <!-- shadow -->
-<rect x="88" y="416" width="84" height="6" rx="3" fill="rgba(58,138,255,0.08)"/>
-<!-- hair top bumps -->
-<rect x="109" y="175" width="35" height="7" fill="#0f0f13"/>
-<rect x="95" y="182" width="63" height="7" fill="#0f0f13"/>
-<rect x="116" y="175" width="7" height="7" fill="#0f0f13"/>
-<rect x="137" y="171" width="14" height="11" fill="#0f0f13"/>
-<rect x="151" y="175" width="7" height="7" fill="#0f0f13"/>
-<!-- hair main block (back) -->
-<rect x="60" y="189" width="133" height="49" fill="#0f0f13"/>
-<!-- head skin -->
-<rect x="67" y="196" width="119" height="91" fill="#fdcba0"/>
-<!-- ears -->
-<rect x="53" y="231" width="14" height="21" fill="#fdcba0"/>
-<rect x="186" y="231" width="14" height="21" fill="#fdcba0"/>
-<!-- bangs overlay -->
-<rect x="60" y="189" width="133" height="28" fill="#0f0f13"/>
-<!-- individual bang strands -->
-<rect x="60" y="210" width="21" height="7" fill="#0f0f13"/>
-<rect x="67" y="217" width="14" height="7" fill="#0f0f13"/>
-<rect x="172" y="210" width="21" height="7" fill="#0f0f13"/>
-<rect x="172" y="217" width="14" height="7" fill="#0f0f13"/>
-<!-- eyebrows -->
-<rect x="81" y="217" width="21" height="7" fill="#0f0f13"/>
-<rect x="151" y="217" width="21" height="7" fill="#0f0f13"/>
-<!-- eye whites -->
-<rect x="81" y="224" width="21" height="21" fill="#ffffff"/>
-<rect x="151" y="224" width="21" height="21" fill="#ffffff"/>
-<!-- iris -->
-<rect x="84" y="227" width="15" height="15" fill="#1e1010"/>
-<rect x="154" y="227" width="15" height="15" fill="#1e1010"/>
-<!-- pupils -->
-<rect x="88" y="231" width="7" height="7" fill="#060303"/>
-<rect x="158" y="231" width="7" height="7" fill="#060303"/>
-<!-- eye highlights (pixel sparkle) -->
-<rect x="81" y="224" width="7" height="7" fill="#ffffff" opacity=".9"/>
-<rect x="151" y="224" width="7" height="7" fill="#ffffff" opacity=".9"/>
-<rect x="91" y="238" width="4" height="4" fill="#ffffff" opacity=".5"/>
-<rect x="161" y="238" width="4" height="4" fill="#ffffff" opacity=".5"/>
-<!-- nose pixel -->
-<rect x="123" y="252" width="7" height="7" fill="#e8a070"/>
-<!-- mouth - open happy -->
-<rect x="102" y="259" width="49" height="7" fill="#c03050"/>
-<rect x="102" y="266" width="49" height="7" fill="#c03050"/>
-<rect x="109" y="259" width="35" height="7" fill="#ffffff"/>
-<!-- cheeks pixel blocks -->
-<rect x="60" y="245" width="21" height="14" fill="#ff7090" opacity=".38"/>
-<rect x="172" y="245" width="21" height="14" fill="#ff7090" opacity=".38"/>
-<!-- neck -->
-<rect x="116" y="273" width="21" height="14" fill="#fdcba0"/>
-<!-- body/shirt -->
-<rect x="81" y="287" width="91" height="77" fill="#18181e"/>
-<!-- shirt logo - pink M (3 rects) -->
-<rect x="109" y="315" width="7" height="28" fill="#ff4488"/>
-<rect x="116" y="301" width="21" height="14" fill="#ff4488"/>
-<rect x="137" y="315" width="7" height="28" fill="#ff4488"/>
-<!-- left arm (shirt sleeve) -->
-<rect x="53" y="294" width="28" height="49" fill="#18181e"/>
-<!-- left forearm skin -->
-<rect x="39" y="259" width="21" height="42" fill="#fdcba0"/>
-<!-- left peace fingers (index + middle) -->
-<rect x="39" y="224" width="7" height="35" fill="#fdcba0"/>
-<rect x="46" y="224" width="7" height="35" fill="#fdcba0"/>
-<!-- left hand knuckle row -->
-<rect x="39" y="252" width="14" height="7" fill="#fdcba0"/>
-<!-- right arm (shirt sleeve) -->
-<rect x="172" y="294" width="28" height="49" fill="#18181e"/>
-<!-- right forearm skin -->
-<rect x="193" y="259" width="21" height="42" fill="#fdcba0"/>
-<!-- right peace fingers -->
-<rect x="200" y="224" width="7" height="35" fill="#fdcba0"/>
-<rect x="207" y="224" width="7" height="35" fill="#fdcba0"/>
-<!-- right hand knuckle row -->
-<rect x="200" y="252" width="14" height="7" fill="#fdcba0"/>
-<!-- legs -->
-<rect x="88" y="364" width="28" height="42" fill="#22223a"/>
-<rect x="137" y="364" width="28" height="42" fill="#22223a"/>
-<rect x="116" y="364" width="21" height="42" fill="#08101c"/>
-<!-- shoes -->
-<rect x="81" y="399" width="42" height="14" fill="#111111"/>
-<rect x="130" y="399" width="42" height="14" fill="#111111"/>
-<!-- shoe highlights -->
-<rect x="88" y="399" width="14" height="5" fill="rgba(255,255,255,0.09)"/>
-<rect x="137" y="399" width="14" height="5" fill="rgba(255,255,255,0.09)"/>
+<rect x="82" y="420" width="92" height="6" rx="3" fill="rgba(0,212,255,0.07)"/>
 
+<!-- HAIR top bumps (row 0-1, various widths) -->
+<rect x="97" y="178" width="12" height="6" fill="#0c0c12"/> <!-- left bump -->
+<rect x="115" y="178" width="18" height="6" fill="#0c0c12"/> <!-- center-left -->
+<rect x="139" y="172" width="12" height="12" fill="#0c0c12"/> <!-- center spike (tallest) -->
+<rect x="157" y="178" width="12" height="6" fill="#0c0c12"/> <!-- center-right -->
+<rect x="175" y="178" width="10" height="6" fill="#0c0c12"/> <!-- right bump -->
+
+<!-- HAIR main mass (rows 2-6, wide) -->
+<rect x="73" y="184" width="110" height="36" fill="#0c0c12"/>
+<!-- side hair extensions -->
+<rect x="61" y="196" width="18" height="42" fill="#0c0c12"/> <!-- left side -->
+<rect x="175" y="196" width="18" height="42" fill="#0c0c12"/> <!-- right side -->
+
+<!-- HEAD skin (rows 2-15: 84px wide × 84px tall) -->
+<rect x="79" y="190" width="98" height="90" fill="#fdd5a4"/>
+
+<!-- EARS -->
+<rect x="61" y="220" width="18" height="30" fill="#fdd5a4"/>
+<rect x="61" y="220" width="18" height="30" fill="#f0a870" opacity=".35"/>
+<rect x="177" y="220" width="18" height="30" fill="#fdd5a4"/>
+<rect x="177" y="220" width="18" height="30" fill="#f0a870" opacity=".35"/>
+
+<!-- BANGS (dark hair over forehead, rows 2-4) -->
+<rect x="73" y="184" width="110" height="24" fill="#0c0c12"/>
+<!-- bang strand drops -->
+<rect x="73" y="208" width="18" height="12" fill="#0c0c12"/> <!-- left hang -->
+<rect x="97" y="208" width="12" height="6" fill="#0c0c12"/>  <!-- left-mid -->
+<rect x="157" y="208" width="12" height="6" fill="#0c0c12"/> <!-- right-mid -->
+<rect x="169" y="208" width="18" height="10" fill="#0c0c12"/> <!-- right hang -->
+
+<!-- EYEBROWS (row 5) -->
+<rect x="85" y="214" width="30" height="6" fill="#0c0c12"/>
+<rect x="141" y="214" width="30" height="6" fill="#0c0c12"/>
+
+<!-- LEFT EYE (rows 6-9, 24x24) -->
+<rect x="85" y="220" width="24" height="24" fill="#ffffff"/> <!-- white -->
+<rect x="88" y="223" width="18" height="18" fill="#1a100a"/> <!-- iris dark -->
+<rect x="91" y="226" width="12" height="12" fill="#06030a"/> <!-- pupil -->
+<rect x="85" y="220" width="6" height="6" fill="#ffffff" opacity=".95"/> <!-- sparkle -->
+<rect x="97" y="238" width="4" height="4" fill="#ffffff" opacity=".5"/> <!-- sparkle2 -->
+
+<!-- RIGHT EYE (rows 6-9) -->
+<rect x="147" y="220" width="24" height="24" fill="#ffffff"/>
+<rect x="150" y="223" width="18" height="18" fill="#1a100a"/>
+<rect x="153" y="226" width="12" height="12" fill="#06030a"/>
+<rect x="147" y="220" width="6" height="6" fill="#ffffff" opacity=".95"/>
+<rect x="159" y="238" width="4" height="4" fill="#ffffff" opacity=".5"/>
+
+<!-- CHEEKS (pixel blush blocks) -->
+<rect class="bsh" x="67" y="232" width="18" height="18" fill="#ff6088" opacity=".35"/>
+<rect class="bsh" x="171" y="232" width="18" height="18" fill="#ff6088" opacity=".35" style="animation-delay:.6s"/>
+
+<!-- NOSE (row 11, 2 pixels) -->
+<rect x="121" y="250" width="12" height="6" fill="#e09060"/>
+
+<!-- MOUTH - open happy smile with teeth (rows 12-14) -->
+<rect x="97" y="256" width="60" height="18" fill="#bb2848"/> <!-- outer mouth dark -->
+<rect x="103" y="256" width="48" height="12" fill="#ffffff"/> <!-- teeth white -->
+<rect x="97" y="268" width="60" height="6" fill="#bb2848"/> <!-- lower lip -->
+
+<!-- NECK (rows 15-16) -->
+<rect x="115" y="280" width="24" height="12" fill="#fdd5a4"/>
+
+<!-- SHIRT BODY (rows 17-24: 96px wide × 48px tall) -->
+<rect x="79" y="292" width="96" height="48" fill="#13131a"/>
+
+<!-- SHIRT LOGO - Pink mountain/M (pixel, 3-block design) -->
+<rect x="103" y="298" width="6" height="30" fill="#ff3a9e"/> <!-- left pillar -->
+<rect x="109" y="292" width="36" height="6" fill="#ff3a9e"/> <!-- top bridge -->
+<rect x="145" y="298" width="6" height="30" fill="#ff3a9e"/> <!-- right pillar -->
+<rect x="121" y="298" width="12" height="12" fill="#ff3a9e"/> <!-- center notch fill -->
+
+<!-- LEFT UPPER ARM (shirt color, angled out) -->
+<rect x="55" y="292" width="24" height="42" fill="#13131a"/>
+<!-- LEFT FOREARM + HAND (skin) -->
+<rect x="43" y="262" width="18" height="36" fill="#fdd5a4"/>
+<!-- LEFT PEACE FINGERS (index + middle pointing up) -->
+<rect x="43" y="220" width="6" height="42" fill="#fdd5a4"/> <!-- index -->
+<rect x="55" y="220" width="6" height="42" fill="#fdd5a4"/> <!-- middle -->
+<!-- knuckle connector -->
+<rect x="43" y="256" width="18" height="6" fill="#fdd5a4"/>
+
+<!-- RIGHT UPPER ARM (shirt) -->
+<rect x="175" y="292" width="24" height="42" fill="#13131a"/>
+<!-- RIGHT FOREARM (skin) -->
+<rect x="193" y="262" width="18" height="36" fill="#fdd5a4"/>
+<!-- RIGHT PEACE FINGERS -->
+<rect x="193" y="220" width="6" height="42" fill="#fdd5a4"/>
+<rect x="205" y="220" width="6" height="42" fill="#fdd5a4"/>
+<rect x="193" y="256" width="18" height="6" fill="#fdd5a4"/>
+
+<!-- PANTS (rows 25-31, split legs) -->
+<rect x="85" y="340" width="30" height="42" fill="#1c1c30"/> <!-- left leg -->
+<rect x="141" y="340" width="30" height="42" fill="#1c1c30"/> <!-- right leg -->
+<rect x="115" y="340" width="26" height="42" fill="#080c18"/> <!-- gap -->
+
+<!-- SHOES -->
+<rect x="79" y="376" width="42" height="12" fill="#0c0c10"/> <!-- left -->
+<rect x="135" y="376" width="42" height="12" fill="#0c0c10"/> <!-- right -->
+<rect x="85" y="376" width="18" height="6" fill="rgba(255,255,255,0.08)"/>
+<rect x="141" y="376" width="18" height="6" fill="rgba(255,255,255,0.08)"/>
 </g>
+<!-- END CHARACTER -->
 
-<!-- Character info (moved up, no blank gap) -->
-<rect x="20" y="428" width="234" height="1" fill="#1a2e48"/>
-<text x="28" y="446" font-family="monospace" font-size="9" fill="#4a6080">LOCATION</text>
-<text x="28" y="461" font-family="monospace" font-size="11" fill="#e6edf3">CEM · Kerala</text>
-<text x="28" y="479" font-family="monospace" font-size="9" fill="#4a6080">UNIVERSITY</text>
-<text x="28" y="494" font-family="monospace" font-size="11" fill="#e6edf3">APJ KTU</text>
-<text x="28" y="512" font-family="monospace" font-size="9" fill="#4a6080">STATUS</text>
-<text x="28" y="527" font-family="monospace" font-size="11" fill="#39d353">RESEARCHING</text>
-<text class="bk" x="164" y="527" font-family="monospace" font-size="11" fill="#39d353">▮</text>
-<text x="28" y="547" font-family="monospace" font-size="9" fill="#4a6080">MAIN FOCUS</text>
-<text x="28" y="562" font-family="monospace" font-size="10" fill="#a040ff">Theoretical CS</text>
-<text x="28" y="582" font-family="monospace" font-size="9" fill="#4a6080">GUILD</text>
-<text x="28" y="597" font-family="monospace" font-size="10" fill="#f0c060">ACSES · Joint Secretary</text>
+<!-- Character info (tight below character) -->
+<rect x="20" y="400" width="234" height="1" fill="#172040"/>
+<text x="26" y="418" font-family="monospace" font-size="9" fill="#3a5070">LOCATION</text>
+<text x="26" y="433" font-family="monospace" font-size="11" fill="#e0eaff">CEM · Kerala</text>
+<text x="26" y="452" font-family="monospace" font-size="9" fill="#3a5070">UNIVERSITY</text>
+<text x="26" y="467" font-family="monospace" font-size="11" fill="#e0eaff">APJ KTU</text>
+<text x="26" y="486" font-family="monospace" font-size="9" fill="#3a5070">STATUS</text>
+<text x="26" y="501" font-family="monospace" font-size="11" fill="#00e87a">RESEARCHING</text>
+<text class="bk" x="162" y="501" font-family="monospace" font-size="11" fill="#00e87a">▮</text>
+<text x="26" y="520" font-family="monospace" font-size="9" fill="#3a5070">MAIN FOCUS</text>
+<text x="26" y="535" font-family="monospace" font-size="10" fill="#b040ff">Theoretical CS</text>
+<text x="26" y="554" font-family="monospace" font-size="9" fill="#3a5070">GUILD</text>
+<text x="26" y="569" font-family="monospace" font-size="10" fill="#ffd060">ACSES · Joint Sec</text>
 
-<!-- ── RIGHT PANEL: NEURAL NETWORK ── -->
-<text x="278" y="174" font-family="monospace" font-size="8" fill="#3a8aff" letter-spacing="2">[ NEURAL.ARCHITECTURE ]  —  knowledge graph</text>
+<!-- ═══ RIGHT PANEL: NEURAL NETWORK ═══ -->
+<text x="278" y="173" font-family="monospace" font-size="8" fill="#00d4ff" letter-spacing="2">[ NEURAL.ARCHITECTURE ]  —  knowledge graph</text>
 
-<!-- Input nodes x=310 -->
-<text x="310" y="205" font-family="monospace" font-size="7" fill="#4a6080" text-anchor="middle">INPUT</text>
-<circle cx="310" cy="240" r="24" fill="#0c1828" stroke="#3a8aff" stroke-width="1.5"/>
-<text x="310" y="236" font-family="monospace" font-size="7" fill="#3a8aff" text-anchor="middle">DATA</text>
-<text x="310" y="247" font-family="monospace" font-size="6" fill="#3a8aff" text-anchor="middle">scikit·np</text>
-<circle cx="310" cy="315" r="24" fill="#0c1828" stroke="#a040ff" stroke-width="1.5"/>
-<text x="310" y="311" font-family="monospace" font-size="7" fill="#a040ff" text-anchor="middle">MATH</text>
-<text x="310" y="322" font-family="monospace" font-size="6" fill="#a040ff" text-anchor="middle">∇ ∂ Σ λ</text>
-<circle cx="310" cy="390" r="24" fill="#0c1828" stroke="#39d353" stroke-width="1.5"/>
-<text x="310" y="386" font-family="monospace" font-size="7" fill="#39d353" text-anchor="middle">CODE</text>
-<text x="310" y="397" font-family="monospace" font-size="6" fill="#39d353" text-anchor="middle">Python·TS</text>
+<!-- Layer labels -->
+<text x="308" y="204" font-family="monospace" font-size="7" fill="#3a5070" text-anchor="middle">INPUT</text>
+<text x="498" y="204" font-family="monospace" font-size="7" fill="#3a5070" text-anchor="middle">HIDDEN</text>
+<text x="690" y="204" font-family="monospace" font-size="7" fill="#3a5070" text-anchor="middle">OUTPUT</text>
 
-<!-- Hidden nodes x=500 -->
-<text x="500" y="205" font-family="monospace" font-size="7" fill="#4a6080" text-anchor="middle">HIDDEN</text>
-<circle cx="500" cy="235" r="27" fill="#0c1828" stroke="#ff4aaa" stroke-width="1.5"/>
-<text x="500" y="231" font-family="monospace" font-size="7" fill="#ff4aaa" text-anchor="middle">VISION</text>
-<text x="500" y="242" font-family="monospace" font-size="6" fill="#ff4aaa" text-anchor="middle">CNN·ViT·CV</text>
-<circle cx="500" cy="300" r="27" fill="#0c1828" stroke="#3a8aff" stroke-width="1.5"/>
-<text x="500" y="296" font-family="monospace" font-size="7" fill="#3a8aff" text-anchor="middle">TEMPORAL</text>
-<text x="500" y="307" font-family="monospace" font-size="6" fill="#3a8aff" text-anchor="middle">LSTM·MAE</text>
-<circle cx="500" cy="365" r="27" fill="#0c1828" stroke="#f0c060" stroke-width="1.5"/>
-<text x="500" y="361" font-family="monospace" font-size="7" fill="#f0c060" text-anchor="middle">MEDICAL</text>
-<text x="500" y="372" font-family="monospace" font-size="6" fill="#f0c060" text-anchor="middle">MobileNet·HI</text>
-<circle cx="500" cy="430" r="27" fill="#0c1828" stroke="#a040ff" stroke-width="1.5"/>
-<text x="500" y="426" font-family="monospace" font-size="7" fill="#a040ff" text-anchor="middle">THEORY</text>
-<text x="500" y="437" font-family="monospace" font-size="6" fill="#a040ff" text-anchor="middle">∇ Alg · TCS</text>
+<!-- Input nodes -->
+<circle cx="308" cy="240" r="24" fill="#0a1020" stroke="#00d4ff" stroke-width="1.5"/>
+<text x="308" y="236" font-family="monospace" font-size="7" fill="#00d4ff" text-anchor="middle">DATA</text>
+<text x="308" y="247" font-family="monospace" font-size="6" fill="#00d4ff" text-anchor="middle">scikit·np</text>
+<circle cx="308" cy="315" r="24" fill="#0a1020" stroke="#b040ff" stroke-width="1.5"/>
+<text x="308" y="311" font-family="monospace" font-size="7" fill="#b040ff" text-anchor="middle">MATH</text>
+<text x="308" y="322" font-family="monospace" font-size="6" fill="#b040ff" text-anchor="middle">∇ ∂ Σ λ</text>
+<circle cx="308" cy="390" r="24" fill="#0a1020" stroke="#00e87a" stroke-width="1.5"/>
+<text x="308" y="386" font-family="monospace" font-size="7" fill="#00e87a" text-anchor="middle">CODE</text>
+<text x="308" y="397" font-family="monospace" font-size="6" fill="#00e87a" text-anchor="middle">Python·TS</text>
 
-<!-- Connections input→hidden (animated) -->
-<line class="fl" x1="334" y1="240" x2="473" y2="236" stroke="#3a8aff" stroke-width=".8" opacity=".5"/>
-<line class="fl" x1="334" y1="242" x2="473" y2="300" stroke="#3a8aff" stroke-width=".8" opacity=".3" style="animation-delay:.3s"/>
-<line class="fl" x1="334" y1="244" x2="473" y2="364" stroke="#3a8aff" stroke-width=".8" opacity=".2" style="animation-delay:.6s"/>
-<line class="fl" x1="334" y1="318" x2="473" y2="238" stroke="#a040ff" stroke-width=".8" opacity=".25" style="animation-delay:.2s"/>
-<line class="fl" x1="334" y1="315" x2="473" y2="302" stroke="#a040ff" stroke-width=".8" opacity=".5" style="animation-delay:.5s"/>
-<line class="fl" x1="334" y1="390" x2="473" y2="364" stroke="#39d353" stroke-width=".8" opacity=".5" style="animation-delay:.8s"/>
-<line class="fl" x1="334" y1="392" x2="473" y2="432" stroke="#39d353" stroke-width=".8" opacity=".4" style="animation-delay:1.1s"/>
-<line class="fl" x1="334" y1="316" x2="473" y2="432" stroke="#a040ff" stroke-width=".8" opacity=".35" style="animation-delay:.9s"/>
+<!-- Hidden nodes -->
+<circle cx="494" cy="235" r="27" fill="#0a1020" stroke="#ff3a9e" stroke-width="1.5"/>
+<text x="494" y="231" font-family="monospace" font-size="7" fill="#ff3a9e" text-anchor="middle">VISION</text>
+<text x="494" y="242" font-family="monospace" font-size="6" fill="#ff3a9e" text-anchor="middle">CNN·ViT·CV</text>
+<circle cx="494" cy="302" r="27" fill="#0a1020" stroke="#00d4ff" stroke-width="1.5"/>
+<text x="494" y="298" font-family="monospace" font-size="7" fill="#00d4ff" text-anchor="middle">TEMPORAL</text>
+<text x="494" y="309" font-family="monospace" font-size="6" fill="#00d4ff" text-anchor="middle">LSTM·MAE</text>
+<circle cx="494" cy="368" r="27" fill="#0a1020" stroke="#ffd060" stroke-width="1.5"/>
+<text x="494" y="364" font-family="monospace" font-size="7" fill="#ffd060" text-anchor="middle">MEDICAL</text>
+<text x="494" y="375" font-family="monospace" font-size="6" fill="#ffd060" text-anchor="middle">MobileNet·HI</text>
+<circle cx="494" cy="432" r="27" fill="#0a1020" stroke="#b040ff" stroke-width="1.5"/>
+<text x="494" y="428" font-family="monospace" font-size="7" fill="#b040ff" text-anchor="middle">THEORY</text>
+<text x="494" y="439" font-family="monospace" font-size="6" fill="#b040ff" text-anchor="middle">∇ Alg · TCS</text>
 
-<!-- Output nodes x=690 -->
-<text x="690" y="205" font-family="monospace" font-size="7" fill="#4a6080" text-anchor="middle">OUTPUT</text>
-<circle cx="690" cy="280" r="32" fill="#0c1828" stroke="#39d353" stroke-width="2" filter="url(#sg)"/>
-<text x="690" y="275" font-family="monospace" font-size="8" fill="#39d353" text-anchor="middle" font-weight="bold">RESEARCH</text>
-<text x="690" y="287" font-family="monospace" font-size="6.5" fill="#39d353" text-anchor="middle">IEEE ×2</text>
-<circle cx="690" cy="385" r="32" fill="#0c1828" stroke="#ff4aaa" stroke-width="2" filter="url(#sg)"/>
-<text x="690" y="380" font-family="monospace" font-size="8" fill="#ff4aaa" text-anchor="middle" font-weight="bold">BUILD</text>
-<text x="690" y="392" font-family="monospace" font-size="6.5" fill="#ff4aaa" text-anchor="middle">KIBO · H-CoAtNet</text>
+<!-- Connections i→h -->
+<line class="fl" x1="332" y1="240" x2="467" y2="236" stroke="#00d4ff" stroke-width=".9" opacity=".5"/>
+<line class="fl" x1="332" y1="242" x2="467" y2="304" stroke="#00d4ff" stroke-width=".9" opacity=".3" style="animation-delay:.3s"/>
+<line class="fl" x1="332" y1="244" x2="467" y2="367" stroke="#00d4ff" stroke-width=".9" opacity=".2" style="animation-delay:.6s"/>
+<line class="fl" x1="332" y1="318" x2="467" y2="238" stroke="#b040ff" stroke-width=".9" opacity=".3" style="animation-delay:.2s"/>
+<line class="fl" x1="332" y1="315" x2="467" y2="304" stroke="#b040ff" stroke-width=".9" opacity=".5" style="animation-delay:.5s"/>
+<line class="fl" x1="332" y1="390" x2="467" y2="368" stroke="#00e87a" stroke-width=".9" opacity=".5" style="animation-delay:.8s"/>
+<line class="fl" x1="332" y1="392" x2="467" y2="434" stroke="#00e87a" stroke-width=".9" opacity=".4" style="animation-delay:1.1s"/>
+<line class="fl" x1="332" y1="316" x2="467" y2="434" stroke="#b040ff" stroke-width=".9" opacity=".3" style="animation-delay:.9s"/>
 
-<!-- Connections hidden→output -->
-<line class="fl" x1="527" y1="235" x2="658" y2="278" stroke="#ff4aaa" stroke-width="1" opacity=".5" style="animation-delay:.2s"/>
-<line class="fl" x1="527" y1="300" x2="658" y2="282" stroke="#3a8aff" stroke-width="1" opacity=".5" style="animation-delay:.5s"/>
-<line class="fl" x1="527" y1="363" x2="658" y2="377" stroke="#f0c060" stroke-width="1" opacity=".5" style="animation-delay:.7s"/>
-<line class="fl" x1="527" y1="430" x2="658" y2="388" stroke="#a040ff" stroke-width="1" opacity=".5" style="animation-delay:1s"/>
-<line class="fl" x1="527" y1="237" x2="658" y2="380" stroke="#ff4aaa" stroke-width="1" opacity=".3" style="animation-delay:.4s"/>
-<line class="fl" x1="527" y1="302" x2="658" y2="382" stroke="#3a8aff" stroke-width="1" opacity=".3" style="animation-delay:.6s"/>
+<!-- Output nodes -->
+<circle cx="688" cy="290" r="32" fill="#0a1020" stroke="#00e87a" stroke-width="2" filter="url(#sg)"/>
+<text x="688" y="285" font-family="monospace" font-size="8" fill="#00e87a" text-anchor="middle" font-weight="bold">RESEARCH</text>
+<text x="688" y="297" font-family="monospace" font-size="6.5" fill="#00e87a" text-anchor="middle">IEEE ×2</text>
+<circle cx="688" cy="388" r="32" fill="#0a1020" stroke="#ff3a9e" stroke-width="2" filter="url(#sg)"/>
+<text x="688" y="383" font-family="monospace" font-size="8" fill="#ff3a9e" text-anchor="middle" font-weight="bold">BUILD</text>
+<text x="688" y="395" font-family="monospace" font-size="6.5" fill="#ff3a9e" text-anchor="middle">KIBO·H-CoAtNet</text>
+
+<!-- Connections h→o -->
+<line class="fl" x1="521" y1="235" x2="656" y2="287" stroke="#ff3a9e" stroke-width="1.1" opacity=".5" style="animation-delay:.2s"/>
+<line class="fl" x1="521" y1="302" x2="656" y2="291" stroke="#00d4ff" stroke-width="1.1" opacity=".5" style="animation-delay:.5s"/>
+<line class="fl" x1="521" y1="366" x2="656" y2="380" stroke="#ffd060" stroke-width="1.1" opacity=".5" style="animation-delay:.7s"/>
+<line class="fl" x1="521" y1="432" x2="656" y2="390" stroke="#b040ff" stroke-width="1.1" opacity=".5" style="animation-delay:1s"/>
+<line class="fl" x1="521" y1="237" x2="656" y2="384" stroke="#ff3a9e" stroke-width="1.1" opacity=".28" style="animation-delay:.4s"/>
+<line class="fl" x1="521" y1="304" x2="656" y2="386" stroke="#00d4ff" stroke-width="1.1" opacity=".28" style="animation-delay:.6s"/>
 
 <!-- Equation caption -->
-<text x="730" y="340" font-family="monospace" font-size="9" fill="#2a3a50">ŷ = σ(Wx + b)</text>
-<text x="736" y="354" font-family="monospace" font-size="9" fill="#2a3a50">L = −Σ yᵢ log(ŷᵢ)</text>
+<text x="734" y="342" font-family="monospace" font-size="9" fill="#1e3050">ŷ = σ(Wx + b)</text>
+<text x="738" y="357" font-family="monospace" font-size="9" fill="#1e3050">L = −Σ yᵢ log(ŷᵢ)</text>
 
-<!-- ── GAMIFICATION SECTION ── -->
-<rect x="20" y="660" width="860" height="1" fill="#1a2e48"/>
-<text x="20" y="680" font-family="monospace" font-size="8" fill="#3a8aff" letter-spacing="2">[ ACHIEVEMENTS.UNLOCKED ]</text>
+<!-- ═══ ACHIEVEMENTS ═══ -->
+<rect x="20" y="658" width="860" height="1" fill="#172040"/>
+<text x="20" y="678" font-family="monospace" font-size="8" fill="#00d4ff" letter-spacing="2">[ ACHIEVEMENTS.UNLOCKED ]</text>
 
-<!-- Badge cards row 1 -->
-<!-- Badge 1: IEEE Publisher -->
-<rect x="20" y="690" width="198" height="76" rx="10" fill="url(#cardg)" stroke="#f0c060" stroke-width="1"/>
-<text x="36" y="714" font-family="monospace" font-size="18">📡</text>
-<text x="68" y="712" font-family="monospace" font-size="9" fill="#f0c060" font-weight="bold">IEEE PUBLISHER</text>
-<text x="68" y="726" font-family="monospace" font-size="8" fill="#6a8090">2 papers · undergrad</text>
-<rect x="30" y="736" width="168" height="6" rx="3" fill="#0a1620"/>
-<rect x="30" y="736" width="168" height="6" rx="3" fill="#f0c060" opacity=".8"/>
-<text x="30" y="756" font-family="monospace" font-size="7" fill="#f0c060">★ LEGENDARY</text>
+<!-- Badge 1 -->
+<rect x="20" y="688" width="198" height="76" rx="10" fill="url(#cg)" stroke="#ffd060" stroke-width="1"/>
+<text x="36" y="714" font-family="monospace" font-size="17">📡</text>
+<text x="65" y="712" font-family="monospace" font-size="9" fill="#ffd060" font-weight="bold">IEEE PUBLISHER</text>
+<text x="65" y="726" font-family="monospace" font-size="8" fill="#3a5070">2 papers · undergrad</text>
+<rect x="28" y="736" width="178" height="5" rx="2" fill="#06090f"/>
+<rect x="28" y="736" width="178" height="5" rx="2" fill="#ffd060" opacity=".85"/>
+<text x="28" y="756" font-family="monospace" font-size="7" fill="#ffd060">★ LEGENDARY</text>
 
-<!-- Badge 2: Vision Master -->
-<rect x="228" y="690" width="198" height="76" rx="10" fill="url(#cardg)" stroke="#3a8aff" stroke-width="1"/>
-<text x="244" y="714" font-family="monospace" font-size="18">👁</text>
-<text x="276" y="712" font-family="monospace" font-size="9" fill="#3a8aff" font-weight="bold">VISION MASTER</text>
-<text x="276" y="726" font-family="monospace" font-size="8" fill="#6a8090">CNN·ViT·LSTM·MAE</text>
-<rect x="238" y="736" width="168" height="6" rx="3" fill="#0a1620"/>
-<rect x="238" y="736" width="150" height="6" rx="3" fill="#3a8aff" opacity=".8"/>
-<text x="238" y="756" font-family="monospace" font-size="7" fill="#3a8aff">★★ EPIC</text>
+<!-- Badge 2 -->
+<rect x="228" y="688" width="198" height="76" rx="10" fill="url(#cg)" stroke="#00d4ff" stroke-width="1"/>
+<text x="244" y="714" font-family="monospace" font-size="17">👁</text>
+<text x="273" y="712" font-family="monospace" font-size="9" fill="#00d4ff" font-weight="bold">VISION MASTER</text>
+<text x="273" y="726" font-family="monospace" font-size="8" fill="#3a5070">CNN·ViT·LSTM·MAE</text>
+<rect x="236" y="736" width="178" height="5" rx="2" fill="#06090f"/>
+<rect x="236" y="736" width="155" height="5" rx="2" fill="#00d4ff" opacity=".85"/>
+<text x="236" y="756" font-family="monospace" font-size="7" fill="#00d4ff">★★ EPIC</text>
 
-<!-- Badge 3: Full-Stack Dev -->
-<rect x="436" y="690" width="198" height="76" rx="10" fill="url(#cardg)" stroke="#39d353" stroke-width="1"/>
-<text x="452" y="714" font-family="monospace" font-size="18">🏗</text>
-<text x="484" y="712" font-family="monospace" font-size="9" fill="#39d353" font-weight="bold">FULL-STACK DEV</text>
-<text x="484" y="726" font-family="monospace" font-size="8" fill="#6a8090">React·TS·Supabase·PG</text>
-<rect x="446" y="736" width="168" height="6" rx="3" fill="#0a1620"/>
-<rect x="446" y="736" width="134" height="6" rx="3" fill="#39d353" opacity=".8"/>
-<text x="446" y="756" font-family="monospace" font-size="7" fill="#39d353">★★ EPIC</text>
+<!-- Badge 3 -->
+<rect x="436" y="688" width="198" height="76" rx="10" fill="url(#cg)" stroke="#00e87a" stroke-width="1"/>
+<text x="452" y="714" font-family="monospace" font-size="17">🏗</text>
+<text x="481" y="712" font-family="monospace" font-size="9" fill="#00e87a" font-weight="bold">FULL-STACK DEV</text>
+<text x="481" y="726" font-family="monospace" font-size="8" fill="#3a5070">React·TS·Supabase·PG</text>
+<rect x="444" y="736" width="178" height="5" rx="2" fill="#06090f"/>
+<rect x="444" y="736" width="138" height="5" rx="2" fill="#00e87a" opacity=".85"/>
+<text x="444" y="756" font-family="monospace" font-size="7" fill="#00e87a">★★ EPIC</text>
 
-<!-- Badge 4: Theory Seeker -->
-<rect x="644" y="690" width="196" height="76" rx="10" fill="url(#cardg)" stroke="#a040ff" stroke-width="1.5"/>
-<text x="660" y="714" font-family="monospace" font-size="18">∇</text>
-<text x="690" y="712" font-family="monospace" font-size="9" fill="#a040ff" font-weight="bold">THEORY SEEKER</text>
-<text x="690" y="726" font-family="monospace" font-size="8" fill="#6a8090">TCS · Algorithms · ∂</text>
-<rect x="654" y="736" width="168" height="6" rx="3" fill="#0a1620"/>
-<rect x="654" y="736" width="90" height="6" rx="3" fill="#a040ff" opacity=".8"/>
-<text x="654" y="756" font-family="monospace" font-size="7" fill="#a040ff">⚡ IN PROGRESS</text>
-<text class="bk" x="740" y="756" font-family="monospace" font-size="7" fill="#a040ff">▮</text>
+<!-- Badge 4 -->
+<rect x="644" y="688" width="196" height="76" rx="10" fill="url(#cg)" stroke="#b040ff" stroke-width="1.4"/>
+<text x="660" y="714" font-family="monospace" font-size="17">∇</text>
+<text x="688" y="712" font-family="monospace" font-size="9" fill="#b040ff" font-weight="bold">THEORY SEEKER</text>
+<text x="688" y="726" font-family="monospace" font-size="8" fill="#3a5070">TCS · Algorithms · ∂</text>
+<rect x="652" y="736" width="178" height="5" rx="2" fill="#06090f"/>
+<rect x="652" y="736" width="88" height="5" rx="2" fill="#b040ff" opacity=".85"/>
+<text x="652" y="756" font-family="monospace" font-size="7" fill="#b040ff">⚡ IN PROGRESS</text>
+<text class="bk" x="744" y="756" font-family="monospace" font-size="7" fill="#b040ff">▮</text>
 
-<!-- ── QUEST LOG ── -->
-<rect x="20" y="780" width="860" height="1" fill="#1a2e48"/>
-<text x="20" y="800" font-family="monospace" font-size="8" fill="#3a8aff" letter-spacing="2">[ QUEST.LOG ]</text>
+<!-- ═══ QUEST LOG ═══ -->
+<rect x="20" y="778" width="860" height="1" fill="#172040"/>
+<text x="20" y="798" font-family="monospace" font-size="8" fill="#00d4ff" letter-spacing="2">[ QUEST.LOG ]</text>
 
-<rect x="20" y="810" width="860" height="52" rx="8" fill="#0c1624" stroke="#1e3050" stroke-width="1"/>
-<text x="36" y="830" font-family="monospace" font-size="14" fill="#39d353">✓</text>
-<text x="58" y="830" font-family="monospace" font-size="11" fill="#e6edf3">HAR Paper — CNN-LSTM tops benchmark on 7-class video dataset</text>
-<text x="762" y="830" font-family="monospace" font-size="9" fill="#39d353">[DONE]</text>
-<text x="58" y="850" font-family="monospace" font-size="9" fill="#4a6080">Temporal modeling · 3D CNN · VideoMAE · V-JEPA2 · compared</text>
+<rect x="20" y="807" width="860" height="50" rx="8" fill="#0c1428" stroke="#172040" stroke-width="1"/>
+<text x="34" y="826" font-family="monospace" font-size="13" fill="#00e87a">✓</text>
+<text x="56" y="826" font-family="monospace" font-size="10" fill="#e0eaff">HAR Paper — CNN-LSTM tops benchmark on 7-class video dataset</text>
+<text x="768" y="826" font-family="monospace" font-size="9" fill="#00e87a">[DONE]</text>
+<text x="56" y="845" font-family="monospace" font-size="8" fill="#3a5070">Temporal modeling · 3D CNN · VideoMAE · V-JEPA2 · compared all</text>
 
-<rect x="20" y="870" width="860" height="52" rx="8" fill="#0c1624" stroke="#1e3050" stroke-width="1"/>
-<text x="36" y="890" font-family="monospace" font-size="14" fill="#39d353">✓</text>
-<text x="58" y="890" font-family="monospace" font-size="11" fill="#e6edf3">HI-MobileNet — rare skin disease diagnosis beats all baselines</text>
-<text x="762" y="890" font-family="monospace" font-size="9" fill="#39d353">[DONE]</text>
-<text x="58" y="910" font-family="monospace" font-size="9" fill="#4a6080">Lightweight transfer learning · limited data · Harlequin Ichthyosis</text>
+<rect x="20" y="864" width="860" height="50" rx="8" fill="#0c1428" stroke="#172040" stroke-width="1"/>
+<text x="34" y="883" font-family="monospace" font-size="13" fill="#00e87a">✓</text>
+<text x="56" y="883" font-family="monospace" font-size="10" fill="#e0eaff">HI-MobileNet — rare skin disease diagnosis beats all baselines</text>
+<text x="768" y="883" font-family="monospace" font-size="9" fill="#00e87a">[DONE]</text>
+<text x="56" y="902" font-family="monospace" font-size="8" fill="#3a5070">Lightweight transfer learning · limited data · Harlequin Ichthyosis</text>
 
-<rect x="20" y="930" width="860" height="52" rx="8" fill="#0c1624" stroke="#3a8aff" stroke-width="1"/>
-<text x="36" y="950" font-family="monospace" font-size="14" fill="#f0c060">►</text>
-<text x="58" y="950" font-family="monospace" font-size="11" fill="#e6edf3">KIBO — gamified career + skill platform · 99.3% test pass rate</text>
-<text x="762" y="950" font-family="monospace" font-size="9" fill="#3a8aff">[ACTIVE]</text>
-<text x="58" y="970" font-family="monospace" font-size="9" fill="#4a6080">React · TypeScript · Supabase · PostgreSQL · WebSockets · Judge0</text>
+<rect x="20" y="921" width="860" height="50" rx="8" fill="#0c1428" stroke="#00d4ff" stroke-width="1"/>
+<text x="34" y="940" font-family="monospace" font-size="13" fill="#ffd060">►</text>
+<text x="56" y="940" font-family="monospace" font-size="10" fill="#e0eaff">KIBO — gamified career + skill platform · high test pass rate</text>
+<text x="768" y="940" font-family="monospace" font-size="9" fill="#00d4ff">[ACTIVE]</text>
+<text x="56" y="959" font-family="monospace" font-size="8" fill="#3a5070">React · TypeScript · Supabase · PostgreSQL · WebSockets · Judge0</text>
 
-<rect x="20" y="990" width="860" height="52" rx="8" fill="#0c1624" stroke="#3a8aff" stroke-width="1"/>
-<text x="36" y="1010" font-family="monospace" font-size="14" fill="#f0c060">►</text>
-<text x="58" y="1010" font-family="monospace" font-size="11" fill="#e6edf3">H-CoAtNet — hybrid CNN+Transformer beats Swin Transformer + ViT</text>
-<text x="762" y="1010" font-family="monospace" font-size="9" fill="#3a8aff">[ACTIVE]</text>
-<text x="58" y="1030" font-family="monospace" font-size="9" fill="#4a6080">PyTorch from scratch · rare disease · 1,580 imgs · 5 classes · imbalanced</text>
+<rect x="20" y="978" width="860" height="50" rx="8" fill="#0c1428" stroke="#00d4ff" stroke-width="1"/>
+<text x="34" y="997" font-family="monospace" font-size="13" fill="#ffd060">►</text>
+<text x="56" y="997" font-family="monospace" font-size="10" fill="#e0eaff">H-CoAtNet — hybrid CNN+Transformer outperforms Swin+ViT</text>
+<text x="768" y="997" font-family="monospace" font-size="9" fill="#00d4ff">[ACTIVE]</text>
+<text x="56" y="1016" font-family="monospace" font-size="8" fill="#3a5070">PyTorch from scratch · rare disease · 1,580 imgs · 5 classes</text>
 
-<rect x="20" y="1050" width="860" height="22" rx="6" fill="#100828" stroke="#a040ff" stroke-width="1.2"/>
-<text x="36" y="1065" font-family="monospace" font-size="11" fill="#a040ff">◈</text>
-<text x="56" y="1065" font-family="monospace" font-size="10" fill="#a040ff">MAIN QUEST: Master Theoretical Computer Science · algorithms · structure · elegance</text>
-<text class="bk" x="852" y="1065" font-family="monospace" font-size="10" fill="#a040ff">▮</text>
+<rect x="20" y="1035" width="860" height="36" rx="7" fill="#0e0820" stroke="#b040ff" stroke-width="1.4"/>
+<text x="34" y="1057" font-family="monospace" font-size="11" fill="#b040ff">◈</text>
+<text x="54" y="1057" font-family="monospace" font-size="10" fill="#b040ff">MAIN QUEST: Master Theoretical CS · algorithms · structure · elegance</text>
+<text class="bk" x="854" y="1057" font-family="monospace" font-size="10" fill="#b040ff">▮</text>
 
-<!-- ── BOTTOM TICKER ── -->
-<rect x="12" y="1082" width="876" height="2" fill="#1a2e48"/>
-<rect x="12" y="1084" width="876" height="32" fill="#06090e"/>
-<text x="20" y="1105" font-family="monospace" font-size="10" fill="#3a8aff">∇ ►</text>
+<!-- TICKER -->
+<rect x="11" y="1079" width="878" height="2" fill="#172040"/>
+<rect x="11" y="1081" width="878" height="39" fill="#040608"/>
+<text x="20" y="1106" font-family="monospace" font-size="10" fill="#00d4ff">∇ ►</text>
 <g clip-path="url(#tc)">
-<text y="1105" font-family="monospace" font-size="10" fill="#2a3a50" letter-spacing="1.5">  ·  Python  ·  PyTorch  ·  TensorFlow  ·  Keras  ·  OpenCV  ·  React  ·  TypeScript  ·  Supabase  ·  PostgreSQL  ·  CNN  ·  LSTM  ·  Transformers  ·  ViT  ·  MobileNetV2  ·  VideoMAE  ·  V-JEPA2  ·  Transfer Learning  ·  Computer Vision  ·  Medical Imaging  ·  TCS  ·  Algorithms  ·
+<text y="1106" font-family="monospace" font-size="10" fill="#1e3050" letter-spacing="1.5">  ·  Python  ·  PyTorch  ·  TensorFlow  ·  Keras  ·  OpenCV  ·  React  ·  TypeScript  ·  Supabase  ·  PostgreSQL  ·  CNN  ·  LSTM  ·  Transformers  ·  ViT  ·  MobileNetV2  ·  VideoMAE  ·  V-JEPA2  ·  TCS  ·  Algorithms  ·  Computer Vision  ·  Medical Imaging  ·
 <animateTransform attributeName="transform" type="translate" from="850,0" to="-3200,0" dur="35s" repeatCount="indefinite"/>
 </text>
 </g>
-<text x="760" y="1112" font-family="monospace" font-size="7" fill="#1a2a38">github.com/Beans</text>
+<text x="762" y="1112" font-family="monospace" font-size="7" fill="#12203a">github.com/Beans</text>
 </svg>
