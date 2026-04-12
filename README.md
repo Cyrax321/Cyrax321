@@ -17,7 +17,7 @@
 ---
 
 <details>
-<summary><b>📄 Paper 1 — HAR from Video · CNN-LSTM · 96.23%</b></summary>
+<summary><b>📄 Paper 1 — HAR from Video · CNN-LSTM · </b></summary>
 <br/>
 <div align="center">
 
@@ -32,7 +32,7 @@ CNN-LSTM achieved **96.23% accuracy**.
 </details>
 
 <details>
-<summary><b>🧬 Paper 2 — Rare Skin Disease · MobileNetV2 · 99.96%</b></summary>
+<summary><b>🧬 Paper 2 — Rare Skin Disease · MobileNetV2 · </b></summary>
 <br/>
 <div align="center">
 
