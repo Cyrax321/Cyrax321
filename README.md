@@ -10,7 +10,7 @@ My work spans sample efficient HAR, rare disease imaging, O(n) tree serializatio
 
 ## Research and Publications
 
-**Two IEEE papers as undergrad. All code is review only and reproducible.**
+**Two IEEE papers as undergrad.**
 
 **Paper 1: HAR from Video** - IEEE PICC 2025 - [DOI 11291542](https://ieeexplore.ieee.org/document/11291542) - Palliparambil, Shaji, Rajan  
 7 class video HAR on 1,113 videos. Tested 3D CNN, CNN-LSTM, VideoMAE, V-JEPA2. CNN-LSTM wins at 96.23% accuracy and 0.9628 F1. Point is that convolutional recurrent fusion beats transformers when data is scarce.
@@ -21,7 +21,7 @@ Harlequin Ichthyosis is ultra rare and data is tiny. MobileNetV2 with transfer l
 - Code: [H-CoAtNet-Ichthyosis-Models](https://github.com/Cyrax321/H-CoAtNet-Ichthyosis-Models)
 
 - [HAR-Sample-Efficient-Activity-Recognition](https://github.com/Cyrax321/HAR-Sample-Efficient-Activity-Recognition) - 7 class video HAR benchmark, Python, TensorFlow, PyTorch, 96.23% CNN-LSTM
-- [H-CoAtNet-Ichthyosis](https://github.com/Cyrax321/H-CoAtNet-Ichthyosis) - Hierarchical hybrid CNN-Transformer for 5 ichthyosis subtypes on 1,580 images, Python, PyTorch, timm, review only
+- [H-CoAtNet-Ichthyosis](https://github.com/Cyrax321/H-CoAtNet-Ichthyosis) - Hierarchical hybrid CNN-Transformer for 5 ichthyosis subtypes on 1,580 images, Python, PyTorch, timm, conv stem plus transformer plus SE and progressive token selection
 - [wave-coAtNet](https://github.com/Cyrax321/wave-coAtNet) - Wavelet enhanced successor with cross attention and prototype selection, 13 model kappa, 5 fold CV
 - [H-CoAtNet-Ichthyosis-Classification](https://github.com/Cyrax321/H-CoAtNet-Ichthyosis-Classification) - Training harness for WaveCoAtNet, 7 pretrained plus scratch baselines
 - [SPPS-Mac-Os-Code-Base](https://github.com/Cyrax321/SPPS-Mac-Os-Code-Base) - SPPS O(n) tree serialization on Apple M1 arm64, 8 blocks vs LOUDS, FlatBuffers, Protobuf, ESA 2026 Track E
