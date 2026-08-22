@@ -20,10 +20,6 @@ My work spans sample efficient HAR, rare disease imaging, O(n) tree serializatio
 Harlequin Ichthyosis is ultra rare and data is tiny. MobileNetV2 with transfer learning hits 99.96%. Lightweight and deployable.
 - Code: [H-CoAtNet-Ichthyosis-Models](https://github.com/Cyrax321/H-CoAtNet-Ichthyosis-Models)
 
-### Codebases
-
-Here are the reference implementations behind the papers and the SPPS program:
-
 - [HAR-Sample-Efficient-Activity-Recognition](https://github.com/Cyrax321/HAR-Sample-Efficient-Activity-Recognition) - 7 class video HAR benchmark, Python, TensorFlow, PyTorch, 96.23% CNN-LSTM
 - [H-CoAtNet-Ichthyosis](https://github.com/Cyrax321/H-CoAtNet-Ichthyosis) - Hierarchical hybrid CNN-Transformer for 5 ichthyosis subtypes on 1,580 images, Python, PyTorch, timm, review only
 - [wave-coAtNet](https://github.com/Cyrax321/wave-coAtNet) - Wavelet enhanced successor with cross attention and prototype selection, 13 model kappa, 5 fold CV
