@@ -1,3 +1,6 @@
+<img align="left" src="https://raw.githubusercontent.com/Cyrax321/Cyrax321/refs/heads/main/assets/ratatui-spin-dark.gif#gh-dark-mode-only">
+<img align="left" src="https://raw.githubusercontent.com/Cyrax321/Cyrax321/refs/heads/main/assets/ratatui-spin-light.gif#gh-light-mode-only">
+
 ### Hey!
 
 👾 I'm **Beans** - Anandhu P Shaji.
