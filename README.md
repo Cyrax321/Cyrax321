@@ -1,12 +1,12 @@
-# Hello, I'm [Beans](https://github.com/Cyrax321) 👋
+# Hello, I'm [Beans](https://github.com/Cyrax321)
 
 I'm an ML Researcher focused on computer vision, temporal modeling and agent infrastructure. I work on research that ships - benchmarking models from scratch in PyTorch and turning them into production systems in TypeScript.
 
 My work spans sample efficient HAR, rare disease imaging, O(n) tree serialization and verifiable agent infrastructure.
 
-## 🚀 My Work
+## My Work
 
-### 🔬 Research - Published
+### Research - Published
 
 **Two IEEE papers as undergrad. All code is review only and reproducible.**
 
@@ -18,7 +18,7 @@ My work spans sample efficient HAR, rare disease imaging, O(n) tree serializatio
 Harlequin Ichthyosis is ultra rare and data is tiny. MobileNetV2 with transfer learning hits 99.96%. Lightweight and deployable.
 - Code: [H-CoAtNet-Ichthyosis-Models](https://github.com/Cyrax321/H-CoAtNet-Ichthyosis-Models)
 
-### 🧬 Research Codebases
+### Research Codebases
 
 Here are the reference implementations behind the papers and the SPPS program:
 
@@ -32,7 +32,7 @@ Here are the reference implementations behind the papers and the SPPS program:
 
 SPPS extends Prufer with direction and rank. Three repos are one project with different hardware. Blocks are correctness, linearity, real data bench, LOUDS, compression, tail latency, downstream and worked examples.
 
-### 🤖 Engineering - Agent Infrastructure
+### Engineering - Agent Infrastructure
 
 My current focus is verifiable infrastructure for long running agents.
 
@@ -41,11 +41,11 @@ My current focus is verifiable infrastructure for long running agents.
 
 SNAGLINE detects. CONTINUUM recovers. Built to run together.
 
-### 💼 Kibo
+### Kibo
 
 - [kibo-v7-](https://github.com/Cyrax321/kibo-v7-) - Career orchestration platform, TypeScript, React 18, Vite, TanStack Query, PostgreSQL with Supabase Realtime sub 100ms CDC, Tailwind plus Shadcn plus Recharts for Garden graph and leaderboard, v5.0.0 MIT. Canonical of 12 plus variants.
 
-### 💻 Open Source
+### Open Source
 
 I've contributed to open source primarily through fixes on large codebases.
 
@@ -61,7 +61,7 @@ I've contributed to open source primarily through fixes on large codebases.
 
 Plus 20 cleanups: floordiv MLIR, logsumexp, reciprocal involution, numpy cross XLA, sparse adagrad, speech commands and typo sweeps. Browse at `github.com/Cyrax321/tensorflow/tree/fix-weighted-moments-tensor-axes`
 
-## 📫 Get in Touch
+## Get in Touch
 
 - Portfolio: https://sx3svi1pkrbco9gt.vercel.app/
 - LinkedIn: https://linkedin.com/in/anandhupshaji
