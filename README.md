@@ -1,3 +1,7 @@
+<style>
+@keyframes blink { 0%,100% { opacity: 1 } 50% { opacity: 0.15 } }
+</style>
+
 # Hello, I'm [Beans](https://github.com/Cyrax321)
 
 I'm an ML Researcher focused on computer vision, temporal modeling and agent infrastructure. I work on research that ships - benchmarking models from scratch in PyTorch and turning them into production systems in TypeScript.
@@ -6,7 +10,7 @@ My work spans sample efficient HAR, rare disease imaging, O(n) tree serializatio
 
 ## My Work
 
-### Research - Published
+### Research
 
 **Two IEEE papers as undergrad. All code is review only and reproducible.**
 
@@ -32,7 +36,7 @@ Here are the reference implementations behind the papers and the SPPS program:
 
 SPPS extends Prufer with direction and rank. Three repos are one project with different hardware. Blocks are correctness, linearity, real data bench, LOUDS, compression, tail latency, downstream and worked examples.
 
-### Engineering - Agent Infrastructure
+### Engineering - Agent Infrastructure <span style="display:inline-block;width:8px;height:8px;background:#22c55e;border-radius:50%;animation:blink 1s step-end infinite;vertical-align:middle;margin-left:6px"></span> <span style="font-size:12px;color:#22c55e;animation:blink 1s step-end infinite">Currently shipping</span>
 
 My current focus is verifiable infrastructure for long running agents.
 
