@@ -8,7 +8,7 @@ I'm an ML Researcher focused on computer vision, temporal modeling and agent inf
 
 My work spans sample efficient HAR, rare disease imaging, O(n) tree serialization and verifiable agent infrastructure.
 
-## Research
+## Research and Publications
 
 **Two IEEE papers as undergrad. All code is review only and reproducible.**
 
