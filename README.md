@@ -25,9 +25,11 @@ My work spans sample efficient HAR, rare disease imaging, O(n) tree serializatio
 
 SPPS extends Prufer with direction and rank. Three repos are one project with different hardware. Blocks are correctness, linearity, real data bench, LOUDS, compression, tail latency, downstream and worked examples.
 
-### Engineering - Agent Infrastructure <img src="assets/blinking-dot.gif" width="10" height="10" alt="live" style="vertical-align:middle;margin-left:6px"> <span style="font-size:12px;color:#22c55e">Currently shipping</span>
+### Engineering - Agent Infrastructure
 
 My current focus is verifiable infrastructure for long running agents.
+
+#### <span style="animation:blink 1s step-end infinite;color:#22c55e">Currently shipping</span> <img src="assets/blinking-dot.gif" width="10" height="10" alt="live" style="vertical-align:middle">
 
 - [CONTINUUM](https://github.com/Cyrax321/CONTINUUM) - Verifiable semantic recovery for long running agents. 19 stars, 15 forks, Apache 2.0, Python 3.11, [demo](https://continuum-nu-six.vercel.app). Semantic checkpoints not transcript dumps, hash chained log with 32 event types, MCP server with 10 tools deny by default, adapters for Generic Python, OpenAI Agents SDK, LangGraph, LangChain, Docker, K8s and Browser. Verified on Claude Code Opus 4.8 with 7 of 7 mechanics and 1038 tests passing.
 - [SNAGLINE](https://github.com/Cyrax321/SNAGLINE) - Lightweight zero dependency realtime failure detection. 4 stars, MIT, Python 3.10. O(1) per step about 1 microsecond, fail open, loops, cascades and CUSUM, median 1.9 microsecond per step over 200k steps.
