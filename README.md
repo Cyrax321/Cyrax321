@@ -12,6 +12,9 @@ My work spans sample efficient HAR, rare disease imaging, O(n) tree serializatio
 
 **Two IEEE papers as undergrad.**
 
+- HAR from Video - Deep Temporal Representation Learning for Sample-Efficient HAR - IEEE PICC 2025 - DOI 11291542 - [ieee](https://ieeexplore.ieee.org/document/11291542) - 7 class video HAR on 1,113 videos, CNN-LSTM 96.23% and 0.9628 F1 - Code: [HAR-Sample-Efficient-Activity-Recognition](https://github.com/Cyrax321/HAR-Sample-Efficient-Activity-Recognition)
+- HI-MobileNet - Lightweight DL for Harlequin Ichthyosis - IEEE - DOI 11332605 - [ieee](https://ieeexplore.ieee.org/document/11332605) - MobileNetV2 99.96%, lightweight and deployable - Code: [H-CoAtNet-Ichthyosis-Models](https://github.com/Cyrax321/H-CoAtNet-Ichthyosis-Models)
+
 - [HAR-Sample-Efficient-Activity-Recognition](https://github.com/Cyrax321/HAR-Sample-Efficient-Activity-Recognition) - 7 class video HAR benchmark, Python, TensorFlow, PyTorch, 96.23% CNN-LSTM
 - [H-CoAtNet-Ichthyosis](https://github.com/Cyrax321/H-CoAtNet-Ichthyosis) - Hierarchical hybrid CNN-Transformer for 5 ichthyosis subtypes on 1,580 images, Python, PyTorch, timm, conv stem plus transformer plus SE and progressive token selection
 - [wave-coAtNet](https://github.com/Cyrax321/wave-coAtNet) - Wavelet enhanced successor with cross attention and prototype selection, 13 model kappa, 5 fold CV
