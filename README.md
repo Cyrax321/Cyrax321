@@ -23,7 +23,7 @@ I'm an ML Researcher focused on computer vision, temporal modeling and agent inf
 #### <span style="animation:blink 1s step-end infinite;color:#22c55e">Currently shipping</span> <img src="assets/blinking-dot.gif" width="10" height="10" alt="live" style="vertical-align:middle">
 - [CONTINUUM](https://github.com/Cyrax321/CONTINUUM) - Verifiable semantic recovery for long running agents. 19 stars, 15 forks, Apache 2.0, Python 3.11. Semantic checkpoints not transcript dumps, hash chained log with 32 event types, MCP server with 10 tools deny by default. Verified on Claude Code Opus 4.8 with 7 of 7 mechanics and 1038 tests passing
 - [SNAGLINE](https://github.com/Cyrax321/SNAGLINE) - Lightweight zero dependency realtime failure detection. 4 stars, MIT, Python 3.10. O(1) per step about 1 microsecond, fail open, loops, cascades and CUSUM, median 1.9 microsecond per step over 200k steps
-### Kibo
+#### Kibo
 - [kibo-v7-](https://github.com/Cyrax321/kibo-v7-) - Career orchestration platform, TypeScript, React 18, Vite, TanStack Query, PostgreSQL with Supabase Realtime sub 100ms CDC, Tailwind plus Shadcn plus Recharts for Garden graph and leaderboard, v5.0.0 MIT
 ### Open Source
 - [tensorflow](https://github.com/tensorflow/tensorflow) - An Open Source ML Framework - 197,312 stars, 76,097 forks. My fork [Cyrax321/tensorflow](https://github.com/Cyrax321/tensorflow) has 25 fixes
