@@ -44,35 +44,41 @@ SNAGLINE detects. CONTINUUM recovers. Built to run together.
 
 I've contributed to open source primarily through fixes on large codebases.
 
-- [tensorflow](https://github.com/Cyrax321/tensorflow) - Fork of tensorflow/tensorflow, 25 fix branches, branch stage behind upstream 1793 on master as of Aug 2026. Ranked by weight.
+- [tensorflow](https://github.com/Cyrax321/tensorflow) - Fork of tensorflow/tensorflow, 25 fix branches, branch stage behind upstream 1793 on master as of Aug 2026
+
+- fix-weighted-moments-tensor-axes - [#122402](https://github.com/tensorflow/tensorflow/pull/122402) - Fix TypeError when axes is Tensor or ndarray
+- fix-linalg-det-singular-gradient - [#122823](https://github.com/tensorflow/tensorflow/pull/122823) - Fix singular crash with SVD
+- fix-topk-grad-int64-dtype - [branch](https://github.com/Cyrax321/tensorflow/tree/fix-topk-grad-int64-dtype) - Fix hardcoded int32 offset for top_k
+- fix-grappler-argmax-saturating-ops - [#122826](https://github.com/tensorflow/tensorflow/pull/122826) - Fix saturating ops in float32
+- fix-igamma-domain-nan - [#124927](https://github.com/tensorflow/tensorflow/pull/124927) - Fix NaN handling for igamma
 
 <details>
-<summary>View all 24 TensorFlow fixes ranked - PR links</summary>
+<summary>View all 24 fixes</summary>
 
-- 1. fix-weighted-moments-tensor-axes - [#122402](https://github.com/tensorflow/tensorflow/pull/122402) - Fix TypeError when axes is Tensor or ndarray
-- 2. fix-linalg-det-singular-gradient - [#122823](https://github.com/tensorflow/tensorflow/pull/122823) - Fix singular crash with SVD
-- 3. fix-topk-grad-int64-dtype - [branch](https://github.com/Cyrax321/tensorflow/tree/fix-topk-grad-int64-dtype) - Fix hardcoded int32 offset for top_k, branch only
-- 4. fix-grappler-argmax-saturating-ops - [#122826](https://github.com/tensorflow/tensorflow/pull/122826) - Fix saturating ops in float32
-- 5. fix-igamma-domain-nan - [#124927](https://github.com/tensorflow/tensorflow/pull/124927) - Fix NaN handling for igamma
-- 6. fix-grappler-reciprocal-involution - [#123195](https://github.com/tensorflow/tensorflow/pull/123195) - Exact tensor equality for reciprocal
-- 7. fix-floordiv-negative-infinity - [#123862](https://github.com/tensorflow/tensorflow/pull/123862) - MLIR FloorDiv infinity correction
-- 8. fix-resource-sparse-adagrad-dtype-mismatch - [#124233](https://github.com/tensorflow/tensorflow/pull/124233) - Validate dtypes in training ops
-- 9. fix-xla-transpose-negative-perm - [#124586](https://github.com/tensorflow/tensorflow/pull/124586) - Normalize negative perm in XLA
-- 10. fix-xla-tensorarray-unstack-scalar - [#124929](https://github.com/tensorflow/tensorflow/pull/124929) - Scatter and disable control flow
-- 11. fix-numpy-cross-xla-static-shape - [#124588](https://github.com/tensorflow/tensorflow/pull/124588) - Static last dim size
-- 12. fix-mlir-reciprocal-involution - [#123282](https://github.com/tensorflow/tensorflow/pull/123282) - Float test coverage
-- 13. fix-igamma-grad-nan-boundary - [#123803](https://github.com/tensorflow/tensorflow/pull/123803) - Run Jacobian test in graph and eager
-- 14. fix-cumulative-logsumexp-nan - [#115554](https://github.com/tensorflow/tensorflow/pull/115554) - Fix NaN for plus infinity
-- 15. fix-speech-commands-exception-types - [#117858](https://github.com/tensorflow/tensorflow/pull/117858) - Assert specific exception types
-- 16. fix-speech-commands-python-idioms - [#117894](https://github.com/tensorflow/tensorflow/pull/117894) - Update recognize_commands idioms
-- 17. fix-tools-exception-types - [#117895](https://github.com/tensorflow/tensorflow/pull/117895) - Update setup.py
-- 18. fix-generic-exceptions-python - [#117860](https://github.com/tensorflow/tensorflow/pull/117860) - Generic Exception to specific types
-- 19. fix-cmake-overridable-fetchcontent-doc - [#124407](https://github.com/tensorflow/tensorflow/pull/124407) - Fix override comment
-- 20. fix-doc-typos - [#124450](https://github.com/tensorflow/tensorflow/pull/124450) - Fix docstring typos
-- 21. fix-misc-typos - [#115560](https://github.com/tensorflow/tensorflow/pull/115560) - Fix ouput accomodate typos
-- 22. fix-posixpath-sys-path - [#115551](https://github.com/tensorflow/tensorflow/pull/115551) - Fix PosixPath in sys.path
-- 23. fix/weighted-moments-tensor-axes - [#122402](https://github.com/tensorflow/tensorflow/pull/122402) - Duplicate of rank 1
-- 24. revert-115560-fix-misc-typos - [branch](https://github.com/Cyrax321/tensorflow/tree/revert-115560-fix-misc-typos) - Revert misc typos
+- fix-weighted-moments-tensor-axes - [#122402](https://github.com/tensorflow/tensorflow/pull/122402) - Fix TypeError when axes is Tensor or ndarray
+- fix-linalg-det-singular-gradient - [#122823](https://github.com/tensorflow/tensorflow/pull/122823) - Fix singular crash with SVD
+- fix-topk-grad-int64-dtype - [branch](https://github.com/Cyrax321/tensorflow/tree/fix-topk-grad-int64-dtype) - Fix hardcoded int32 offset for top_k
+- fix-grappler-argmax-saturating-ops - [#122826](https://github.com/tensorflow/tensorflow/pull/122826) - Fix saturating ops in float32
+- fix-igamma-domain-nan - [#124927](https://github.com/tensorflow/tensorflow/pull/124927) - Fix NaN handling for igamma
+- fix-grappler-reciprocal-involution - [#123195](https://github.com/tensorflow/tensorflow/pull/123195) - Exact tensor equality for reciprocal
+- fix-floordiv-negative-infinity - [#123862](https://github.com/tensorflow/tensorflow/pull/123862) - MLIR FloorDiv infinity correction
+- fix-resource-sparse-adagrad-dtype-mismatch - [#124233](https://github.com/tensorflow/tensorflow/pull/124233) - Validate dtypes in training ops
+- fix-xla-transpose-negative-perm - [#124586](https://github.com/tensorflow/tensorflow/pull/124586) - Normalize negative perm in XLA
+- fix-xla-tensorarray-unstack-scalar - [#124929](https://github.com/tensorflow/tensorflow/pull/124929) - Scatter and disable control flow
+- fix-numpy-cross-xla-static-shape - [#124588](https://github.com/tensorflow/tensorflow/pull/124588) - Static last dim size
+- fix-mlir-reciprocal-involution - [#123282](https://github.com/tensorflow/tensorflow/pull/123282) - Float test coverage
+- fix-igamma-grad-nan-boundary - [#123803](https://github.com/tensorflow/tensorflow/pull/123803) - Run Jacobian test in graph and eager
+- fix-cumulative-logsumexp-nan - [#115554](https://github.com/tensorflow/tensorflow/pull/115554) - Fix NaN for plus infinity
+- fix-speech-commands-exception-types - [#117858](https://github.com/tensorflow/tensorflow/pull/117858) - Assert specific exception types
+- fix-speech-commands-python-idioms - [#117894](https://github.com/tensorflow/tensorflow/pull/117894) - Update recognize_commands idioms
+- fix-tools-exception-types - [#117895](https://github.com/tensorflow/tensorflow/pull/117895) - Update setup.py
+- fix-generic-exceptions-python - [#117860](https://github.com/tensorflow/tensorflow/pull/117860) - Generic Exception to specific types
+- fix-cmake-overridable-fetchcontent-doc - [#124407](https://github.com/tensorflow/tensorflow/pull/124407) - Fix override comment
+- fix-doc-typos - [#124450](https://github.com/tensorflow/tensorflow/pull/124450) - Fix docstring typos
+- fix-misc-typos - [#115560](https://github.com/tensorflow/tensorflow/pull/115560) - Fix ouput accomodate typos
+- fix-posixpath-sys-path - [#115551](https://github.com/tensorflow/tensorflow/pull/115551) - Fix PosixPath in sys.path
+- fix/weighted-moments-tensor-axes - [#122402](https://github.com/tensorflow/tensorflow/pull/122402) - Duplicate of rank 1
+- revert-115560-fix-misc-typos - [branch](https://github.com/Cyrax321/tensorflow/tree/revert-115560-fix-misc-typos) - Revert misc typos
 
 </details>
 
