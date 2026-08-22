@@ -8,9 +8,7 @@ I'm an ML Researcher focused on computer vision, temporal modeling and agent inf
 
 My work spans sample efficient HAR, rare disease imaging, O(n) tree serialization and verifiable agent infrastructure.
 
-## My Work
-
-### Research
+## Research
 
 **Two IEEE papers as undergrad. All code is review only and reproducible.**
 
@@ -22,7 +20,7 @@ My work spans sample efficient HAR, rare disease imaging, O(n) tree serializatio
 Harlequin Ichthyosis is ultra rare and data is tiny. MobileNetV2 with transfer learning hits 99.96%. Lightweight and deployable.
 - Code: [H-CoAtNet-Ichthyosis-Models](https://github.com/Cyrax321/H-CoAtNet-Ichthyosis-Models)
 
-### Research Codebases
+### Codebases
 
 Here are the reference implementations behind the papers and the SPPS program:
 
