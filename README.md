@@ -3,7 +3,7 @@
 
 ### Hey!
 
-👾 I'm **Beans** - Anandhu P Shaji.
+👾 I'm **Beans**.
 
 🔬 ML researcher with 2x IEEE as undergrad. I work on computer vision, temporal modeling and agent infrastructure. I cook at [Cyrax321](https://github.com/Cyrax321).
 
@@ -21,7 +21,7 @@ Current streak is **4** days, max streak is **19** days.
 #### 🌀 Projects
 
 | **Research** | **Engineering** |
-|---|---|
+| :--- | :--- |
 | • [HAR-Sample-Efficient-Activity-Recognition](https://github.com/Cyrax321/HAR-Sample-Efficient-Activity-Recognition) - 7 class video HAR benchmark, 1,113 videos, CNN-LSTM 96.23% vs 3D CNN, VideoMAE, V-JEPA2. IEEE PICC 2025 [11291542](https://ieeexplore.ieee.org/document/11291542)<br>• [H-CoAtNet-Ichthyosis](https://github.com/Cyrax321/H-CoAtNet-Ichthyosis) - Hierarchical hybrid CNN-Transformer for 5 ichthyosis subtypes on 1,580 images, review only<br>• [wave-coAtNet](https://github.com/Cyrax321/wave-coAtNet) - Wavelet enhanced successor with cross attention and prototype selection, 13 model kappa, 5 fold CV<br>• [H-CoAtNet-Ichthyosis-Classification](https://github.com/Cyrax321/H-CoAtNet-Ichthyosis-Classification) - Training harness for WaveCoAtNet, 7 pretrained plus scratch baselines<br>• [H-CoAtNet-Ichthyosis-Models](https://github.com/Cyrax321/H-CoAtNet-Ichthyosis-Models) - Original docx training code for HI-MobileNet, IEEE [11332605](https://ieeexplore.ieee.org/document/11332605) 99.96% MobileNetV2<br>• [SPPS-Mac-Os-Code-Base](https://github.com/Cyrax321/SPPS-Mac-Os-Code-Base) - SPPS O(n) tree serialization on Apple M1 arm64, 8 blocks vs LOUDS, FlatBuffers, Protobuf<br>• [spps-linux-experiment-results](https://github.com/Cyrax321/spps-linux-experiment-results) - SPPS cross platform validation on EPYC 7763 Ubuntu 24.04, 12006 of 12006 PASS<br>• [spps-experiments](https://github.com/Cyrax321/spps-experiments) - SPPS ESA 2026 Track E on Ryzen 5 7235HS, bijective O(n) | • [CONTINUUM](https://github.com/Cyrax321/CONTINUUM) - Verifiable semantic recovery for long running agents, 19 stars, 15 forks, Apache 2.0, Python 3.11, [demo](https://continuum-nu-six.vercel.app) - semantic checkpoints, hash chained log, MCP 10 tools, 1038 tests<br>• [SNAGLINE](https://github.com/Cyrax321/SNAGLINE) - Lightweight zero dependency realtime failure detection, 4 stars, MIT, Python 3.10 - loops, cascades, CUSUM, 1 microsecond per step<br>• [kibo-v7-](https://github.com/Cyrax321/kibo-v7-) - Career orchestration platform, TypeScript, React 18, Vite, TanStack Query, Supabase Realtime, sub 100ms CDC, canonical of 12 plus variants<br>• [tensorflow](https://github.com/Cyrax321/tensorflow) - Fork of tensorflow/tensorflow, 25 fix branches - weighted_moments a7a234b, linalg.det 2033cc7, top_k d511f44, Grappler 1581c76, igamma 713375a plus 20 cleanups |
 
 Tip: Run `gh repo clone Cyrax321/CONTINUUM` to try the recovery demo.
@@ -29,7 +29,7 @@ Tip: Run `gh repo clone Cyrax321/CONTINUUM` to try the recovery demo.
 #### 🛠️ What am I working on?
 
 | **Category** | **Description** |
-|---|---|
+| :--- | :--- |
 | **Researching** | [SPPS](https://github.com/Cyrax321/SPPS-Mac-Os-Code-Base) - Signed Positional Prufer Sequences, O(n) tree serialization. ESA 2026 Track E. |
 | **Maintaining** | [CONTINUUM](https://github.com/Cyrax321/CONTINUUM) - Agent recovery. [SNAGLINE](https://github.com/Cyrax321/SNAGLINE) - Agent failure detection. |
 | **Building** | [Kibo](https://github.com/Cyrax321/kibo-v7-) - Gamified career platform with Realtime, Garden graph and leaderboard. |
