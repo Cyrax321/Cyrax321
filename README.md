@@ -1,11 +1,7 @@
 <div align="center">
-  <img src="assets/banner.svg" width="1280" alt="Anandhu P Shaji - ML Researcher"/>
-</div>
-
-<div align="center">
 
 # Anandhu P Shaji - Beans
-**ML Researcher · BTech CSE, CEM Munnar (APJ KTU) · Joint Secretary, ACSES**
+**ML Researcher · Computer Vision · Theoretical CS · Agent Infrastructure**
 
 <a href="https://linkedin.com/in/anandhupshaji"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
 <a href="mailto:cyrax8590@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
@@ -23,18 +19,12 @@
 
 ---
 
-## Founder Note
-
-I build research that ships. Pre-final CSE, I benchmark models from scratch in PyTorch and turn them into production systems in TypeScript. Goal is simple: master Theoretical CS and ship useful infrastructure. `i love learning`.
-
----
-
 ## Research
 
 **Two IEEE papers as undergrad. All code is review only and reproducible.**
 
 **Paper 1: HAR from Video** - IEEE PICC 2025 - [DOI 11291542](https://ieeexplore.ieee.org/document/11291542) - Palliparambil, Shaji, Rajan  
-7 class video HAR on 1,113 videos. Tested 3D CNN, CNN-LSTM, VideoMAE, V-JEPA2. CNN-LSTM wins at 96.23% accuracy and 0.9628 F1. Point is that convolutional recurrent fusion beats transformers when data is scarce. Code: [HAR-Sample-Efficient-Activity-Recognition](https://github.com/Cyrax321/HAR-Sample-Efficient-Activity-Recognition)
+7 class video HAR on 1,113 videos. Tested 3D CNN, CNN-LSTM, VideoMAE, V-JEPA2. CNN-LSTM wins at 96.23% accuracy and 0.9628 F1. Convolutional recurrent fusion beats transformers when data is scarce. Code: [HAR-Sample-Efficient-Activity-Recognition](https://github.com/Cyrax321/HAR-Sample-Efficient-Activity-Recognition)
 
 **Paper 2: HI-MobileNet** - IEEE - [DOI 11332605](https://ieeexplore.ieee.org/document/11332605)  
 Harlequin Ichthyosis is ultra rare and data is tiny. MobileNetV2 with transfer learning hits 99.96%. Lightweight and deployable. Code ref: [H-CoAtNet-Ichthyosis-Models](https://github.com/Cyrax321/H-CoAtNet-Ichthyosis-Models)
@@ -128,7 +118,7 @@ Python · PyTorch · TensorFlow · C++ · TypeScript · React · PostgreSQL · S
 ![Stats](https://github-readme-stats.vercel.app/api?username=Cyrax321&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Cyrax321&layout=compact&theme=tokyonight&hide_border=true)
 
-**Portfolio** https://sx3svi1pkrbco9gt.vercel.app/ · **LinkedIn** https://linkedin.com/in/anandhupshaji · **Email** cyrax8590@gmail.com · CEM Kerala
+**Portfolio** https://sx3svi1pkrbco9gt.vercel.app/ · **LinkedIn** https://linkedin.com/in/anandhupshaji · **Email** cyrax8590@gmail.com
 
 <sub>Last updated Aug 2026 · github.com/Cyrax321</sub>
 
