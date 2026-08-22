@@ -44,7 +44,7 @@ SNAGLINE detects. CONTINUUM recovers. Built to run together.
 
 I've contributed to open source primarily through fixes on large codebases.
 
-- [tensorflow](https://github.com/Cyrax321/tensorflow) - Fork of tensorflow/tensorflow, 25 fix branches, branch stage behind upstream 1793 on master as of Aug 2026
+- [tensorflow](https://github.com/tensorflow/tensorflow) - An Open Source Machine Learning Framework for Everyone - 197,312 stars, 76,097 forks upstream. My fork [Cyrax321/tensorflow](https://github.com/Cyrax321/tensorflow) has 25 fix branches, branch stage behind upstream 1793 on master as of Aug 2026
 
 - fix-weighted-moments-tensor-axes - [#122402](https://github.com/tensorflow/tensorflow/pull/122402) - Fix TypeError when axes is Tensor or ndarray
 - fix-linalg-det-singular-gradient - [#122823](https://github.com/tensorflow/tensorflow/pull/122823) - Fix singular crash with SVD
