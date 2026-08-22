@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0f1e"/>
+      <stop offset="100%" stop-color="#111a33"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="320" rx="20" fill="url(#bg)" stroke="#1e2a4a" stroke-width="1"/>
+  <!-- accent line -->
+  <rect x="48" y="48" width="4" height="224" rx="2" fill="url(#accent)"/>
+  <text x="72" y="88" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" fill="#64748b" letter-spacing="3">ANANDHU P SHAJI  ·  BEANS  ·  CYRAX321</text>
+  <text x="72" y="135" font-family="Inter, Helvetica, Arial, sans-serif" font-size="42" fill="#f1f5f9" font-weight="700">ML Researcher  ·  Engineer</text>
+  <text x="72" y="170" font-family="Inter, Helvetica, Arial, sans-serif" font-size="16" fill="#94a3b8">Computer Vision · Temporal Modeling · Theoretical CS · Agent Infrastructure</text>
+  <text x="72" y="205" font-family="monospace" font-size="12" fill="#475569">BTech CSE (Pre-Final) · College of Engineering Munnar, APJ KTU  ·  Joint Secretary, ACSES  ·  2× IEEE Published</text>
+  <g font-family="monospace" font-size="11" fill="#64748b">
+    <text x="72" y="250">CONTINUUM 19★  ·  SNAGLINE 4★  ·  SPPS ESA 2026  ·  HAR 96.23%  ·  HI-MobileNet 99.96%  ·  Kibo</text>
+  </g>
+  <g font-family="monospace" font-size="11" fill="#334155">
+    <text x="72" y="280">github.com/Cyrax321  ·  linkedin.com/in/anandhupshaji  ·  sx3svi1pkrbco9gt.vercel.app</text>
+  </g>
+  <!-- subtle dot grid -->
+  <circle cx="1150" cy="80" r="1.5" fill="#1e2a4a"/><circle cx="1180" cy="80" r="1.5" fill="#1e2a4a"/><circle cx="1210" cy="80" r="1.5" fill="#1e2a4a"/>
+</svg>
