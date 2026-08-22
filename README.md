@@ -64,7 +64,4 @@ I'm an ML Researcher focused on computer vision, temporal modeling and agent inf
 
 ## Get in Touch
 
-- Portfolio: https://sx3svi1pkrbco9gt.vercel.app/
-- LinkedIn: https://linkedin.com/in/anandhupshaji
-- Email: cyrax8590@gmail.com
-- GitHub: https://github.com/Cyrax321
+Portfolio: https://sx3svi1pkrbco9gt.vercel.app/ · LinkedIn: https://linkedin.com/in/anandhupshaji · Email: cyrax8590@gmail.com · GitHub: https://github.com/Cyrax321
