@@ -26,6 +26,23 @@ Current streak is **4** days, max streak is **19** days.
 
 Tip: Run `gh repo clone Cyrax321/CONTINUUM` to try the recovery demo.
 
+#### 📈 Contributions
+
+![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Cyrax321&bg_color=0d1117&color=4e9bff&line=4e9bff&point=ffffff&hide_border=true)
+![Contribs](https://github-contributor-stats.vercel.app/api?username=Cyrax321&show_icons=true&theme=tokyonight&hide_border=true)
+
+**TensorFlow** - [Cyrax321/tensorflow](https://github.com/Cyrax321/tensorflow) - 25 fix branches on tensorflow/tensorflow
+
+| Fix | Commit | Summary |
+| :--- | :--- | :--- |
+| tf.nn.weighted_moments | a7a234b | Fix TypeError when axes is Tensor or ndarray. Normalize via constant_value and tolist. Add 3 tests. Fix Bazel deps |
+| tf.linalg.det gradient | 2033cc7 | Fix singular crash. Use SVD det times A inverse H plus pinv instead of matrix_inverse |
+| top_k int64 | d511f44 | Fix hardcoded int32 offset. Use dynamic index_type |
+| Grappler ArgMax | 1581c76 | Fix wrong results for saturating ops in float32 |
+| igamma NaN | 713375a | Fix a less equal 0 to not a greater than 0 for NaN. Add graph and eager Jacobian test |
+
+Plus 20 cleanups: floordiv MLIR, logsumexp, reciprocal involution, numpy cross XLA, sparse adagrad, speech commands, typo sweeps, cmake. Browse at `github.com/Cyrax321/tensorflow/tree/fix-weighted-moments-tensor-axes`
+
 #### 🛠️ What am I working on?
 
 | **Category** | **Description** |
