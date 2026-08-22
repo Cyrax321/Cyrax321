@@ -25,7 +25,7 @@ My work spans sample efficient HAR, rare disease imaging, O(n) tree serializatio
 
 SPPS extends Prufer with direction and rank. Three repos are one project with different hardware. Blocks are correctness, linearity, real data bench, LOUDS, compression, tail latency, downstream and worked examples.
 
-### Engineering - Agent Infrastructure <span style="display:inline-block;width:8px;height:8px;background:#22c55e;border-radius:50%;animation:blink 1s step-end infinite;vertical-align:middle;margin-left:6px"></span> <span style="font-size:12px;color:#22c55e;animation:blink 1s step-end infinite">Currently shipping</span>
+### Engineering - Agent Infrastructure <img src="assets/blinking-dot.gif" width="10" height="10" alt="live" style="vertical-align:middle;margin-left:6px"> <span style="font-size:12px;color:#22c55e">Currently shipping</span>
 
 My current focus is verifiable infrastructure for long running agents.
 
