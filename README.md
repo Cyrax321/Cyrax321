@@ -31,10 +31,19 @@ I'm an ML Researcher focused on computer vision, temporal modeling and agent inf
   reconciliation, memory governance, tenant isolation, liveness evaluation,
   and automatic pre-compaction checkpointing**.
   
-- [SNAGLINE](https://github.com/Cyrax321/SNAGLINE) - Lightweight zero dependency realtime failure detection. 4 stars, MIT, Python 3.10. O(1) per step about 1 microsecond, fail open, loops, cascades and CUSUM, median 1.9 microsecond per step over 200k steps
+- [SNAGLINE](https://github.com/Cyrax321/SNAGLINE) - **[SNAGLINE](https://github.com/Cyrax321/SNAGLINE)**
+- Open-source, dependency-free real-time failure detection for AI agents.  
+  MIT · **11★ · 6 forks**
+  
+  Deterministic monitoring for loops, error cascades, latency anomalies,
+  goal drift, stagnation, token runaway, tool churn, silent aborts, and
+  side-effect duplication.
+  
+  **694 tests · 2.43 μs median / 27.71 μs p99** over 200,000 synthetic steps.
 #### Kibo
 - [kibo-v7-](https://github.com/Cyrax321/kibo-v7-) - Career orchestration platform, TypeScript, React 18, Vite, TanStack Query, PostgreSQL with Supabase Realtime sub 100ms CDC, Tailwind plus Shadcn plus Recharts for Garden graph and leaderboard, v5.0.0 MIT
-### Open Source
+  
+### Open Source Contributions 
 - [tensorflow](https://github.com/tensorflow/tensorflow) - An Open Source ML Framework - 197,312 stars, 76,097 forks. My fork [Cyrax321/tensorflow](https://github.com/Cyrax321/tensorflow) has 25 fixes
 - fix-weighted-moments-tensor-axes - [#122402](https://github.com/tensorflow/tensorflow/pull/122402) - Fix TypeError when axes is Tensor or ndarray. Normalize via constant_value and tolist. Add 3 tests
 - fix-linalg-det-singular-gradient - [#122823](https://github.com/tensorflow/tensorflow/pull/122823) - Fix singular crash. Use SVD det times A inverse H plus pinv instead of matrix_inverse
