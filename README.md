@@ -17,8 +17,7 @@ I'm an ML Researcher focused on computer vision, temporal modeling and agent inf
 - [spps-experiments](https://github.com/Cyrax321/spps-experiments) - ESA 2026 submission on Ryzen 5 7235HS, bijective O(n)
 ### Engineering - Agent Infrastructure
 #### <span style="color:#22c55e">Currently shipping</span> <img src="assets/blinking-dot.gif" width="10" height="10" alt="live" style="vertical-align:middle">
-- [CONTINUUM](https://github.com/Cyrax321/CONTINUUM) - **[CONTINUUM](https://github.com/Cyrax321/CONTINUUM)**  
-  Open-source infrastructure for verifiable semantic recovery of long-running AI agents.  
+- [CONTINUUM](https://github.com/Cyrax321/CONTINUUM) - Open-source infrastructure for verifiable semantic recovery of long-running AI agents.  
   Apache 2.0 · Python 3.11+ · **26★ · 33 forks**
   
   Semantic checkpoints, hash-chained event integrity, environment revalidation,
@@ -31,8 +30,7 @@ I'm an ML Researcher focused on computer vision, temporal modeling and agent inf
   reconciliation, memory governance, tenant isolation, liveness evaluation,
   and automatic pre-compaction checkpointing**.
   
-- [SNAGLINE](https://github.com/Cyrax321/SNAGLINE) - **[SNAGLINE](https://github.com/Cyrax321/SNAGLINE)**
-- Open-source, dependency-free real-time failure detection for AI agents.  
+- [SNAGLINE](https://github.com/Cyrax321/SNAGLINE) - Open-source, dependency-free real-time failure detection for AI agents.  
   MIT · **11★ · 6 forks**
   
   Deterministic monitoring for loops, error cascades, latency anomalies,
