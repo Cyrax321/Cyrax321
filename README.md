@@ -17,7 +17,20 @@ I'm an ML Researcher focused on computer vision, temporal modeling and agent inf
 - [spps-experiments](https://github.com/Cyrax321/spps-experiments) - ESA 2026 submission on Ryzen 5 7235HS, bijective O(n)
 ### Engineering - Agent Infrastructure
 #### <span style="color:#22c55e">Currently shipping</span> <img src="assets/blinking-dot.gif" width="10" height="10" alt="live" style="vertical-align:middle">
-- [CONTINUUM](https://github.com/Cyrax321/CONTINUUM) - Verifiable semantic recovery for long running agents. 19 stars, 15 forks, Apache 2.0, Python 3.11. Semantic checkpoints not transcript dumps, hash chained log with 32 event types, MCP server with 10 tools deny by default. Verified on Claude Code Opus 4.8 with 7 of 7 mechanics and 1038 tests passing
+- [CONTINUUM](https://github.com/Cyrax321/CONTINUUM) - **[CONTINUUM](https://github.com/Cyrax321/CONTINUUM)**  
+  Open-source infrastructure for verifiable semantic recovery of long-running AI agents.  
+  Apache 2.0 · Python 3.11+ · **26★ · 33 forks**
+  
+  Semantic checkpoints, hash-chained event integrity, environment revalidation,
+  provenance-aware recovery, idempotent side-effect protection, recovery
+  contracts, and a deny-by-default MCP interface with **12 tools**.
+  
+  **7/7 recovery mechanics verified** in a real Claude Code session.
+  
+  Current development spans **provenance graphs, authority lifecycle and
+  reconciliation, memory governance, tenant isolation, liveness evaluation,
+  and automatic pre-compaction checkpointing**.
+  
 - [SNAGLINE](https://github.com/Cyrax321/SNAGLINE) - Lightweight zero dependency realtime failure detection. 4 stars, MIT, Python 3.10. O(1) per step about 1 microsecond, fail open, loops, cascades and CUSUM, median 1.9 microsecond per step over 200k steps
 #### Kibo
 - [kibo-v7-](https://github.com/Cyrax321/kibo-v7-) - Career orchestration platform, TypeScript, React 18, Vite, TanStack Query, PostgreSQL with Supabase Realtime sub 100ms CDC, Tailwind plus Shadcn plus Recharts for Garden graph and leaderboard, v5.0.0 MIT
