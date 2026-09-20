@@ -38,6 +38,13 @@ I'm an ML Researcher focused on computer vision, temporal modeling and agent inf
   side-effect duplication.
   
   **694 tests · 2.43 μs median / 27.71 μs p99** over 200,000 synthetic steps.
+
+- [QwerySmith](https://github.com/Cyrax321/QwerySmith-1.0) - Production Text-to-SQL research pipeline & self-healing database agent.  
+  MIT · Python 3.10+ · Unsloth & QLoRA · **[Hugging Face Model](https://huggingface.co/Cyrax321/QwerySmith-1.0)**
+  
+  Fine-tuned Qwen3-4B on balanced multi-source distributions (b-mc2 + Gretel synthetic),
+  featuring automatic schema introspection, execution-based verification, and a self-healing
+  loop that repairs syntax and join failures against live relational databases.
 #### Kibo
 - [kibo-v7-](https://github.com/Cyrax321/kibo-v7-) - Career orchestration platform, TypeScript, React 18, Vite, TanStack Query, PostgreSQL with Supabase Realtime sub 100ms CDC, Tailwind plus Shadcn plus Recharts for Garden graph and leaderboard, v5.0.0 MIT
   
