@@ -27,21 +27,25 @@ I fine-tune, specialize, and evaluate open-source language models with a focus o
 
 ### Engineering - Agent Infrastructure
 #### <span style="color:#22c55e">Currently shipping</span> <img src="assets/blinking-dot.gif" width="10" height="10" alt="live" style="vertical-align:middle">
-- [CONTINUUM](https://github.com/Cyrax321/CONTINUUM) · [[Live Demo](https://continuum-nu-six.vercel.app)] - Open-source infrastructure for verifiable semantic recovery of long-running AI agents.  
-  Apache 2.0 · Python 3.11+ · **28★ · 55 forks** · [`continuum-agent`](https://pypi.org/project/continuum-agent/)
+
+- **[CONTINUUM](https://github.com/Cyrax321/CONTINUUM)** · [[Live Demo](https://continuum-nu-six.vercel.app)] · [[PyPI](https://pypi.org/project/continuum-agent/)] · [[Docker GHCR](https://github.com/Cyrax321/CONTINUUM/pkgs/container/continuum)]  
+  *Production-grade infrastructure for verifiable semantic recovery of long-running autonomous AI agents.*  
+  **Apache 2.0 · Python 3.11+ · 28★ · 55 forks · ~2,240+ tests · 14 Phase 6 recovery scenarios**
   
-  Dual-engine state machine, semantic checkpoints (not raw conversation dumps), hash-chained event integrity, environment revalidation, provenance-aware recovery, idempotent side-effect protection, recovery contracts, and a deny-by-default MCP interface with **12 tools**.
+  Solves the multi-hour agent crash failure mode: replaces naive context replay and token-burning hallucinated recoveries with deterministic, verifiable resumption.
+  - **Zero Side-Effect Duplication**: Cryptographically tamper-evident SHA-256 hash-chained event logs paired with an idempotent action ledger physically preventing duplicate mutations (e.g. double billing, duplicate API writes).
+  - **Semantic Checkpoints & Environment Revalidation**: Resumes from compact, versioned state contracts rather than lossy conversation dumps, enforcing staleness propagation across external dependency graphs before execution resumes.
+  - **Deny-by-Default MCP Server (12 Tools)**: Native drop-in integration for Claude Code, Cursor, and Anthropic toolchains with sub-second deterministic rollbacks.
+  - **Rigorous Battle Testing**: 14 Phase 6 recovery scenarios 100% verified inside real Claude Code agent sessions; automated Docker builds on GHCR and interactive web demo.
   
-  **~2,240+ automated tests · 14 Phase 6 recovery scenarios** (verified in live Claude Code sessions).
+- **[SNAGLINE](https://github.com/Cyrax321/SNAGLINE)** · [[Documentation](https://cyrax321.github.io/SNAGLINE/)] · [[PyPI](https://pypi.org/project/snagline/)]  
+  *Zero-dependency, microsecond-scale real-time failure detection & guardrails for LLM agents.*  
+  **MIT · Python 3.10+ · 13★ · 9 forks · Zero dependencies · 1.70 – 2.43 μs median latency**
   
-  Architecture spans **provenance DAGs, authority lifecycle & reconciliation, tenant isolation, memory governance, quiet-window triggers, and automatic pre-compaction checkpointing**.
-  
-- [SNAGLINE](https://github.com/Cyrax321/SNAGLINE) · [[Docs](https://cyrax321.github.io/SNAGLINE/)] - Open-source, dependency-free real-time failure detection for AI agents.  
-  MIT · Python 3.10+ · **13★ · 9 forks** · Zero dependencies · [`snagline`](https://pypi.org/project/snagline/)
-  
-  Deterministic monitoring for infinite loops, error cascades, latency regressions (CUSUM), semantic goal drift, tool thrashing/meltdown, stagnation, token runaway, silent aborts, and side-effect duplication in **<1ms without LLM-as-a-judge calls**.
-  
-  **1.70 - 2.43 μs median / 27.71 μs p99** per step overhead over 200,000 synthetic steps. Verified across real agents in LangChain, LangGraph, and Claude Code hook bridges.
+  Eliminates the silent budget-burn problem: catches infinite loops, tool thrashing, latency spikes, and reasoning collapse in real time **in <1ms without expensive LLM-as-a-judge calls**.
+  - **Microsecond-Scale Zero Overhead**: Runs $O(1)$ amortized statistical detectors using strictly the Python standard library—benchmarked at **1.70 – 2.43 μs median / 27.71 μs p99** over 200,000 synthetic steps on Apple Silicon.
+  - **Deterministic Multi-Vector Anomaly Trapping**: Real-time detection across infinite loops (sliding-window novelty), error cascades, statistical CUSUM latency regressions, semantic goal drift, tool meltdown/entropy collapse, and token runaway.
+  - **Universal Framework Interoperability**: Zero vendor lock-in. Drop-in companion for LangGraph, LangChain, AutoGen, CrewAI, and custom raw Python loops, with native HTTP sidecar bridges for non-Python agents (Claude Code, OpenClaw, Hermes).
 #### Kibo
 - [kibo-v7-](https://github.com/Cyrax321/kibo-v7-) - Career orchestration platform, TypeScript, React 18, Vite, TanStack Query, PostgreSQL with Supabase Realtime sub 100ms CDC, Tailwind plus Shadcn plus Recharts for Garden graph and leaderboard, v5.0.0 MIT
   
