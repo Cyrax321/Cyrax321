@@ -4,7 +4,7 @@ I'm an ML Researcher focused on computer vision, temporal modeling and agent inf
 
 ## Research and Publications
 
-**Areas: Sample-Efficient HAR · Rare Disease Imaging · Hybrid CNN-Transformer · O(n) Tree Serialization · Agent Infrastructure**
+**Areas: LLM Fine-Tuning & Text-to-SQL · Agent Infrastructure · Sample-Efficient HAR · Rare Disease Imaging · Hybrid CNN-Transformer**
 
 - HAR from Video - IEEE PICC 2025 - DOI 11291542 - [ieee](https://ieeexplore.ieee.org/document/11291542) - 7 class HAR, 1,113 videos, CNN-LSTM 96.23% - Code: [HAR-Sample-Efficient-Activity-Recognition](https://github.com/Cyrax321/HAR-Sample-Efficient-Activity-Recognition)
 - HI-MobileNet - IEEE - DOI 11332605 - [ieee](https://ieeexplore.ieee.org/document/11332605) - Harlequin Ichthyosis, MobileNetV2 99.96% - Code: [H-CoAtNet-Ichthyosis-Models](https://github.com/Cyrax321/H-CoAtNet-Ichthyosis-Models)
@@ -15,6 +15,16 @@ I'm an ML Researcher focused on computer vision, temporal modeling and agent inf
 - [SPPS-Mac-Os-Code-Base](https://github.com/Cyrax321/SPPS-Mac-Os-Code-Base) - SPPS O(n) tree serialization on Apple M1 arm64, 8 blocks vs LOUDS, FlatBuffers, Protobuf, ESA 2026 Track E
 - [spps-linux-experiment-results](https://github.com/Cyrax321/spps-linux-experiment-results) - Cross platform validation on EPYC 7763 Ubuntu 24.04, 12006 of 12006 PASS
 - [spps-experiments](https://github.com/Cyrax321/spps-experiments) - ESA 2026 submission on Ryzen 5 7235HS, bijective O(n)
+### LLM Research & Fine-Tuning
+
+I fine-tune, specialize, and evaluate open-source language models with a focus on sample efficiency, domain generalization, and deterministic SQL execution.
+
+- **[QwerySmith 1.0 & 1.1](https://github.com/Cyrax321/QwerySmith-1.0)** - Production Text-to-SQL research pipeline & self-healing database agent (Qwen3-4B + QLoRA via Unsloth).  
+  MIT · Python 3.10+ · **88.5% execution accuracy** · Balanced multi-source data mix (`b-mc2` + `gretelai`) with leak-proof evaluation splits and self-healing schema introspection.
+  - [QwerySmith-1.0 (LoRA Adapter)](https://huggingface.co/Cyrax321/QwerySmith-1.0) - 132 MB parameter-efficient adapter weights.
+  - [QwerySmith-1.0-Merged](https://huggingface.co/Cyrax321/QwerySmith-1.0-Merged) - Full 16-bit standalone model for vLLM, TGI, and Transformers.
+  - [QwerySmith-1.0-GGUF](https://huggingface.co/Cyrax321/QwerySmith-1.0-GGUF) - Quantized 4-bit (`q4_k_m`) model for local offline inference via Ollama & llama.cpp.
+
 ### Engineering - Agent Infrastructure
 #### <span style="color:#22c55e">Currently shipping</span> <img src="assets/blinking-dot.gif" width="10" height="10" alt="live" style="vertical-align:middle">
 - [CONTINUUM](https://github.com/Cyrax321/CONTINUUM) - Open-source infrastructure for verifiable semantic recovery of long-running AI agents.  
@@ -38,13 +48,6 @@ I'm an ML Researcher focused on computer vision, temporal modeling and agent inf
   side-effect duplication.
   
   **694 tests · 2.43 μs median / 27.71 μs p99** over 200,000 synthetic steps.
-
-- [QwerySmith](https://github.com/Cyrax321/QwerySmith-1.0) - Production Text-to-SQL research pipeline & self-healing database agent.  
-  MIT · Python 3.10+ · Unsloth & QLoRA · **[Hugging Face Model](https://huggingface.co/Cyrax321/QwerySmith-1.0)**
-  
-  Fine-tuned Qwen3-4B on balanced multi-source distributions (b-mc2 + Gretel synthetic),
-  featuring automatic schema introspection, execution-based verification, and a self-healing
-  loop that repairs syntax and join failures against live relational databases.
 #### Kibo
 - [kibo-v7-](https://github.com/Cyrax321/kibo-v7-) - Career orchestration platform, TypeScript, React 18, Vite, TanStack Query, PostgreSQL with Supabase Realtime sub 100ms CDC, Tailwind plus Shadcn plus Recharts for Garden graph and leaderboard, v5.0.0 MIT
   
