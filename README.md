@@ -27,27 +27,21 @@ I fine-tune, specialize, and evaluate open-source language models with a focus o
 
 ### Engineering - Agent Infrastructure
 #### <span style="color:#22c55e">Currently shipping</span> <img src="assets/blinking-dot.gif" width="10" height="10" alt="live" style="vertical-align:middle">
-- [CONTINUUM](https://github.com/Cyrax321/CONTINUUM) - Open-source infrastructure for verifiable semantic recovery of long-running AI agents.  
-  Apache 2.0 · Python 3.11+ · **26★ · 33 forks**
+- [CONTINUUM](https://github.com/Cyrax321/CONTINUUM) · [[Live Demo](https://continuum-nu-six.vercel.app)] - Open-source infrastructure for verifiable semantic recovery of long-running AI agents.  
+  Apache 2.0 · Python 3.11+ · **28★ · 55 forks** · [`continuum-agent`](https://pypi.org/project/continuum-agent/)
   
-  Semantic checkpoints, hash-chained event integrity, environment revalidation,
-  provenance-aware recovery, idempotent side-effect protection, recovery
-  contracts, and a deny-by-default MCP interface with **12 tools**.
+  Dual-engine state machine, semantic checkpoints (not raw conversation dumps), hash-chained event integrity, environment revalidation, provenance-aware recovery, idempotent side-effect protection, recovery contracts, and a deny-by-default MCP interface with **12 tools**.
   
-  **7/7 recovery mechanics verified** in a real Claude Code session.
+  **~2,240+ automated tests · 14 Phase 6 recovery scenarios** (verified in live Claude Code sessions).
   
-  Current development spans **provenance graphs, authority lifecycle and
-  reconciliation, memory governance, tenant isolation, liveness evaluation,
-  and automatic pre-compaction checkpointing**.
+  Architecture spans **provenance DAGs, authority lifecycle & reconciliation, tenant isolation, memory governance, quiet-window triggers, and automatic pre-compaction checkpointing**.
   
-- [SNAGLINE](https://github.com/Cyrax321/SNAGLINE) - Open-source, dependency-free real-time failure detection for AI agents.  
-  MIT · **11★ · 6 forks**
+- [SNAGLINE](https://github.com/Cyrax321/SNAGLINE) · [[Docs](https://cyrax321.github.io/SNAGLINE/)] - Open-source, dependency-free real-time failure detection for AI agents.  
+  MIT · Python 3.10+ · **13★ · 9 forks** · Zero dependencies · [`snagline`](https://pypi.org/project/snagline/)
   
-  Deterministic monitoring for loops, error cascades, latency anomalies,
-  goal drift, stagnation, token runaway, tool churn, silent aborts, and
-  side-effect duplication.
+  Deterministic monitoring for infinite loops, error cascades, latency regressions (CUSUM), semantic goal drift, tool thrashing/meltdown, stagnation, token runaway, silent aborts, and side-effect duplication in **<1ms without LLM-as-a-judge calls**.
   
-  **694 tests · 2.43 μs median / 27.71 μs p99** over 200,000 synthetic steps.
+  **1.70 - 2.43 μs median / 27.71 μs p99** per step overhead over 200,000 synthetic steps. Verified across real agents in LangChain, LangGraph, and Claude Code hook bridges.
 #### Kibo
 - [kibo-v7-](https://github.com/Cyrax321/kibo-v7-) - Career orchestration platform, TypeScript, React 18, Vite, TanStack Query, PostgreSQL with Supabase Realtime sub 100ms CDC, Tailwind plus Shadcn plus Recharts for Garden graph and leaderboard, v5.0.0 MIT
   
