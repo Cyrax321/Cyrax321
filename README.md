@@ -15,15 +15,26 @@ I'm an ML Researcher focused on computer vision, temporal modeling and agent inf
 - [SPPS-Mac-Os-Code-Base](https://github.com/Cyrax321/SPPS-Mac-Os-Code-Base) - SPPS O(n) tree serialization on Apple M1 arm64, 8 blocks vs LOUDS, FlatBuffers, Protobuf, ESA 2026 Track E
 - [spps-linux-experiment-results](https://github.com/Cyrax321/spps-linux-experiment-results) - Cross platform validation on EPYC 7763 Ubuntu 24.04, 12006 of 12006 PASS
 - [spps-experiments](https://github.com/Cyrax321/spps-experiments) - ESA 2026 submission on Ryzen 5 7235HS, bijective O(n)
+- QwerySmith: Multi-Source Curriculum Fine-Tuning and Robust Evaluation for Text-to-SQL - 2026 - [[Research Paper (PDF)]](https://drive.google.com/file/d/1sN1eVn7LpOi6cLEI1euxOT2cByBoXLlg/view?usp=sharing) · [[Code]](https://github.com/Cyrax321/QwerySmith-1.0) - Qwen3-4B + QLoRA, 88.5% in-dist, 55.7% enterprise, self-healing SQL agent
+
 ### LLM Research & Fine-Tuning
 
 I fine-tune, specialize, and evaluate open-source language models with a focus on sample efficiency, domain generalization, and deterministic SQL execution.
 
-- **[QwerySmith 1.0 & 1.1](https://github.com/Cyrax321/QwerySmith-1.0)** - Production Text-to-SQL research pipeline & self-healing database agent (Qwen3-4B + QLoRA via Unsloth).  
-  MIT · Python 3.10+ · **88.5% execution accuracy** · Balanced multi-source data mix (`b-mc2` + `gretelai`) with leak-proof evaluation splits and self-healing schema introspection.
-  - [QwerySmith-1.0 (LoRA Adapter)](https://huggingface.co/Cyrax321/QwerySmith-1.0) - 132 MB parameter-efficient adapter weights.
-  - [QwerySmith-1.0-Merged](https://huggingface.co/Cyrax321/QwerySmith-1.0-Merged) - Full 16-bit standalone model for vLLM, TGI, and Transformers.
-  - [QwerySmith-1.0-GGUF](https://huggingface.co/Cyrax321/QwerySmith-1.0-GGUF) - Quantized 4-bit (`q4_k_m`) model for local offline inference via Ollama & llama.cpp.
+- **[QwerySmith 1.0 & 1.1](https://github.com/Cyrax321/QwerySmith-1.0)** · [[Research Paper (PDF)](https://drive.google.com/file/d/1sN1eVn7LpOi6cLEI1euxOT2cByBoXLlg/view?usp=sharing)] · [[GitHub Codebase](https://github.com/Cyrax321/QwerySmith-1.0)]  
+  *Production Text-to-SQL research pipeline & self-healing autonomous database agent (Qwen3-4B + QLoRA via Unsloth & TRL).*  
+  **MIT · Python 3.10+ · 88.5% In-Dist Acc · 55.7% Enterprise Acc (+43 wins vs 18 losses on Gretel, $p=0.0019$) · Zero-Shot Reasoning**
+  
+  Addresses single-source catastrophic overfitting in domain-adapted LLMs by engineering a balanced multi-source curriculum (`b-mc2` + `gretelai`), enforcing leak-proof split carving, and formalizing the *Few-Shot Paradox*. Ships with an interactive, autonomous CLI agent featuring schema introspection and execution-guided self-healing error recovery.
+  
+  - **QwerySmith 1.1 (Latest / Production)**:
+    - [LoRA Adapter](https://huggingface.co/Cyrax321/QwerySmith-1.1/tree/main) - 132 MB parameter-efficient adapter weights trained on balanced multi-source curriculum.
+    - [Merged Model](https://huggingface.co/Cyrax321/QwerySmith-1.1-Merged) - Full 16-bit standalone model for vLLM, TGI, and Transformers.
+    - [GGUF Quantized Model](https://huggingface.co/Cyrax321/QwerySmith-1.1-GGUF/tree/main) - Quantized 4-bit (`q4_k_m`) model for local offline inference via Ollama & llama.cpp.
+  - **QwerySmith 1.0 (Baseline)**:
+    - [LoRA Adapter](https://huggingface.co/Cyrax321/QwerySmith-1.0) - Single-source baseline adapter.
+    - [Merged Model](https://huggingface.co/Cyrax321/QwerySmith-1.0-Merged) - Standalone v1.0 checkpoint.
+    - [GGUF Quantized Model](https://huggingface.co/Cyrax321/QwerySmith-1.0-GGUF) - Local baseline GGUF.
 
 ### Engineering - Agent Infrastructure
 #### <span style="color:#22c55e">Currently shipping</span> <img src="assets/blinking-dot.gif" width="10" height="10" alt="live" style="vertical-align:middle">
