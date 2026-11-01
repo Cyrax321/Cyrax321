@@ -2,10 +2,12 @@
 
 I am an ML systems researcher and engineer building an independent AI lab focused on **Agentic AI, Sovereign Systems, and Long-Horizon Autonomy.**
 
-My work centers on the engineering foundations that make autonomous systems practical in production:
+I believe every individual deserves uncompromising privacy without diluting themselves into centralized systems, and every organization should own sovereign AI: models, data, and agent runtimes they govern locally, without leaking proprietary state to centralized cloud monopolies.
+
+My work centers on the engineering foundations that make sovereign autonomous systems practical in production:
 - **Deterministic Reliability Runtimes**: Semantic recovery checkpoints and idempotent mutation ledgers that prevent state corruption across multi-hour agent executions.
 - **Low-Latency Anomaly Detection**: Sub-millisecond statistical failure detectors and calibrated decision engines with zero LLM-as-a-judge overhead.
-- **Domain-Specialized Models**: Sample-efficient fine-tuning, curriculum data engineering, and zero-leakage evaluation for sovereign LLM and vision pipelines.
+- **Domain-Specialized Sovereign Models**: Sample-efficient fine-tuning, curriculum data engineering, and zero-leakage evaluation for locally deployed, enterprise-governed pipelines.
 
 Building the systems behind production autonomous intelligence.
 
