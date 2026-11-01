@@ -30,6 +30,10 @@ I'm an ML Researcher and Systems Engineer focused on AI agent infrastructure, LL
   - **Deterministic Multi-Vector Anomaly Trapping**: Real-time detection across infinite loops (sliding-window novelty), error cascades, statistical CUSUM latency regressions, semantic goal drift, tool meltdown/entropy collapse, and token runaway.
   - **Universal Framework Interoperability**: Zero vendor lock-in. Drop-in companion for LangGraph, LangChain, AutoGen, CrewAI, and custom raw Python loops, with native HTTP sidecar bridges for non-Python agents (Claude Code, OpenClaw, Hermes).
 
+- **[snapjudge](https://github.com/Cyrax321/snapjudge)**  
+  *Fast, non-autoregressive System-1 decision engine in pure C++17.*  
+  Answers typed questions (choice, score, noun) with calibrated probabilities in a single forward pass, delivering sub-millisecond execution with zero GPU dependencies.
+
 - **[kibo-v7-](https://github.com/Cyrax321/kibo-v7-)**  
   *Career orchestration platform.*  
   TypeScript, React 18, Vite, TanStack Query, PostgreSQL with Supabase Realtime sub-100ms CDC, Tailwind CSS, Shadcn UI, Recharts for garden graphs and leaderboards, v5.0.0 MIT.
@@ -60,6 +64,10 @@ Both CONTINUUM and SNAGLINE are community-driven, active open-source projects we
     - [LoRA Adapter](https://huggingface.co/Cyrax321/QwerySmith-1.0): 132 MB parameter-efficient adapter weights (single-source training).
     - [Merged Model](https://huggingface.co/Cyrax321/QwerySmith-1.0-Merged): Standalone 16-bit model checkpoint.
     - [GGUF Quantized Model](https://huggingface.co/Cyrax321/QwerySmith-1.0-GGUF): Quantized 4-bit (`q4_k_m`) model for local offline inference.
+
+- **[maya-healthcare-llm](https://github.com/Cyrax321/maya-healthcare-llm)**  
+  *Research-grade sovereign healthcare operations LLM.*  
+  Reproducible, production-oriented fine-tuning and evaluation suite specializing in non-clinical hospital administration, bed occupancy forecasting, workforce rostering, and operating room logistics.
 
 ---
 
