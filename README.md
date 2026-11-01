@@ -153,4 +153,4 @@ I actively experiment with state of the art foundation models, coding agents, an
 
 ## Get in Touch
 
-Portfolio: https://sx3svi1pkrbco9gt.vercel.app/ · LinkedIn: https://linkedin.com/in/anandhupshaji · Email: cyrax8590@gmail.com
+Portfolio: https://anandhupshaji.me · LinkedIn: https://linkedin.com/in/anandhupshaji · Email: cyrax8590@gmail.com
