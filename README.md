@@ -5,7 +5,7 @@ I am an ML systems engineer, TensorFlow core contributor, and founder building a
 I believe every individual deserves uncompromising privacy without diluting themselves into centralized systems, and every organization must own sovereign AI: models, data, and agent runtimes they govern locally, without leaking proprietary state to cloud monopolies.
 
 Centralized AI stacks are fundamentally brittle and insecure. Real-world autonomy requires two co-designed layers:
-- **Agents That Do Not Break**: Deterministic runtimes with cryptographic event hashing, immutable action ledgers, and semantic checkpoints that guarantee zero side-effect duplication and verifiable recovery across multi-hour executions.
+- **Agents and Harnesses That Do Not Break**: Deterministic execution harnesses and runtimes with cryptographic event hashing, immutable action ledgers, and semantic checkpoints that guarantee zero side-effect duplication and verifiable recovery across multi-hour executions.
 - **Task-Specific Sovereign Models**: Lean, domain-specialized architectures engineered specifically for the job, running privately offline or on-premises with zero external data egress.
 
 Building the engineering stack for production sovereign autonomy.
@@ -14,9 +14,9 @@ Building the engineering stack for production sovereign autonomy.
 
 ## Research and Engineering Categories
 
-### 1. Sovereign Agent Runtimes and Reliability Infrastructure (Flagship Work)
+### 1. Sovereign Agent Runtimes, Harnesses, and Reliability Infrastructure (Flagship Work)
 
-Building autonomous agent execution engines that do not break, crash, or duplicate destructive side-effects during long-horizon workflows.
+Building autonomous agent execution harnesses and runtimes that do not break, crash, or duplicate destructive side-effects during long-horizon workflows.
 
 #### <span style="color:#22c55e">Currently shipping realtime open source</span> <img src="assets/blinking-dot.gif" width="10" height="10" alt="live" style="vertical-align:middle">
 
