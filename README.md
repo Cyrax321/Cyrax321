@@ -48,6 +48,10 @@ Both CONTINUUM and SNAGLINE are community-driven, active open-source projects we
   
   Addresses single-source catastrophic overfitting in domain-adapted LLMs by engineering a balanced multi-source curriculum (`b-mc2` + `gretelai`), enforcing leak-proof split carving, and formalizing the Few-Shot Paradox. Ships with an interactive, autonomous CLI agent featuring schema introspection and execution-guided self-healing error recovery.
   
+  - **QwerySmith 2.0 (Multi-Seed Development)**:
+    - [QwerySmith-2.0-dev-seed1](https://huggingface.co/Cyrax321/QwerySmith-2.0-dev-seed1): Multi-seed training checkpoint (Seed 1) for enterprise SQL reasoning and variance control.
+    - [QwerySmith-2.0-dev-seed2](https://huggingface.co/Cyrax321/QwerySmith-2.0-dev-seed2): Multi-seed training checkpoint (Seed 2) for cross-split generalization.
+    - [QwerySmith-2.0-dev-seed3](https://huggingface.co/Cyrax321/QwerySmith-2.0-dev-seed3): Multi-seed training checkpoint (Seed 3) for ensembling and variance minimization.
   - **QwerySmith 1.1**:
     - [LoRA Adapter](https://huggingface.co/Cyrax321/QwerySmith-1.1/tree/main): 132 MB parameter-efficient adapter weights trained on balanced multi-source curriculum.
     - [Merged Model](https://huggingface.co/Cyrax321/QwerySmith-1.1-Merged): Full 16-bit standalone model for vLLM, TGI, and Transformers.
