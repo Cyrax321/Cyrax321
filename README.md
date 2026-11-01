@@ -1,13 +1,17 @@
 # Hi, I'm [Beans](https://github.com/Cyrax321)
 
-I am an ML systems researcher and engineer building an independent AI lab focused on **Agentic AI, Sovereign Systems, and Long-Horizon Autonomy.**
+I am an ML systems researcher and engineer building an independent AI lab dedicated to **Sovereign Machine Intelligence, Unbreakable Agent Runtimes, and Task-Specific Models.**
 
-I believe every individual deserves uncompromising privacy without diluting themselves into centralized systems, and every organization should own sovereign AI: models, data, and agent runtimes they govern locally, without leaking proprietary state to centralized cloud monopolies.
+### The Sovereign Architecture Thesis
 
-My work centers on the engineering foundations that make sovereign autonomous systems practical in production:
-- **Deterministic Reliability Runtimes**: Semantic recovery checkpoints and idempotent mutation ledgers that prevent state corruption across multi-hour agent executions.
-- **Low-Latency Anomaly Detection**: Sub-millisecond statistical failure detectors and calibrated decision engines with zero LLM-as-a-judge overhead.
-- **Domain-Specialized Sovereign Models**: Sample-efficient fine-tuning, curriculum data engineering, and zero-leakage evaluation for locally deployed, enterprise-governed pipelines.
+I believe every individual deserves uncompromising privacy without diluting themselves into centralized systems, and every organization must own sovereign AI: intelligence, data, and execution environments they govern locally, without leaking proprietary state to centralized cloud monopolies.
+
+True sovereign autonomy cannot survive on fragile prompt chains or monolithic generalist cloud APIs. Production sovereignty requires two tightly coupled engineering foundations:
+
+1. **Autonomous Agents That Do Not Break**: Long-horizon agentic workflows collapse when runtimes lack deterministic recovery. I engineer execution runtimes with cryptographic event hashing, idempotent action ledgers, and semantic checkpoints that physically prevent side-effect duplication, eliminate state corruption, and resume deterministically from unhandled failures without token-burning hallucination.
+2. **Task-Specific Sovereign Intelligence**: Monolithic generalist models are bloated, expensive, and leak private organizational state. I build sample-efficient, highly calibrated domain models designed exclusively for the task at hand: running locally, offline, or in air-gapped enterprise environments with zero external data egress.
+
+By co-designing unbreakable agent runtimes with task-specialized sovereign models, my lab builds the complete infrastructure stack for production sovereign autonomy.
 
 Building the systems behind production autonomous intelligence.
 
@@ -15,7 +19,9 @@ Building the systems behind production autonomous intelligence.
 
 ## Research and Engineering Categories
 
-### 1. Agent Runtime and Systems Infrastructure (Flagship Work)
+### 1. Sovereign Agent Runtimes and Reliability Infrastructure (Flagship Work)
+
+Building autonomous agent execution engines that do not break, crash, or duplicate destructive side-effects during long-horizon workflows.
 
 #### <span style="color:#22c55e">Currently shipping realtime open source</span> <img src="assets/blinking-dot.gif" width="10" height="10" alt="live" style="vertical-align:middle">
 
@@ -55,7 +61,9 @@ Both CONTINUUM and SNAGLINE are community-driven, active open-source projects we
 
 ---
 
-### 2. LLM Research and Domain Specialization
+### 2. Task-Specific Sovereign Models and Domain Specialization
+
+Engineering specialized, sample-efficient models designed exclusively for high-stakes operational domains, runnable on local or private infrastructure with zero external data egress.
 
 - **[QwerySmith Model Family](https://github.com/Cyrax321/QwerySmith-1.0)** · [[Research Paper (PDF)](https://drive.google.com/file/d/1sN1eVn7LpOi6cLEI1euxOT2cByBoXLlg/view?usp=sharing)] · [[GitHub Codebase](https://github.com/Cyrax321/QwerySmith-1.0)]  
   *Production Text-to-SQL research pipeline and self-healing autonomous database agent (Qwen3-4B base foundation + QLoRA via Unsloth and TRL).*  
