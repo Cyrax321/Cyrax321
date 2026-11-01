@@ -22,7 +22,7 @@ Building autonomous agent execution harnesses and runtimes that do not break, cr
 
 - **[CONTINUUM](https://github.com/Cyrax321/CONTINUUM)** · [[Live Demo](https://continuum-nu-six.vercel.app)] · [[PyPI](https://pypi.org/project/continuum-agent/)] · [[Docker GHCR](https://github.com/Cyrax321/CONTINUUM/pkgs/container/continuum)]  
   *Production-grade infrastructure for verifiable semantic recovery of long-running autonomous AI agents.*  
-  **Apache 2.0 · Python 3.11+ · 28★ · 55 forks · 58 contributors · 4,230+ tests · 14 Phase 6 recovery scenarios**
+  **Apache 2.0 · Python 3.11+ · 2,554 commits · 28★ · 55 forks · 58 contributors · 4,230+ tests · 14 Phase 6 recovery scenarios**
   
   Solves the multi-hour agent crash failure mode: replaces naive context replay and token-burning hallucinated recoveries with deterministic, verifiable resumption.
   - **Zero Side-Effect Duplication**: Cryptographically tamper-evident SHA-256 hash-chained event logs paired with an idempotent action ledger physically preventing duplicate mutations (e.g. double billing, duplicate API writes).
@@ -35,7 +35,7 @@ Building autonomous agent execution harnesses and runtimes that do not break, cr
 
 - **[SNAGLINE](https://github.com/Cyrax321/SNAGLINE)** · [[Documentation](https://cyrax321.github.io/SNAGLINE/)] · [[PyPI](https://pypi.org/project/snagline/)]  
   *Zero-dependency, microsecond-scale real-time failure detection and guardrails for LLM agents.*  
-  **MIT · Python 3.10+ · 13★ · 9 forks · 11 contributors · Zero dependencies · 1.70 - 2.43 μs median latency**
+  **MIT · Python 3.10+ · 822 commits · 13★ · 9 forks · 11 contributors · Zero dependencies · 1.70 - 2.43 μs median latency**
   
   Eliminates the silent budget-burn problem: catches infinite loops, tool thrashing, latency spikes, and reasoning collapse in real time in <1ms without expensive LLM-as-a-judge calls.
   - **Microsecond-Scale Zero Overhead**: Runs $O(1)$ amortized statistical detectors using strictly the Python standard library, benchmarked at **1.70 - 2.43 μs median / 27.71 μs p99** over 200,000 synthetic steps on Apple Silicon.
@@ -88,7 +88,7 @@ Engineering specialized, sample-efficient models designed exclusively for high-s
 ### 3. Computer Vision and Rare Disease Imaging
 
 - **[wave-coAtNet](https://github.com/Cyrax321/wave-coAtNet)**  
-  *Wavelet-enhanced hybrid CNN-Transformer with 2D Discrete Wavelet Transform (DWT) subband decomposition.*  
+  *Wavelet-enhanced hybrid CNN-Transformer with 2D Discrete Wavelet Transform (DWT) subband decomposition.* (1,549 commits)  
   Features MBConv depthwise separable convolution, cross-attention, relative position bias, and prototype selection. Evaluated on 13 model benchmarks with 5-fold cross-validation, achieving 0.942 Quadratic Weighted Kappa across rare ichthyosis subtypes.
 
 - **[H-CoAtNet-Ichthyosis](https://github.com/Cyrax321/H-CoAtNet-Ichthyosis)**  
