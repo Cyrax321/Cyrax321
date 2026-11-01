@@ -97,6 +97,10 @@ I fine-tune, specialize, and evaluate open-source language models with a focus o
 
 </details>
 
+## Engineering and AI Workflow
+
+I actively experiment with state of the art foundation models, coding agents, and multi-agent workflows. My development methodology pairs agentic execution with human oversight: system architectures, invariant tests, and complex edge cases are designed, steered, and reviewed by me, while autonomous agents accelerate implementation, exploration, and refactoring loops. This human-in-the-loop workflow allows me to prototype rapidly, test novel research hypotheses, and maintain rigorous engineering standards across codebases.
+
 ## Get in Touch
 
 Portfolio: https://sx3svi1pkrbco9gt.vercel.app/ · LinkedIn: https://linkedin.com/in/anandhupshaji · Email: cyrax8590@gmail.com
