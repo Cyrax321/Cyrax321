@@ -54,7 +54,7 @@ I fine-tune, specialize, and evaluate open-source language models with a focus o
   **MIT · Python 3.10+ · 13★ · 9 forks · Zero dependencies · 1.70 – 2.43 μs median latency**
   
   Eliminates the silent budget-burn problem: catches infinite loops, tool thrashing, latency spikes, and reasoning collapse in real time **in <1ms without expensive LLM-as-a-judge calls**.
-  - **Microsecond-Scale Zero Overhead**: Runs $O(1)$ amortized statistical detectors using strictly the Python standard library—benchmarked at **1.70 – 2.43 μs median / 27.71 μs p99** over 200,000 synthetic steps on Apple Silicon.
+  - **Microsecond-Scale Zero Overhead**: Runs $O(1)$ amortized statistical detectors using strictly the Python standard library, benchmarked at **1.70 – 2.43 μs median / 27.71 μs p99** over 200,000 synthetic steps on Apple Silicon.
   - **Deterministic Multi-Vector Anomaly Trapping**: Real-time detection across infinite loops (sliding-window novelty), error cascades, statistical CUSUM latency regressions, semantic goal drift, tool meltdown/entropy collapse, and token runaway.
   - **Universal Framework Interoperability**: Zero vendor lock-in. Drop-in companion for LangGraph, LangChain, AutoGen, CrewAI, and custom raw Python loops, with native HTTP sidecar bridges for non-Python agents (Claude Code, OpenClaw, Hermes).
 #### Kibo
