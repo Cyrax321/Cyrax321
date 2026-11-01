@@ -10,7 +10,7 @@ I'm an ML Researcher and Systems Engineer focused on AI agent infrastructure, LL
 
 - **[CONTINUUM](https://github.com/Cyrax321/CONTINUUM)** · [[Live Demo](https://continuum-nu-six.vercel.app)] · [[PyPI](https://pypi.org/project/continuum-agent/)] · [[Docker GHCR](https://github.com/Cyrax321/CONTINUUM/pkgs/container/continuum)]  
   *Production-grade infrastructure for verifiable semantic recovery of long-running autonomous AI agents.*  
-  **Apache 2.0 · Python 3.11+ · 28★ · 55 forks · ~2,240+ tests · 14 Phase 6 recovery scenarios**
+  **Apache 2.0 · Python 3.11+ · 28★ · 55 forks · 58 contributors · ~2,240+ tests · 14 Phase 6 recovery scenarios**
   
   Solves the multi-hour agent crash failure mode: replaces naive context replay and token-burning hallucinated recoveries with deterministic, verifiable resumption.
   - **Zero Side-Effect Duplication**: Cryptographically tamper-evident SHA-256 hash-chained event logs paired with an idempotent action ledger physically preventing duplicate mutations (e.g. double billing, duplicate API writes).
@@ -20,7 +20,7 @@ I'm an ML Researcher and Systems Engineer focused on AI agent infrastructure, LL
 
 - **[SNAGLINE](https://github.com/Cyrax321/SNAGLINE)** · [[Documentation](https://cyrax321.github.io/SNAGLINE/)] · [[PyPI](https://pypi.org/project/snagline/)]  
   *Zero-dependency, microsecond-scale real-time failure detection and guardrails for LLM agents.*  
-  **MIT · Python 3.10+ · 13★ · 9 forks · Zero dependencies · 1.70 - 2.43 μs median latency**
+  **MIT · Python 3.10+ · 13★ · 9 forks · 11 contributors · Zero dependencies · 1.70 - 2.43 μs median latency**
   
   Eliminates the silent budget-burn problem: catches infinite loops, tool thrashing, latency spikes, and reasoning collapse in real time in <1ms without expensive LLM-as-a-judge calls.
   - **Microsecond-Scale Zero Overhead**: Runs $O(1)$ amortized statistical detectors using strictly the Python standard library, benchmarked at **1.70 - 2.43 μs median / 27.71 μs p99** over 200,000 synthetic steps on Apple Silicon.
@@ -30,6 +30,10 @@ I'm an ML Researcher and Systems Engineer focused on AI agent infrastructure, LL
 - **[kibo-v7-](https://github.com/Cyrax321/kibo-v7-)**  
   *Career orchestration platform.*  
   TypeScript, React 18, Vite, TanStack Query, PostgreSQL with Supabase Realtime sub-100ms CDC, Tailwind CSS, Shadcn UI, Recharts for garden graphs and leaderboards, v5.0.0 MIT.
+
+#### Community and Open Source Contributions
+
+Both CONTINUUM and SNAGLINE are community-driven, active open-source projects welcoming developers, researchers, and maintainers worldwide. Whether you want to add new recovery scenarios, optimize statistical anomaly heuristics, integrate new agent frameworks, or improve documentation and tests, contributions are warmly welcomed. Check out the open issues, RFCs, and contribution guidelines in each repository to get involved.
 
 ---
 
