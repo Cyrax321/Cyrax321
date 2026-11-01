@@ -10,13 +10,16 @@ I'm an ML Researcher and Systems Engineer focused on AI agent infrastructure, LL
 
 - **[CONTINUUM](https://github.com/Cyrax321/CONTINUUM)** · [[Live Demo](https://continuum-nu-six.vercel.app)] · [[PyPI](https://pypi.org/project/continuum-agent/)] · [[Docker GHCR](https://github.com/Cyrax321/CONTINUUM/pkgs/container/continuum)]  
   *Production-grade infrastructure for verifiable semantic recovery of long-running autonomous AI agents.*  
-  **Apache 2.0 · Python 3.11+ · 28★ · 55 forks · 58 contributors · ~2,240+ tests · 14 Phase 6 recovery scenarios**
+  **Apache 2.0 · Python 3.11+ · 28★ · 55 forks · 58 contributors · 4,230+ tests · 14 Phase 6 recovery scenarios**
   
   Solves the multi-hour agent crash failure mode: replaces naive context replay and token-burning hallucinated recoveries with deterministic, verifiable resumption.
   - **Zero Side-Effect Duplication**: Cryptographically tamper-evident SHA-256 hash-chained event logs paired with an idempotent action ledger physically preventing duplicate mutations (e.g. double billing, duplicate API writes).
   - **Semantic Checkpoints and Environment Revalidation**: Resumes from compact, versioned state contracts rather than lossy conversation dumps, enforcing staleness propagation across external dependency graphs before execution resumes.
-  - **Deny-by-Default MCP Server (12 Tools)**: Native drop-in integration for Claude Code, Cursor, and Anthropic toolchains with sub-second deterministic rollbacks.
-  - **Rigorous Battle Testing**: 14 Phase 6 recovery scenarios 100% verified inside real Claude Code agent sessions; automated Docker builds on GHCR and interactive web demo.
+  - **Provenance-Aware State and Seven Recovery Modes**: Every fact carries its origin; agent-reported progress is marked `REQUIRES_REVIEW` (never self-certifying) with sealed next-action recovery contracts.
+  - **Secure Planning Loop and Drift Detection**: Two-signal observation verification escalates high-risk branches, with scheduled periodic revalidation catching mid-run environment drift within one cycle.
+  - **Deny-by-Default MCP Server (13 Tools)**: Native drop-in integration for Claude Code, Cursor, and Anthropic toolchains with sub-second deterministic rollbacks.
+  - **Framework Adapters and Wire Sidecar**: Native integrations for LangGraph, LangChain, OpenAI Agents SDK, and an HTTP sidecar bridge with OpenAPI wire conformance for non-Python agents.
+  - **Rigorous Battle Testing**: 4,230+ collected tests and 14 Phase 6 recovery scenarios 100% verified inside live Claude Code agent sessions; automated Docker builds on GHCR and interactive web demo.
 
 - **[SNAGLINE](https://github.com/Cyrax321/SNAGLINE)** · [[Documentation](https://cyrax321.github.io/SNAGLINE/)] · [[PyPI](https://pypi.org/project/snagline/)]  
   *Zero-dependency, microsecond-scale real-time failure detection and guardrails for LLM agents.*  
