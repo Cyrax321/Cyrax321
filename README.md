@@ -1,10 +1,10 @@
-# Building an Independent AI Research Lab
+# Building an AI Lab
 
-Most of AI today is passive: models wait for a prompt, answer, and forget. The real frontier belongs to systems that can plan across long horizons, verify their own work, recover from unexpected failures, and operate with sovereign independence.
+I am [Beans](https://github.com/Cyrax321). I build systems for autonomous, sovereign intelligence.
 
-I am [Beans](https://github.com/Cyrax321), building toward **Agentic AI, Sovereign AI, and Autonomous Intelligence Systems.**
+Currently building toward **Agentic AI, Sovereign AI, and Autonomous Intelligence Systems.**
 
-My research and engineering focus on the core foundations of self-directed intelligence: intelligent agents, reasoning architectures, agent reliability infrastructure, and sovereign domain models.
+Researching and engineering the foundations of intelligent agents, self-directed systems, agent infrastructure, reasoning architectures, and sovereign AI capabilities.
 
 **Autonomy · Intelligence · Sovereignty · Infrastructure**
 
