@@ -1,19 +1,14 @@
 # Hi, I'm [Beans](https://github.com/Cyrax321)
 
-I am an ML systems researcher and engineer building an independent AI lab dedicated to **Sovereign Machine Intelligence, Unbreakable Agent Runtimes, and Task-Specific Models.**
+I am an ML systems engineer, TensorFlow core contributor, and founder building an independent AI lab dedicated to **Sovereign Machine Intelligence.**
 
-### The Sovereign Architecture Thesis
+I believe every individual deserves uncompromising privacy without diluting themselves into centralized systems, and every organization must own sovereign AI: models, data, and agent runtimes they govern locally, without leaking proprietary state to cloud monopolies.
 
-I believe every individual deserves uncompromising privacy without diluting themselves into centralized systems, and every organization must own sovereign AI: intelligence, data, and execution environments they govern locally, without leaking proprietary state to centralized cloud monopolies.
+Centralized AI stacks are fundamentally brittle and insecure. Real-world autonomy requires two co-designed layers:
+- **Agents That Do Not Break**: Deterministic runtimes with cryptographic event hashing, immutable action ledgers, and semantic checkpoints that guarantee zero side-effect duplication and verifiable recovery across multi-hour executions.
+- **Task-Specific Sovereign Models**: Lean, domain-specialized architectures engineered specifically for the job, running privately offline or on-premises with zero external data egress.
 
-True sovereign autonomy cannot survive on fragile prompt chains or monolithic generalist cloud APIs. Production sovereignty requires two tightly coupled engineering foundations:
-
-1. **Autonomous Agents That Do Not Break**: Long-horizon agentic workflows collapse when runtimes lack deterministic recovery. I engineer execution runtimes with cryptographic event hashing, idempotent action ledgers, and semantic checkpoints that physically prevent side-effect duplication, eliminate state corruption, and resume deterministically from unhandled failures without token-burning hallucination.
-2. **Task-Specific Sovereign Intelligence**: Monolithic generalist models are bloated, expensive, and leak private organizational state. I build sample-efficient, highly calibrated domain models designed exclusively for the task at hand: running locally, offline, or in air-gapped enterprise environments with zero external data egress.
-
-By co-designing unbreakable agent runtimes with task-specialized sovereign models, my lab builds the complete infrastructure stack for production sovereign autonomy.
-
-Building the systems behind production autonomous intelligence.
+Building the engineering stack for production sovereign autonomy.
 
 ---
 
