@@ -1,6 +1,16 @@
-# Hello, I'm [Beans](https://github.com/Cyrax321)
+# Building an Independent AI Research Lab
 
-I'm an ML Researcher and Systems Engineer focused on AI agent infrastructure, LLM domain adaptation, computer vision, and high-performance algorithms.
+Most of AI today is passive: models wait for a prompt, answer, and forget. The real frontier belongs to systems that can plan across long horizons, verify their own work, recover from unexpected failures, and operate with sovereign independence.
+
+I am [Beans](https://github.com/Cyrax321), building toward **Agentic AI, Sovereign AI, and Autonomous Intelligence Systems.**
+
+My research and engineering focus on the core foundations of self-directed intelligence: intelligent agents, reasoning architectures, agent reliability infrastructure, and sovereign domain models.
+
+**Autonomy · Intelligence · Sovereignty · Infrastructure**
+
+*Building the systems behind the next generation of AI.*
+
+---
 
 ## Research and Engineering Categories
 
