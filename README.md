@@ -1,14 +1,13 @@
-# Building an AI Lab
+# Hi, I'm [Beans](https://github.com/Cyrax321)
 
-I am [Beans](https://github.com/Cyrax321). I build systems for autonomous, sovereign intelligence.
+I am an ML systems researcher and engineer building an independent AI lab focused on **Agentic AI, Sovereign Systems, and Long-Horizon Autonomy.**
 
-Currently building toward **Agentic AI, Sovereign AI, and Autonomous Intelligence Systems.**
+My work centers on the engineering foundations that make autonomous systems practical in production:
+- **Deterministic Reliability Runtimes**: Semantic recovery checkpoints and idempotent mutation ledgers that prevent state corruption across multi-hour agent executions.
+- **Low-Latency Anomaly Detection**: Sub-millisecond statistical failure detectors and calibrated decision engines with zero LLM-as-a-judge overhead.
+- **Domain-Specialized Models**: Sample-efficient fine-tuning, curriculum data engineering, and zero-leakage evaluation for sovereign LLM and vision pipelines.
 
-Researching and engineering the foundations of intelligent agents, self-directed systems, agent infrastructure, reasoning architectures, and sovereign AI capabilities.
-
-**Autonomy · Intelligence · Sovereignty · Infrastructure**
-
-*Building the systems behind the next generation of AI.*
+Building the systems behind production autonomous intelligence.
 
 ---
 
